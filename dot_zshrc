@@ -1,0 +1,16 @@
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Add colors to Terminal
+# export CLICOLOR=1
+# export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# Add nvim, cargo and pip3 to PATH
+PATH=$HOME/.local/bin:./nvim-macos/bin:$HOME/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH
+
+# Alias
+alias python=/usr/local/bin/python3
+neofetch
