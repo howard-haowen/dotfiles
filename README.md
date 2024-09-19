@@ -9,6 +9,7 @@
 tree -a -C
 ```
 
+```txt
 ├── .config
 │   ├── fish
 │   │   └── functions
@@ -22,6 +23,7 @@ tree -a -C
 ├── Brewfile
 ├── Brewfile.lock.json
 └── README.md
+```
 
 2. While in `~/dotfiles`, run `stow .` to create symlinks.
 
