@@ -2,7 +2,7 @@
 
 ## Save dotfiles in a single directory on Machine A
 
-1. Move all dotfiles to `~/dotfiles/` so that it has the same file structure as `~`
+1. Move all dotfiles to `~/dotfiles/` so that it has the same file structure as `~`.
 
 - show the tree structure of all files with color
 ```sh
@@ -25,8 +25,24 @@ tree -a -C
 └── README.md
 ```
 
-2. While in `~/dotfiles`, run `stow .` to create symlinks.
+1. While in `~/dotfiles`, run this to create symlinks:
+```sh
+stow .
+```
+
+1. When new dotfiles are added to `~/dotfiles`, run this to delete all symlinks before creating them again:
+```sh
+stow -D .
+```
 
 ## Replicate dotfiles on Machine B
 
+1. Clone the dotfiles repository using `git`.
+```sh
+git clone git@github.com:howard-haowen/dotfiles.git 
+```
 
+1. While in `~/dotfiles`, run this to create symlinks:
+```sh
+stow .
+```
