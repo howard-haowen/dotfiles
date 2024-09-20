@@ -20,13 +20,13 @@ brew "powerlevel10k"
 
 # other tools
 ## Lightweight and flexible command-line JSON processor
-brew "jq"
+# brew "jq"
 ## Distributed revision control system
 brew "git"
 ## File browser
 # brew "ranger"
 ## User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
+# brew "fish"
 ## Simplified and community-driven man pages
 brew "tldr"
 ## Tools and libraries to manipulate images in many formats
@@ -34,10 +34,14 @@ brew "imagemagick"
 ## Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 ## Suite of command-line tools for converting to and working with CSV
-brew "csvkit"
+# brew "csvkit"
 ## Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 ## Command-line toolbox for fancy output in the terminal
 brew "rich-cli"
 ## Display directories as trees (with optional color/HTML output)
 brew "tree"
+## Pluggable terminal workspace, with terminal multiplexer as the base feature
+brew "zellij"
+## Modern shell for the GitHub era
+brew "nushell"
