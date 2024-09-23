@@ -48,4 +48,4 @@ brew "zellij"
 ## Modern shell for the GitHub era
 brew "nushell"
 ## Post-modern modal text editor
-brew "helix"
+# brew "helix"
