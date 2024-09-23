@@ -23,6 +23,8 @@ brew "powerlevel10k"
 # brew "jq"
 ## Distributed revision control system
 brew "git"
+## Simple terminal UI for git commands
+brew "lazygit"
 ## File browser
 # brew "ranger"
 ## User-friendly command-line shell for UNIX-like operating systems
@@ -45,3 +47,5 @@ brew "tree"
 brew "zellij"
 ## Modern shell for the GitHub era
 brew "nushell"
+## Post-modern modal text editor
+brew "helix"
