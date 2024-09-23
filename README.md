@@ -16,9 +16,27 @@ tree -a -C
 │   │       ├── cheat.sh.fish
 │   │       ├── ls-pipenv.fish
 │   │       └── wttr.fish
-│   └── nvim
-│       └── lua
-│           └── community.lua
+│   ├── nvim
+│   │   ├── .neoconf.json
+│   │   ├── .stylua.toml
+│   │   ├── README.md
+│   │   ├── init.lua
+│   │   ├── lua
+│   │   │   ├── community.lua
+│   │   │   ├── lazy_setup.lua
+│   │   │   ├── plugins
+│   │   │   │   ├── astrocore.lua
+│   │   │   │   ├── astrolsp.lua
+│   │   │   │   ├── astroui.lua
+│   │   │   │   ├── mason.lua
+│   │   │   │   ├── none-ls.lua
+│   │   │   │   ├── treesitter.lua
+│   │   │   │   └── user.lua
+│   │   │   └── polish.lua
+│   │   ├── neovim.yml
+│   │   └── selene.toml
+│   └── zellij
+│       └── config.kdl
 ├── .zshrc
 ├── Brewfile
 ├── Brewfile.lock.json
