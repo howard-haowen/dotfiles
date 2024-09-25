@@ -19,33 +19,35 @@ brew "openjdk" #java
 brew "powerlevel10k"
 
 # other tools
-## Lightweight and flexible command-line JSON processor
+## lightweight and flexible command-line json processor
 # brew "jq"
-## Distributed revision control system
+## distributed revision control system
 brew "git"
-## Simple terminal UI for git commands
+## simple terminal ui for git commands
 brew "lazygit"
-## File browser
+## file browser
 # brew "ranger"
-## User-friendly command-line shell for UNIX-like operating systems
+## user-friendly command-line shell for unix-like operating systems
 # brew "fish"
-## Simplified and community-driven man pages
+## simplified and community-driven man pages
 brew "tldr"
-## Tools and libraries to manipulate images in many formats
+## tools and libraries to manipulate images in many formats
 brew "imagemagick"
-## Like neofetch, but much faster because written mostly in C
+## like neofetch, but much faster because written mostly in c
 brew "fastfetch"
-## Suite of command-line tools for converting to and working with CSV
+## suite of command-line tools for converting to and working with csv
 # brew "csvkit"
-## Organize software neatly under a single directory tree (e.g. /usr/local)
+## organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-## Command-line toolbox for fancy output in the terminal
+## command-line toolbox for fancy output in the terminal
 brew "rich-cli"
-## Display directories as trees (with optional color/HTML output)
+## display directories as trees (with optional color/html output)
 brew "tree"
-## Pluggable terminal workspace, with terminal multiplexer as the base feature
+## pluggable terminal workspace, with terminal multiplexer as the base feature
 brew "zellij"
-## Modern shell for the GitHub era
+## modern shell for the github era
 brew "nushell"
-## Post-modern modal text editor
+## post-modern modal text editor
 # brew "helix"
+## cross-shell prompt for astronauts
+brew "starship"
