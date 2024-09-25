@@ -17,6 +17,9 @@ alias py=python3
 # Add an alias for pip3
 alias pip=pip3
 
+# Set the home directory for nushell config
+export XDG_CONFIG_HOME="/Users/haowen_jiang/.config"
+
 # Activate starship
 eval "$(starship init zsh)"
 

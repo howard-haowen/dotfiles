@@ -896,3 +896,8 @@ $env.config = {
         }
     ]
 }
+
+# Add this to make starship the default prompt for nushell
+use ~/.cache/starship/init.nu
+
+
