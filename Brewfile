@@ -16,7 +16,8 @@ brew "node" #node.js
 brew "openjdk" #java
 
 # powerlevel10k theme for zsh
-brew "powerlevel10k"
+# use starship for a better alternative
+# brew "powerlevel10k"
 
 # other tools
 ## lightweight and flexible command-line json processor
