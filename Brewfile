@@ -1,27 +1,60 @@
-# brew bundle command
+# ╭──────────────────────────────────────────────────────────╮
+# │ brew bundle command                                      │
+# ╰──────────────────────────────────────────────────────────╯
 tap "homebrew/bundle"
 
-# neovim text editor
-# use `nvim` to launch the editor
+# ╭──────────────────────────────────────────────────────────╮
+# │ neovim text editor                                       │
+# ╰──────────────────────────────────────────────────────────╯
+## Ambitious Vim-fork focused on extensibility and agility
+## use `nvim` to launch the editor
 tap "neovim/neovim" || true
 brew "neovim"
 
-# python environments
+# ╭──────────────────────────────────────────────────────────╮
+# │ python environments                                      │
+# ╰──────────────────────────────────────────────────────────╯
 brew "pyenv"
 brew "pipenv"
 brew "pipx"
 
-# other programming languages
+# ╭──────────────────────────────────────────────────────────╮
+# │ other programming languages                              │
+# ╰──────────────────────────────────────────────────────────╯
 brew "node" #node.js
 brew "openjdk" #java
+brew "rust" #rust
 
 # powerlevel10k theme for zsh
 # use starship for a better alternative
 # brew "powerlevel10k"
 
-# other tools
+# ╭──────────────────────────────────────────────────────────╮
+# │ yazi file manager and its dependencies                   │
+# ╰──────────────────────────────────────────────────────────╯
+brew "yazi" 
+## Create thumbnails for your video files
+brew "ffmpegthumbnailer" 
+## 7-Zip is a file archiver with a high compression ratio 
+brew "sevenzip" 
 ## lightweight and flexible command-line json processor
-# brew "jq"
+brew "jq" 
+## PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler" 
+## Simple, fast and user-friendly alternative to find 
+brew "fd" 
+## Search tool like grep and The Silver Searcher 
+brew "ripgrep" 
+## Search tool like grep and The Silver Searcher
+brew "fzf" 
+## Shell extension to navigate your filesystem faster
+brew "zoxide" 
+## tools and libraries to manipulate images in many formats
+brew "imagemagick" 
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ other tools                                              │
+# ╰──────────────────────────────────────────────────────────╯
 ## distributed revision control system
 brew "git"
 ## simple terminal ui for git commands
@@ -32,8 +65,6 @@ brew "lazygit"
 # brew "fish"
 ## simplified and community-driven man pages
 brew "tldr"
-## tools and libraries to manipulate images in many formats
-brew "imagemagick"
 ## like neofetch, but much faster because written mostly in c
 brew "fastfetch"
 ## suite of command-line tools for converting to and working with csv
@@ -52,3 +83,15 @@ brew "nushell"
 # brew "helix"
 ## cross-shell prompt for astronauts
 brew "starship"
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ cask applications                                        │
+# ╰──────────────────────────────────────────────────────────╯
+# specify a directory to install the applications in
+cask_args appdir: '/Applications'
+# add extra repositories other than the default one 
+tap 'homebrew/homebrew-bundle' || true 
+## Menlo for Powerline 
+cask "font-hack-nerd-font"
+## Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
