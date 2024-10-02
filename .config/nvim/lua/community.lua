@@ -12,4 +12,5 @@ return {
   { import = "astrocommunity.note-taking.obsidian-nvim" },
   { import = "astrocommunity.editing-support.comment-box-nvim" },
   { import = "astrocommunity.editing-support.true-zen-nvim" },
+  { import = "astrocommunity.recipes.neovide" },
 }
