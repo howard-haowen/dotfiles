@@ -28,3 +28,6 @@ eval "$(starship init zsh)"
 
 # Activate fastfetch
 # fastfetch
+
+# Created by `pipx` on 2024-10-05 07:29:14
+export PATH="$PATH:/Users/haowen_jiang/.local/bin"
