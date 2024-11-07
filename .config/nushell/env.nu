@@ -92,7 +92,8 @@ $env.NU_PLUGIN_DIRS = [
 # which is built into the nushell stdlib:
 # use std "path add"
 # $env.PATH = ($env.PATH | split row (char esep))
-# path add /some/path
+# Add cargo bin to PATH
+path add /Users/haowen_jiang/.cargo/bin
 # path add ($env.CARGO_HOME | path join "bin")
 # path add ($env.HOME | path join ".local" "bin")
 # $env.PATH = ($env.PATH | uniq)
