@@ -95,3 +95,5 @@ tap 'homebrew/homebrew-bundle' || true
 cask "font-hack-nerd-font"
 ## Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+## Get up and running with large language models locally
+cask "ollama"
