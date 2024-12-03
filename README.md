@@ -13,6 +13,8 @@ tree -a -C -I .git -I .mypy_cach
 ```txt
 .
 ├── .config
+│   ├── elia
+│   │   └── config.toml
 │   ├── fish
 │   │   └── functions
 │   │       ├── cheat.sh.fish
