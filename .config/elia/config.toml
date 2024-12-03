@@ -1,0 +1,44 @@
+# the ID or name of the model that is selected by default on launch
+default_model = "ollama/llama3"
+
+# the system prompt on launch
+system_prompt = "You are a helpful assistant who answers questions based on the context given to you."
+
+# choose from "nebula", "cobalt", "twilight", "hacker", "alpine", "galaxy", "nautilus", "monokai", "textual"
+theme = "galaxy"
+
+# change the syntax highlighting theme of code in messages
+# choose from https://pygments.org/styles/
+# defaults to "monokai"
+message_code_theme = "dracula"
+
+# example of adding local llama3 support
+# only the `name` field is required here.
+[[models]]
+name = "ollama/llama3.2"
+
+# example of a model running on a local server, e.g. LocalAI
+# [[models]]
+# name = "openai/some-model"
+# api_base = "http://localhost:8080/v1"
+# api_key = "api-key-if-required"
+#
+# # example of add a groq model, showing some other fields
+# [[models]]
+# name = "groq/llama2-70b-4096"
+# display_name = "Llama 2 70B"  # appears in UI
+# provider = "Groq"  # appears in UI
+# temperature = 1.0  # high temp = high variation in output
+# max_retries = 0  # number of retries on failed request
+#
+# # example of multiple instances of one model, e.g. you might
+# # have a 'work' OpenAI org and a 'personal' org.
+# [[models]]
+# id = "work-gpt-3.5-turbo"
+# name = "gpt-3.5-turbo"
+# display_name = "GPT 3.5 Turbo (Work)"
+#
+# [[models]]
+# id = "personal-gpt-3.5-turbo"
+# name = "gpt-3.5-turbo"
+# display_name = "GPT 3.5 Turbo (Personal)"
