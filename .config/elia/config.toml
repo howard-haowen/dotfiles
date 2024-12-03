@@ -12,10 +12,12 @@ theme = "galaxy"
 # defaults to "monokai"
 message_code_theme = "dracula"
 
-# example of adding local llama3 support
+# example of adding local ollama models
 # only the `name` field is required here.
 [[models]]
 name = "ollama/llama3.2"
+[[models]]
+name = "ollama/qwen2.5-coder"
 
 # example of a model running on a local server, e.g. LocalAI
 # [[models]]
