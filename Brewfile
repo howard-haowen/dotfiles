@@ -14,7 +14,7 @@ brew "neovim"
 # ╭──────────────────────────────────────────────────────────╮
 # │ python environments                                      │
 # ╰──────────────────────────────────────────────────────────╯
-brew "pyenv"
+# brew "pyenv" # replaced by the uv package manager written in Rust
 brew "pipenv"
 brew "pipx"
 
@@ -29,10 +29,8 @@ brew "rust" #rust
 # use starship for a better alternative
 # brew "powerlevel10k"
 
-# ╭──────────────────────────────────────────────────────────╮
-# │ yazi file manager and its dependencies                   │
-# ╰──────────────────────────────────────────────────────────╯
-brew "yazi" 
+# yazi file manager and its dependencies
+# brew "yazi" 
 ## Create thumbnails for your video files
 brew "ffmpegthumbnailer" 
 ## 7-Zip is a file archiver with a high compression ratio 

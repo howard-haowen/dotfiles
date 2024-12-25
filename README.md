@@ -7,7 +7,7 @@
 - show the tree structure of all files with color
 - use the `-I` option to ignore a directory
 ```sh
-tree -a -C -I .git -I .mypy_cach
+tree -a -C -I .git 
 ```
 
 ```txt
@@ -63,6 +63,8 @@ tree -a -C -I .git -I .mypy_cach
 ├── Brewfile
 ├── Brewfile.lock.json
 └── README.md
+
+13 directories, 39 files
 ```
 
 1. While in `~/dotfiles`, run this to create symlinks:
@@ -87,7 +89,7 @@ git clone git@github.com:howard-haowen/dotfiles.git
 stow .
 ```
 
-## pipx packages
+## packages installed via `pipx`
 
 - list packages installed via `pipx`
 ```sh
@@ -99,6 +101,35 @@ pipx list
 venvs are in /Users/haowen_jiang/.local/pipx/venvs
 apps are exposed on your $PATH at /Users/haowen_jiang/.local/bin
 manual pages are exposed at /Users/haowen_jiang/.local/share/man
-   package llm 0.16, installed using Python 3.12.6
+   package docling 2.13.0, installed using Python 3.12.7
+    - docling
+   package elia-chat 1.10.0, installed using Python 3.12.7
+    - elia
+   package jsondiff 2.2.1, installed using Python 3.12.7
+    - jdiff
+   package llm 0.19.1, installed using Python 3.12.6
     - llm
+   package strip-tags 0.5.1, installed using Python 3.12.7
+    - strip-tags
+   package ttok 0.3, installed using Python 3.12.7
+    - ttok
+   package uv 0.5.11, installed using Python 3.12.7
+    - uv
+    - uvx
+```
+
+## packages installed via `uv`
+
+- list packages installed via `uv`
+```sh
+uv tool list
+```
+
+- output
+```sh
+open-interpreter v0.4.3
+- i
+- interpreter
+- interpreter-classic
+- wtf
 ```
