@@ -31,3 +31,10 @@ eval "$(starship init zsh)"
 
 # Created by `pipx` on 2024-10-05 07:29:14
 export PATH="$PATH:/Users/haowen_jiang/.local/bin"
+
+# bun
+export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# zoxide
+eval "$(zoxide init zsh)"

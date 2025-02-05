@@ -1,5 +1,5 @@
 # the ID or name of the model that is selected by default on launch
-default_model = "hf.co/nctu6/Llama3-TAIDE-LX-8B-Chat-Alpha1-GGU"
+default_model = "ollama/hf.co/nctu6/Llama3-TAIDE-LX-8B-Chat-Alpha1-GGUF:Q4_0"
 
 # the system prompt on launch
 # system_prompt = "You are a helpful assistant who answers questions based on the context given to you."
@@ -95,7 +95,7 @@ message_code_theme = "dracula"
 # example of adding local ollama models
 # only the `name` field is required here.
 [[models]]
-name = "ollama/hf.co/nctu6/Llama3-TAIDE-LX-8B-Chat-Alpha1-GGU"
+name = "ollama/hf.co/nctu6/Llama3-TAIDE-LX-8B-Chat-Alpha1-GGUF:Q4_0"
 [[models]]
 name = "ollama/qwen2.5-coder"
 [[models]]

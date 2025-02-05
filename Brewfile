@@ -24,44 +24,46 @@ brew "pipx"
 brew "node" #node.js
 brew "openjdk" #java
 brew "rust" #rust
+brew "go" #golang
 
 # powerlevel10k theme for zsh
 # use starship for a better alternative
 # brew "powerlevel10k"
 
-# yazi file manager and its dependencies
+# ╭──────────────────────────────────────────────────────────╮
+# │ other tools                                              │
+# ╰──────────────────────────────────────────────────────────╯
+## yazi file manager 
 # brew "yazi" 
+## file browser
+# brew "ranger"
+## Hackable, minimal, fast TUI file explorer
+brew "xplr"
 ## Create thumbnails for your video files
-brew "ffmpegthumbnailer" 
+# brew "ffmpegthumbnailer" 
 ## 7-Zip is a file archiver with a high compression ratio 
-brew "sevenzip" 
+# brew "sevenzip" 
 ## lightweight and flexible command-line json processor
 brew "jq" 
 ## PDF rendering library (based on the xpdf-3.0 code base)
-brew "poppler" 
+# brew "poppler" 
 ## Simple, fast and user-friendly alternative to find 
 brew "fd" 
 ## Search tool like grep and The Silver Searcher 
 brew "ripgrep" 
-## Search tool like grep and The Silver Searcher
+## Command-line fuzzy finder written in Go
 brew "fzf" 
 ## Shell extension to navigate your filesystem faster
 brew "zoxide" 
 ## tools and libraries to manipulate images in many formats
 brew "imagemagick" 
-
-# ╭──────────────────────────────────────────────────────────╮
-# │ other tools                                              │
-# ╰──────────────────────────────────────────────────────────╯
+## Terminal image and video viewer
+# brew "timg"
 ## distributed revision control system
 brew "git"
 ## simple terminal ui for git commands
 brew "lazygit"
-## file browser
-# brew "ranger"
-## user-friendly command-line shell for unix-like operating systems
-# brew "fish"
-## simplified and community-driven man pages
+# simplified and community-driven man pages
 brew "tldr"
 ## like neofetch, but much faster because written mostly in c
 brew "fastfetch"
@@ -77,6 +79,8 @@ brew "tree"
 brew "zellij"
 ## modern shell for the github era
 brew "nushell"
+## user-friendly command-line shell for unix-like operating systems
+# brew "fish"
 ## post-modern modal text editor
 # brew "helix"
 ## cross-shell prompt for astronauts
