@@ -44,6 +44,12 @@ tree -a -C -I .git
 │   │   ├── neovim.yml
 │   │   └── selene.toml
 │   ├── starship.toml
+│   ├── wezterm
+│   │   ├── images
+│   │   │   └── ibm_watsonx_bg.jpg
+│   │   └── wezterm.lua
+│   ├── xplr
+│   │   └── init.lua
 │   ├── yazi
 │   │   ├── keymap.toml
 │   │   ├── package.toml
@@ -64,7 +70,7 @@ tree -a -C -I .git
 ├── Brewfile.lock.json
 └── README.md
 
-13 directories, 39 files
+16 directories, 42 files
 ```
 
 1. While in `~/dotfiles`, run this to create symlinks:
@@ -101,14 +107,14 @@ pipx list
 venvs are in /Users/haowen_jiang/.local/pipx/venvs
 apps are exposed on your $PATH at /Users/haowen_jiang/.local/bin
 manual pages are exposed at /Users/haowen_jiang/.local/share/man
-   package docling 2.13.0, installed using Python 3.12.7
-    - docling
-   package elia-chat 1.10.0, installed using Python 3.12.7
-    - elia
+   package datasette 0.65.1, installed using Python 3.12.7
+    - datasette
    package jsondiff 2.2.1, installed using Python 3.12.7
     - jdiff
    package llm 0.19.1, installed using Python 3.12.6
     - llm
+   package openai-whisper 20240930, installed using Python 3.12.7
+    - whisper
    package strip-tags 0.5.1, installed using Python 3.12.7
     - strip-tags
    package ttok 0.3, installed using Python 3.12.7
@@ -127,9 +133,15 @@ uv tool list
 
 - output
 ```sh
+elia-chat v1.10.0
+- elia
+markitdown v0.0.1a3
+- markitdown
 open-interpreter v0.4.3
 - i
 - interpreter
 - interpreter-classic
 - wtf
+open-webui v0.5.7
+- open-webui
 ```
