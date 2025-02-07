@@ -11,7 +11,7 @@
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Set environment variables
-EDITOR=nvim
+export EDITOR=nvim
 
 # Add an alias for python3
 alias python=python3

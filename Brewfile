@@ -96,6 +96,8 @@ tap 'homebrew/homebrew-bundle' || true
 ## Menlo for Powerline 
 cask "font-hack-nerd-font"
 ## Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
+# cask "iterm2"
+## GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 ## Get up and running with large language models locally
 cask "ollama"
