@@ -36,19 +36,17 @@ brew "go" #golang
 # │ other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
 ## yazi file manager 
-# brew "yazi" 
-## file browser
-# brew "ranger"
-## Hackable, minimal, fast TUI file explorer
-brew "xplr"
+brew "yazi" 
 ## Create thumbnails for your video files
-# brew "ffmpegthumbnailer" 
+brew "ffmpegthumbnailer" 
+## Play, record, convert, and stream audio and video
+brew "ffmpeg"
 ## 7-Zip is a file archiver with a high compression ratio 
-# brew "sevenzip" 
+brew "sevenzip" 
 ## lightweight and flexible command-line json processor
 brew "jq" 
 ## PDF rendering library (based on the xpdf-3.0 code base)
-# brew "poppler" 
+brew "poppler" 
 ## Simple, fast and user-friendly alternative to find 
 brew "fd" 
 ## Search tool like grep and The Silver Searcher 
@@ -57,10 +55,14 @@ brew "ripgrep"
 brew "fzf" 
 ## Shell extension to navigate your filesystem faster
 brew "zoxide" 
-# Modern, maintained replacement for ls
-brew "eza"
 ## tools and libraries to manipulate images in many formats
 brew "imagemagick" 
+## file browser
+# brew "ranger"
+## Hackable, minimal, fast TUI file explorer
+# brew "xplr"
+# Modern, maintained replacement for ls
+brew "eza"
 ## Terminal image and video viewer
 # brew "timg"
 ## distributed revision control system
@@ -97,6 +99,8 @@ cask_args appdir: '/Applications'
 tap 'homebrew/homebrew-bundle' || true 
 ## Menlo for Powerline 
 cask "font-hack-nerd-font"
+## Symbols Nerd Font (Symbols Only)
+cask "font-symbols-only-nerd-font"
 ## Terminal emulator as alternative to Apple's Terminal app
 # cask "iterm2"
 ## GPU-accelerated cross-platform terminal emulator and multiplexer

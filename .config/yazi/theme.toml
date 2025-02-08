@@ -7,8 +7,8 @@
 # : Flavor {{{
 
 [flavor]
-use = ""
-
+dark = "dracula"
+light = "dracula"
 # : }}}
 
 # : Manager {{{

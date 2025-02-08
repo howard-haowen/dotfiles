@@ -1,5 +1,5 @@
 [plugin]
-deps = [{ use = "AnirudhG07/rich-preview", rev = "9bcf154" }]
+deps = [{ use = "AnirudhG07/rich-preview", rev = "9bcf154" }, { use = "Lil-Dank/lazygit", rev = "c82794f" }]
 
 [flavor]
 deps = []
