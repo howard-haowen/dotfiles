@@ -17,7 +17,7 @@ config.color_scheme = "Dracula"
 config.hide_tab_bar_if_only_one_tab = true
 
 -- Window Configuration
-config.initial_rows = 40
+config.initial_rows = 45
 config.initial_cols = 140
 
 -- Background Image Configuration

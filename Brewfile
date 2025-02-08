@@ -10,6 +10,8 @@ tap "homebrew/bundle"
 ## use `nvim` to launch the editor
 tap "neovim/neovim" || true
 brew "neovim"
+## Post-modern modal text editor
+brew "helix"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ python environments                                      │
@@ -55,6 +57,8 @@ brew "ripgrep"
 brew "fzf" 
 ## Shell extension to navigate your filesystem faster
 brew "zoxide" 
+# Modern, maintained replacement for ls
+brew "eza"
 ## tools and libraries to manipulate images in many formats
 brew "imagemagick" 
 ## Terminal image and video viewer
@@ -81,8 +85,6 @@ brew "zellij"
 brew "nushell"
 ## user-friendly command-line shell for unix-like operating systems
 # brew "fish"
-## post-modern modal text editor
-# brew "helix"
 ## cross-shell prompt for astronauts
 brew "starship"
 
