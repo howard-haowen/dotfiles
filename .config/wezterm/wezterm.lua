@@ -1,11 +1,11 @@
 local wezterm = require("wezterm")
 
 -- Create the config object
-local config = {}
+local config = wezterm.config_builder()
 
 -- Font Configuration
 config.font_size = 16.0
--- config.font = wezterm.font("firacode nerd font")
+-- config.font = wezterm.font("MesloLGS Nerd Font Mono")
 -- config.font = wezterm.font_with_fallback({
 -- 	"firacode nerd font",
 -- 	"symbols nerd font",

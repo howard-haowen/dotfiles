@@ -66,8 +66,27 @@ ZSH_THEME="robbyrussell"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load?
+# Find out all plugins, including both standard and custom, with this command:
+# omz plugin list
+
 # Standard plugins can be found in $ZSH/plugins/
+# Find out all the standard plugins with this command
+# ls ~/.oh-my-zsh/plugins/ 
+ 
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# zsh-related packages
+# - autosuggesions plugin
+# git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+#
+# - zsh-syntax-highlighting plugin
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+#
+# - zsh-fast-syntax-highlighting plugin
+# git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+#
+# - zsh-autocomplete plugin
+# git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
+
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
@@ -76,6 +95,13 @@ plugins=(
   starship
   pipenv
   eza
+  uv
+  python
+  zsh-interactive-cd
+  zsh-autosuggestions 
+  zsh-syntax-highlighting 
+  fast-syntax-highlighting 
+  zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -126,3 +152,5 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+

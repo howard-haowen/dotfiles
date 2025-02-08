@@ -9,6 +9,7 @@ tap "homebrew/bundle"
 ## Ambitious Vim-fork focused on extensibility and agility
 ## use `nvim` to launch the editor
 tap "neovim/neovim" || true
+## Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 ## Post-modern modal text editor
 brew "helix"
@@ -28,12 +29,8 @@ brew "openjdk" #java
 brew "rust" #rust
 brew "go" #golang
 
-# powerlevel10k theme for zsh
-# use starship for a better alternative
-# brew "powerlevel10k"
-
 # ╭──────────────────────────────────────────────────────────╮
-# │ other tools                                              │
+# │ yazi and its dependencies                                │
 # ╰──────────────────────────────────────────────────────────╯
 ## yazi file manager 
 brew "yazi" 
@@ -57,38 +54,46 @@ brew "fzf"
 brew "zoxide" 
 ## tools and libraries to manipulate images in many formats
 brew "imagemagick" 
-## file browser
-# brew "ranger"
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ shells                                                   │
+# ╰──────────────────────────────────────────────────────────╯
 ## Hackable, minimal, fast TUI file explorer
 # brew "xplr"
-# Modern, maintained replacement for ls
+## file browser
+# brew "ranger"
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ other tools                                              │
+# ╰──────────────────────────────────────────────────────────╯
+## suite of command-line tools for converting to and working with csv
+# brew "csvkit"
+## Modern, maintained replacement for ls
 brew "eza"
-## Terminal image and video viewer
-# brew "timg"
+## like neofetch, but much faster because written mostly in c
+brew "fastfetch"
 ## distributed revision control system
 brew "git"
 ## simple terminal ui for git commands
 brew "lazygit"
-# simplified and community-driven man pages
-brew "tldr"
-## like neofetch, but much faster because written mostly in c
-brew "fastfetch"
-## suite of command-line tools for converting to and working with csv
-# brew "csvkit"
-## organize software neatly under a single directory tree (e.g. /usr/local)
-brew "stow"
 ## command-line toolbox for fancy output in the terminal
 brew "rich-cli"
+## cross-shell prompt for astronauts
+brew "starship"
+## organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+## Terminal image and video viewer
+# brew "timg"
+## simplified and community-driven man pages
+brew "tldr"
 ## display directories as trees (with optional color/html output)
 brew "tree"
 ## pluggable terminal workspace, with terminal multiplexer as the base feature
 brew "zellij"
-## modern shell for the github era
-brew "nushell"
-## user-friendly command-line shell for unix-like operating systems
-# brew "fish"
-## cross-shell prompt for astronauts
-brew "starship"
+## Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+## Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ cask applications                                        │
