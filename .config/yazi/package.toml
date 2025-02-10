@@ -1,5 +1,7 @@
+# Install a plugin with the following command
+# ya pack -a owner/my-plugin
 [plugin]
-deps = [{ use = "AnirudhG07/rich-preview", rev = "9bcf154" }, { use = "Lil-Dank/lazygit", rev = "c82794f" }]
+deps = [{ use = "AnirudhG07/rich-preview", rev = "9bcf154" }, { use = "Lil-Dank/lazygit", rev = "c82794f" }, { use = "AnirudhG07/nbpreview", rev = "1d85745" }]
 
 [flavor]
 deps = []
