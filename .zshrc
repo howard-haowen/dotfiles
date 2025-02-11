@@ -1,8 +1,35 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# For the fzf command
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+# Set up the base binary path for fzf
+export FZF_BASE=/opt/homebrew/bin/fzf
+# The Catppuccin Mocha theme from https://github.com/catppuccin/fzf
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=selected-bg:#45475a \
+--multi"
+
+# For Yazi text editor
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+# Source all zsh files under the custom/ folder 
+# for file in $ZSH/custom/*.zsh; do
+#     [ -r "$file" ] && source "$file"
+# done
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -98,6 +125,7 @@ plugins=(
   eza
   uv
   python
+  fzf
   zsh-interactive-cd
   zsh-autosuggestions 
   zsh-syntax-highlighting 
@@ -105,8 +133,9 @@ plugins=(
   zsh-autocomplete
 )
 
+# Source the main oh-my-zsh command
 source $ZSH/oh-my-zsh.sh
-
+#
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -144,14 +173,5 @@ export PATH="$PATH:/Users/haowen_jiang/.local/bin"
 export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# For yazi
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
 
 

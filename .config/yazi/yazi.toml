@@ -3,7 +3,7 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [manager]
-ratio          = [ 2, 3, 4 ]
+ratio          = [ 2, 2, 6 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
 sort_reverse 	 = false
@@ -119,17 +119,17 @@ preloaders = [
 	{ mime = "application/ms-opentype", run = "font" },
 ]
 prepend_previewers = [
-    { name = "*.csv", run = "rich-preview"}, # for csv files
-    { name = "*.md", run = "rich-preview" }, # for markdown (.md) files
-    { name = "*.rst", run = "rich-preview"}, # for restructured text (.rst) files
+    { name = "*.csv", run = "bat"}, # for csv files
+    { name = "*.md", run = "bat" }, # for markdown (.md) files
+    { name = "*.rst", run = "bat"}, # for restructured text (.rst) files
     { name = "*.ipynb", run = "nbpreview"}, # for jupyter notebooks (.ipynb)
-    { name = "*.json", run = "rich-preview"}, # for json (.json) files
+    { name = "*.json", run = "bat"}, # for json (.json) files
 #    { name = "*.lang_type", run = "rich-preview"} # for particular language files eg. .py, .go., .lua, etc.
 ]
 previewers = [
 	{ name = "*/", run = "folder", sync = true },
 	# Code
-	{ mime = "text/*", run = "code" },
+	{ mime = "text/*", run = "bat" },
 	{ mime = "application/{mbox,javascript,wine-extension-ini}", run = "code" },
 	# JSON
 	{ mime = "application/{json,ndjson}", run = "json" },

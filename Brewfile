@@ -68,6 +68,8 @@ brew "imagemagick"
 # ╰──────────────────────────────────────────────────────────╯
 ## suite of command-line tools for converting to and working with csv
 # brew "csvkit"
+## Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 ## Modern, maintained replacement for ls
 brew "eza"
 ## like neofetch, but much faster because written mostly in c
