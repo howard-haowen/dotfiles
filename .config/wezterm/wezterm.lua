@@ -22,15 +22,15 @@ config.initial_rows = 45
 config.initial_cols = 130
 config.window_padding = {
 	left = 18,
-	right = 15,
-	top = 20,
-	bottom = 5,
+	right = 18,
+	top = 10,
+	bottom = 10,
 }
 
 -- Background Image Configuration
 local dimmer = { brightness = 0.2 }
 
-config.window_background_opacity = 0.9 -- Set overall window transparency
+config.window_background_opacity = 0.7 -- Set overall window transparency
 config.macos_window_background_blur = 8 -- Blur the background on MacOS
 config.background = {
 	{
@@ -39,7 +39,8 @@ config.background = {
 		},
 		hsb = dimmer,
 		opacity = 0.5,
-		attachment = "Fixed", -- Make the background image fit the whole window
+		attachment = "Fixed", -- Make the background image fixed
+		horizontal_align = "Right",
 	},
 }
 
@@ -47,21 +48,6 @@ config.background = {
 -- Rather simple presentation mode toggle for WezTerm.
 -- Usage: Activate with CTRL + ALT + P for presentation mode, or CTRL + ALT + SHIFT + P for fullscreen presentation.
 wezterm.plugin.require("https://gitlab.com/xarvex/presentation.wez").apply_to_config(config)
-
--- Status Bar Plugin
-wezterm.plugin.require("https://github.com/yriveiro/wezterm-status").apply_to_config(config, {
-	cells = {
-		battery = { enabled = false },
-		date = { format = "%H:%M" },
-		hostname = { enabled = false },
-		cwd = {
-			-- Enable CWD display
-			enabled = true,
-			-- Replace $HOME with ~
-			tilde_prefix = true,
-		},
-	},
-})
 
 -- statusbar.apply_to_config(config, {
 -- 	cells = {
