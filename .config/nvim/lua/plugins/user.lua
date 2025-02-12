@@ -5,7 +5,27 @@ return {
 
   -- == Examples of Adding Plugins ==
   -- For community plugins, add them in nvim/lua/community.lua
-
+  -- Add CodeCompanion.nvim plugin
+  {
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("codecompanion").setup {
+        strategies = {
+          chat = { adapter = "ollama" },
+          inline = { adapter = "ollama" },
+          agent = { adapter = "ollama" },
+        },
+        server = {
+          url = "127.0.0.1:11434",
+          model = "qwen2.5-coder:latest",
+        },
+      }
+    end,
+  },
   -- == Examples of Overriding Plugins ==
 
   -- customize alpha options
