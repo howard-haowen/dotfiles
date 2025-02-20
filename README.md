@@ -4,73 +4,61 @@
 
 1. Move all dotfiles to `~/dotfiles/` so that it has the same file structure as `~`.
 
-- show the tree structure of all files with color
+- show the tree structure of all files with icons using `eza`
 - use the `-I` option to ignore a directory
 ```sh
-tree -a -C -I .git 
+eza --all --tree --icons --level=3 -I .git
 ```
 
 ```txt
 .
-├── .config
-│   ├── elia
-│   │   └── config.toml
-│   ├── fish
-│   │   └── functions
-│   │       ├── cheat.sh.fish
-│   │       ├── ls-pipenv.fish
-│   │       └── wttr.fish
-│   ├── nushell
-│   │   ├── config.nu
-│   │   └── env.nu
-│   ├── nvim
-│   │   ├── .neoconf.json
-│   │   ├── .stylua.toml
-│   │   ├── README.md
-│   │   ├── init.lua
-│   │   ├── lua
-│   │   │   ├── community.lua
-│   │   │   ├── lazy_setup.lua
-│   │   │   ├── plugins
-│   │   │   │   ├── astrocore.lua
-│   │   │   │   ├── astrolsp.lua
-│   │   │   │   ├── astroui.lua
-│   │   │   │   ├── mason.lua
-│   │   │   │   ├── noice.lua
-│   │   │   │   ├── none-ls.lua
-│   │   │   │   ├── treesitter.lua
-│   │   │   │   └── user.lua
-│   │   │   └── polish.lua
-│   │   ├── neovim.yml
-│   │   └── selene.toml
-│   ├── starship.toml
-│   ├── wezterm
-│   │   ├── images
-│   │   │   └── ibm_watsonx_bg.jpg
-│   │   └── wezterm.lua
-│   ├── xplr
-│   │   └── init.lua
-│   ├── yazi
-│   │   ├── keymap.toml
-│   │   ├── package.toml
-│   │   ├── plugins
-│   │   │   └── rich-preview.yazi
-│   │   │       ├── DO_NOT_MODIFY_ANYTHING_IN_THIS_DIRECTORY
-│   │   │       ├── LICENSE
-│   │   │       ├── README.md
-│   │   │       └── init.lua
-│   │   ├── theme.toml
-│   │   └── yazi.toml
-│   └── zellij
-│       └── config.kdl
-├── .gitignore
-├── .stowignore
-├── .zshrc
-├── Brewfile
-├── Brewfile.lock.json
-└── README.md
-
-16 directories, 42 files
+ .
+├──  .config
+│   ├──  bagels
+│   │   └──  config.yaml
+│   ├──  elia
+│   │   └──  config.toml
+│   ├──  fish
+│   │   └──  functions
+│   ├──  helix
+│   │   ├──  config.toml
+│   │   └──  languages.toml
+│   ├──  nushell
+│   │   ├──  config.nu
+│   │   └──  env.nu
+│   ├──  nvim
+│   │   ├──  .neoconf.json
+│   │   ├──  .stylua.toml
+│   │   ├──  init.lua
+│   │   ├──  lua
+│   │   ├──  neovim.yml
+│   │   ├── 󰂺 README.md
+│   │   └──  selene.toml
+│   ├──  starship.toml
+│   ├──  wezterm
+│   │   ├──  images
+│   │   └──  wezterm.lua
+│   ├──  xplr
+│   │   └──  init.lua
+│   ├──  yazi
+│   │   ├──  flavors
+│   │   ├──  keymap.toml
+│   │   ├──  package.toml
+│   │   ├──  plugins
+│   │   ├──  theme.toml
+│   │   └──  yazi.toml
+│   └──  zellij
+│       └──  config.kdl
+├──  .gitignore
+├──  .oh-my-zsh
+│   └──  custom
+│       ├──  aliases.zsh
+│       └──  functions.zsh
+├──  .stowignore
+├── 󱆃 .zshrc
+├── 󱄖 Brewfile
+├── 󱄖 Brewfile.lock.json
+└── 󰂺 README.md
 ```
 
 1. While in `~/dotfiles`, run this to create symlinks:
@@ -95,18 +83,57 @@ git clone git@github.com:howard-haowen/dotfiles.git
 stow .
 ```
 
-## packages installed via `pipx`
+## Packages installed via `brew bundle`
 
-- list packages installed via `pipx`
+- List all packages listed in `Brewfile`
+```sh
+brew bundle list
+```
+
+```output
+neovim
+helix
+pipenv
+pipx
+node
+openjdk
+rust
+go
+yazi
+ffmpegthumbnailer
+ffmpeg
+sevenzip
+jq
+poppler
+fd
+ripgrep
+fzf
+zoxide
+imagemagick
+bat
+eza
+fastfetch
+git
+lazygit
+rich-cli
+starship
+stow
+tldr
+tree
+zellij
+zsh-autosuggestions
+zsh-syntax-highlighting
+```
+
+## Packages installed via `pipx`
+
+- List packages installed via `pipx`
 ```sh
 pipx list
 ```
 
 - output
 ```sh
-venvs are in /Users/haowen_jiang/.local/pipx/venvs
-apps are exposed on your $PATH at /Users/haowen_jiang/.local/bin
-manual pages are exposed at /Users/haowen_jiang/.local/share/man
    package datasette 0.65.1, installed using Python 3.12.7
     - datasette
    package jsondiff 2.2.1, installed using Python 3.12.7
@@ -124,24 +151,37 @@ manual pages are exposed at /Users/haowen_jiang/.local/share/man
     - uvx
 ```
 
-## packages installed via `uv`
+## Packages installed via `uv`
 
-- list packages installed via `uv`
+- List packages installed via `uv`
 ```sh
 uv tool list
 ```
 
 - output
 ```sh
+bagels v0.3.6
+- bagels
+docling v2.23.0
+- docling
+- docling-tools
 elia-chat v1.10.0
 - elia
+jupytext v1.16.7
+- jupytext
+- jupytext-config
 markitdown v0.0.1a3
 - markitdown
+nbpreview v0.9.1
+- nbp
+- nbpreview
 open-interpreter v0.4.3
 - i
 - interpreter
 - interpreter-classic
 - wtf
-open-webui v0.5.7
+open-webui v0.5.10
 - open-webui
+ruff v0.9.5
+- ruff
 ```
