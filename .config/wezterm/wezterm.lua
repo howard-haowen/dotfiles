@@ -39,7 +39,7 @@ config.background = {
 			File = os.getenv("HOME") .. "/dotfiles/.config/wezterm/images/ibm_watsonx_bg.jpg",
 		},
 		hsb = dimmer,
-		opacity = 0.5,
+		opacity = 0.9,
 		attachment = "Fixed", -- Make the background image fixed
 		horizontal_align = "Right",
 	},
