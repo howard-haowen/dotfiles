@@ -1,7 +1,19 @@
-# Install a plugin with the following command
-# ya pack -a owner/my-plugin
-[plugin]
-deps = [{ use = "AnirudhG07/rich-preview", rev = "9bcf154" }, { use = "Lil-Dank/lazygit", rev = "c82794f" }, { use = "AnirudhG07/nbpreview", rev = "1d85745" }]
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "9bcf154"
+hash = "d2a6fa78e3ba43cfb44a45e52c0ebad6"
 
-[flavor]
-deps = [{ use = "yazi-rs/flavors:catppuccin-mocha", rev = "fd85060" }]
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "c82794f"
+hash = "2b0c33928986f126d5c5a4cac31a6b46"
+
+[[plugin.deps]]
+use = "AnirudhG07/nbpreview"
+rev = "1d85745"
+hash = "d378328e5d0a1b9fb9f04ab3aade4575"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "fd85060"
+hash = "c40e434318a8ceffd01842f8dfb2390e"

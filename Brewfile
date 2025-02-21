@@ -96,6 +96,8 @@ brew "zellij"
 brew "zsh-autosuggestions"
 ## Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+## Single-player roguelike video game
+brew "nethack"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ cask applications                                        │
