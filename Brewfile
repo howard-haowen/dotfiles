@@ -12,7 +12,7 @@ tap "neovim/neovim" || true
 ## Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 ## Post-modern modal text editor
-brew "helix"
+# brew "helix"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ python environments                                      │
@@ -68,6 +68,10 @@ brew "imagemagick"
 # ╰──────────────────────────────────────────────────────────╯
 ## suite of command-line tools for converting to and working with csv
 # brew "csvkit"
+## All-in-one AI-Powered CLI Chat & Copilot
+brew "aichat"
+## Easily create and use cli based on bash script
+brew "argc"
 ## Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 ## Modern, maintained replacement for ls
@@ -76,8 +80,10 @@ brew "eza"
 brew "fastfetch"
 ## distributed revision control system
 brew "git"
+## Blazing fast terminal-ui for git written in rust
+brew "gitui"
 ## simple terminal ui for git commands
-brew "lazygit"
+# brew "lazygit"
 ## command-line toolbox for fancy output in the terminal
 brew "rich-cli"
 ## cross-shell prompt for astronauts
@@ -91,7 +97,7 @@ brew "tldr"
 ## display directories as trees (with optional color/html output)
 brew "tree"
 ## pluggable terminal workspace, with terminal multiplexer as the base feature
-brew "zellij"
+# brew "zellij"
 ## Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 ## Fish shell like syntax highlighting for zsh

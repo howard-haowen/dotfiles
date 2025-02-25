@@ -31,7 +31,7 @@ config.window_close_confirmation = "NeverPrompt"
 -- Background Image Configuration
 local dimmer = { brightness = 0.2 }
 
-config.window_background_opacity = 0.7 -- Set overall window transparency
+config.window_background_opacity = 0.7  -- Set overall window transparency
 config.macos_window_background_blur = 8 -- Blur the background on MacOS
 config.background = {
 	{
