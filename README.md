@@ -11,15 +11,18 @@ eza --all --tree --icons --level=3 -I .git
 ```
 
 ```txt
-.
  .
 ├──  .config
+│   ├──  aichat
+│   │   └──  config.yaml
 │   ├──  bagels
 │   │   └──  config.yaml
 │   ├──  elia
 │   │   └──  config.toml
 │   ├──  fish
 │   │   └──  functions
+│   ├──  gitui
+│   │   └──  catppuccin-mocha.ron
 │   ├──  helix
 │   │   ├──  config.toml
 │   │   └──  languages.toml
@@ -87,40 +90,42 @@ stow .
 
 - List all packages listed in `Brewfile`
 ```sh
-brew bundle list
+brew bundle list | sort
 ```
 
 ```output
-neovim
-helix
-pipenv
-pipx
-node
-openjdk
-rust
-go
-yazi
-ffmpegthumbnailer
-ffmpeg
-sevenzip
-jq
-poppler
-fd
-ripgrep
-fzf
-zoxide
-imagemagick
+aichat
+argc
+ascii-image-converter
 bat
 eza
 fastfetch
+fd
+ffmpeg
+ffmpegthumbnailer
+fzf
 git
-lazygit
+gitui
+go
+imagemagick
+jq
+neovim
+nethack
+node
+openjdk
+pipenv
+pipx
+poppler
 rich-cli
+ripgrep
+rust
+sevenzip
 starship
 stow
 tldr
 tree
-zellij
+yazi
+zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting
 ```
@@ -129,59 +134,59 @@ zsh-syntax-highlighting
 
 - List packages installed via `pipx`
 ```sh
-pipx list
+pipx list | sort
 ```
 
 - output
 ```sh
-   package datasette 0.65.1, installed using Python 3.12.7
-    - datasette
-   package jsondiff 2.2.1, installed using Python 3.12.7
     - jdiff
-   package llm 0.19.1, installed using Python 3.12.6
     - llm
-   package openai-whisper 20240930, installed using Python 3.12.7
-    - whisper
-   package strip-tags 0.5.1, installed using Python 3.12.7
-    - strip-tags
-   package ttok 0.3, installed using Python 3.12.7
-    - ttok
-   package uv 0.5.11, installed using Python 3.12.7
     - uv
     - uvx
+    - whisper
+   package jsondiff 2.2.1, installed using Python 3.12.7
+   package llm 0.19.1, installed using Python 3.12.6
+   package openai-whisper 20240930, installed using Python 3.12.7
+   package uv 0.5.11, installed using Python 3.12.7
 ```
 
 ## Packages installed via `uv`
 
 - List packages installed via `uv`
 ```sh
-uv tool list
+uv tool list | sort
 ```
 
 - output
 ```sh
-bagels v0.3.6
 - bagels
-docling v2.23.0
+- datasette
 - docling
 - docling-tools
-elia-chat v1.10.0
 - elia
-jupytext v1.16.7
-- jupytext
-- jupytext-config
-markitdown v0.0.1a3
-- markitdown
-nbpreview v0.9.1
-- nbp
-- nbpreview
-open-interpreter v0.4.3
 - i
 - interpreter
 - interpreter-classic
-- wtf
-open-webui v0.5.10
+- jupytext
+- jupytext-config
+- markitdown
+- nbp
+- nbpreview
 - open-webui
-ruff v0.9.5
 - ruff
+- vd
+- vd2to3.vdx
+- visidata
+- wtf
+bagels v0.3.6
+datasette v0.65.1
+docling v2.23.0
+elia-chat v1.10.0
+jupytext v1.16.7
+markitdown v0.0.1a3
+nbpreview v0.9.1
+open-interpreter v0.4.3
+open-webui v0.5.10
+ruff v0.9.5
+visidata v3.1.1
 ```

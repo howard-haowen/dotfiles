@@ -1,7 +1,9 @@
 # ╭──────────────────────────────────────────────────────────╮
 # │ brew bundle command                                      │
 # ╰──────────────────────────────────────────────────────────╯
-tap "homebrew/bundle"
+# add extra repositories other than the default one 
+tap "homebrew/bundle" || true 
+tap "TheZoraiz/ascii-image-converter"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ neovim text editor                                       │
@@ -102,6 +104,8 @@ brew "tree"
 brew "zsh-autosuggestions"
 ## Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+## Convert images to ascii art
+brew "ascii-image-converter"
 ## Single-player roguelike video game
 brew "nethack"
 
@@ -110,8 +114,6 @@ brew "nethack"
 # ╰──────────────────────────────────────────────────────────╯
 # specify a directory to install the applications in
 cask_args appdir: '/Applications'
-# add extra repositories other than the default one 
-tap 'homebrew/homebrew-bundle' || true 
 ## Menlo for Powerline 
 cask "font-hack-nerd-font"
 ## Symbols Nerd Font (Symbols Only)

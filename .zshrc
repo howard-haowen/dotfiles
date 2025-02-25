@@ -175,7 +175,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Greeting message
 cat << "EOF"
-                                                                                       
          ██████████                     ██   ██                                        
       ████████████████                █████ █████                                      
     ████            ████               ███   ███            ██████████    ███████████  

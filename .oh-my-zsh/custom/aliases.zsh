@@ -11,6 +11,7 @@ alias wt='get_weather'
 alias cht='cheat'
 # Use the catppuccin-mocha theme for gitui 
 alias gitui='gitui -t catppuccin-mocha.ron'
+alias img2text='ascii-image-converter --color'
 
 # Use fzf with the preview_file function, defined in custom/preview.zsh
 # alias ff="fzf --border --preview 'preview_file {}'"
