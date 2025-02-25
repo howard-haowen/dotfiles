@@ -1,3 +1,4 @@
+// Source: https://github.com/catppuccin/gitui/blob/main/themes/catppuccin-mocha.ron
 (
     selected_tab: Some("Reset"),
     command_fg: Some("#cdd6f4"),
