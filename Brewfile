@@ -106,6 +106,14 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 ## Convert images to ascii art
 brew "ascii-image-converter"
+## Terminal based presentation tool
+brew "slides"
+## Terminal slideshow tool, the export2pdf function doesn't work!
+# brew "presenterm"
+## Terminal multiplexer
+# brew "tmux"
+## Toolkit for creating graphical user interfaces
+# brew "gtk+3"
 ## Single-player roguelike video game
 brew "nethack"
 

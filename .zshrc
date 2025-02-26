@@ -172,6 +172,10 @@ export PATH="$PATH:/Users/haowen_jiang/.local/bin"
 # bun
 export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# gtk+3
+export PATH="/usr/local/opt/gtk+3/bin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/opt/gtk+3/lib/pkgconfig"
+export LD_LIBRARY_PATH="/usr/local/opt/gtk+3/lib:$LD_LIBRARY_PATH"
 
 # Greeting message
 # cat << "EOF"
