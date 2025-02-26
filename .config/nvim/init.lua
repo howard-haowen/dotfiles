@@ -17,3 +17,6 @@ end
 
 require "lazy_setup"
 require "polish"
+
+-- For the Obsidian plugin to work
+vim.opt.conceallevel = 1

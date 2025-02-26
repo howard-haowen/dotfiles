@@ -14,6 +14,7 @@ return {
         "basedpyright",
         "pyright",
         "ruff",
+        -- "markdown_oxide",
         -- add more arguments for adding more language servers
       },
     },
