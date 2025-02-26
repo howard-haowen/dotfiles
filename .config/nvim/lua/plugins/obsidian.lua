@@ -29,6 +29,7 @@ return {
               end,
               desc = "Obsidian Follow Link",
             },
+            -- The following doesn't work!
             -- -- Toggle check-boxes
             -- ["<Leader>zc"] = {
             --   action = function() return require("obsidian").util.toggle_checkbox() end,
