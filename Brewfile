@@ -10,9 +10,9 @@ tap "TheZoraiz/ascii-image-converter"
 # ╰──────────────────────────────────────────────────────────╯
 ## Ambitious Vim-fork focused on extensibility and agility
 ## use `nvim` to launch the editor
-tap "neovim/neovim" || true
+# tap "neovim/neovim" || true
 ## Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
+brew "neovim", head: "true"
 ## Post-modern modal text editor
 # brew "helix"
 

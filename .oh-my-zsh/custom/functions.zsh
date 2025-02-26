@@ -1,7 +1,7 @@
 # Get minimal weather info for Taipei
 function get_weather() {
     local weather_info=$(curl -s "wttr.in/Taipei?format=3")
-    echo "The current weather is: $weather_info"
+    echo "Today's weather in $weather_info"
 }
 
 # Get cheatsheet info with cht.sh
