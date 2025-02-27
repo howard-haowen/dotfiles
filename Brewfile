@@ -108,6 +108,8 @@ brew "zsh-syntax-highlighting"
 brew "ascii-image-converter"
 ## Terminal based presentation tool
 brew "slides"
+## Readline wrapper: adds readline support to tools that lack it
+brew "rlwrap"
 ## Terminal slideshow tool, the export2pdf function doesn't work!
 # brew "presenterm"
 ## Terminal multiplexer

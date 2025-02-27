@@ -13,11 +13,6 @@ $git_status\
 $c\
 $rust\
 $golang\
-$nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
 $python\
 [](fg:color_blue bg:color_bg3)\
 $docker_context\
@@ -95,10 +90,10 @@ format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
 style = "bg:color_aqua"
 format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
 
-[nodejs]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+# [nodejs]
+# symbol = ""
+# style = "bg:color_blue"
+# format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
 [c]
 symbol = " "
@@ -115,24 +110,24 @@ symbol = ""
 style = "bg:color_blue"
 format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
-[php]
-symbol = ""
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+# [php]
+# symbol = ""
+# format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
-[java]
-symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+# [java]
+# symbol = " "
+# style = "bg:color_blue"
+# format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
-[kotlin]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
-[haskell]
-symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+# [kotlin]
+# symbol = ""
+# style = "bg:color_blue"
+# format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+#
+# [haskell]
+# symbol = ""
+# style = "bg:color_blue"
+# format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
 [python]
 symbol = ""

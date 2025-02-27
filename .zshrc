@@ -1,7 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# For the fzf command
+# ╭──────────────────────────────────────────────────────────╮
+# │ For the fzf command                                      │
+# ╰──────────────────────────────────────────────────────────╯
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 # Set up the base binary path for fzf
@@ -14,7 +16,9 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475a \
 --multi"
 
-# For Yazi text editor
+# ╭──────────────────────────────────────────────────────────╮
+# │ For the Yazi text editor                                 │
+# ╰──────────────────────────────────────────────────────────╯
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -24,18 +28,41 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# ╭──────────────────────────────────────────────────────────╮
+# │ For the omz, or oh-my-zsh, command                       │
+# ╰──────────────────────────────────────────────────────────╯
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-# Source all zsh files under the custom/ folder 
-# for file in $ZSH/custom/*.zsh; do
-#     [ -r "$file" ] && source "$file"
-# done
 
+# Plugins for oh-my-zsh
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  zoxide
+  starship
+  pipenv
+  eza
+  uv
+  python
+  fzf
+  zsh-interactive-cd
+  zsh-autosuggestions 
+  zsh-syntax-highlighting 
+  fast-syntax-highlighting 
+  zsh-autocomplete
+)
+
+# Source the main oh-my-zsh command
+source $ZSH/oh-my-zsh.sh
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ For zsh config                                           │
+# ╰──────────────────────────────────────────────────────────╯
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -114,30 +141,9 @@ ZSH_THEME="robbyrussell"
 # - zsh-autocomplete plugin
 # git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 
-# Plugins for oh-my-zsh
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zoxide
-  starship
-  pipenv
-  eza
-  uv
-  python
-  fzf
-  zsh-interactive-cd
-  zsh-autosuggestions 
-  zsh-syntax-highlighting 
-  fast-syntax-highlighting 
-  zsh-autocomplete
-)
-
-# Source the main oh-my-zsh command
-source $ZSH/oh-my-zsh.sh
-#
-# User configuration
-
+# ╭──────────────────────────────────────────────────────────╮
+# │ User configuration                                       │
+# ╰──────────────────────────────────────────────────────────╯
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -172,11 +178,12 @@ export PATH="$PATH:/Users/haowen_jiang/.local/bin"
 # bun
 export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-# gtk+3
-export PATH="/usr/local/opt/gtk+3/bin:$PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/gtk+3/lib/pkgconfig"
-export LD_LIBRARY_PATH="/usr/local/opt/gtk+3/lib:$LD_LIBRARY_PATH"
+# Call the function to clean up PATH
+remove_duplicate_path_entries
 
+# ╭──────────────────────────────────────────────────────────╮
+# │ Messages to show when a zsh session starts               │
+# ╰──────────────────────────────────────────────────────────╯
 # Greeting message
 # cat << "EOF"
 #          ██████████                     ██   ██                                        
@@ -195,5 +202,5 @@ export LD_LIBRARY_PATH="/usr/local/opt/gtk+3/lib:$LD_LIBRARY_PATH"
 
 # Print a greeting message with `pyfiglet`
 uvx pyfiglet --font=ansi_shadow --color=light_blue: "Hi Haowen"
-# Show the weather in Taipei
+# Show the weather in Taipei, defined in .oh-my-zsh/custom/aliases.zsh
 wt

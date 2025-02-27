@@ -14,7 +14,7 @@ config.font_size = 16.0
 -- })
 --
 -- Appearance Configuration
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "Ibm 3270 (High Contrast) (Gogh)"
 config.hide_tab_bar_if_only_one_tab = true
 
 -- Window Configuration
@@ -31,7 +31,7 @@ config.window_close_confirmation = "NeverPrompt"
 -- Background Image Configuration
 local dimmer = { brightness = 0.2 }
 
-config.window_background_opacity = 0.7  -- Set overall window transparency
+config.window_background_opacity = 1 -- Set overall window transparency
 config.macos_window_background_blur = 8 -- Blur the background on MacOS
 config.background = {
 	{
@@ -39,7 +39,7 @@ config.background = {
 			File = os.getenv("HOME") .. "/dotfiles/.config/wezterm/images/ibm_watsonx_bg.jpg",
 		},
 		hsb = dimmer,
-		opacity = 0.9,
+		opacity = 0.8,
 		attachment = "Fixed", -- Make the background image fixed
 		horizontal_align = "Right",
 	},
