@@ -110,6 +110,8 @@ brew "ascii-image-converter"
 brew "slides"
 ## Readline wrapper: adds readline support to tools that lack it
 brew "rlwrap"
+## Pager/text based browser
+brew "w3m"
 ## Terminal slideshow tool, the export2pdf function doesn't work!
 # brew "presenterm"
 ## Terminal multiplexer

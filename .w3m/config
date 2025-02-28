@@ -1,0 +1,6 @@
+# Set the charset to UTF-8
+charset UTF-8
+# Auto preview link url
+display_link 1
+# no images
+display_image 0

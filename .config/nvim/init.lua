@@ -20,3 +20,6 @@ require "polish"
 
 -- For the Obsidian plugin to work
 vim.opt.conceallevel = 1
+-- Ensure the UTF-8 encoding
+vim.o.encoding = "utf-8"
+vim.o.fileencoding = "utf-8"
