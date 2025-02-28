@@ -25,6 +25,7 @@ return {
         -- Toggle the last Yazi session
         "<Leader>y",
         "<cmd>Yazi toggle<cr>",
+        mode = "n", -- Normal mode
         desc = "Open Yazi",
       },
     },

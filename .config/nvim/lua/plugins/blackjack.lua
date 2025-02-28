@@ -14,7 +14,7 @@ return {
   },
   keys = {
     {
-      "<Leader>j",
+      "<Leader>bj",
       ":BlackJackNewGame<CR>",
       mode = "n", -- Normal mode
       desc = "Play Blackjack", -- Optional description for the mapping
