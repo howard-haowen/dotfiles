@@ -201,6 +201,6 @@ remove_duplicate_path_entries
 # EOF
 
 # Print a greeting message with `pyfiglet`
-uvx pyfiglet --font=ansi_shadow --color=light_blue: "Hi Haowen"
+uvx pyfiglet --font=ansi_shadow --color=blue: "Hi Haowen"
 # Show the weather in Taipei, defined in .oh-my-zsh/custom/aliases.zsh
 wt
