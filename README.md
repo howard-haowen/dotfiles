@@ -9,59 +9,60 @@
 ```sh
 eza --all --tree --icons --level=3 -I .git
 ```
-
-```txt
- .
-├──  .config
-│   ├──  aichat
-│   │   └──  config.yaml
-│   ├──  bagels
-│   │   └──  config.yaml
-│   ├──  elia
-│   │   └──  config.toml
-│   ├──  fish
-│   │   └──  functions
-│   ├──  gitui
-│   │   └──  catppuccin-mocha.ron
-│   ├──  helix
-│   │   ├──  config.toml
-│   │   └──  languages.toml
-│   ├──  nushell
-│   │   ├──  config.nu
-│   │   └──  env.nu
-│   ├──  nvim
-│   │   ├──  .neoconf.json
-│   │   ├──  .stylua.toml
-│   │   ├──  init.lua
-│   │   ├──  lua
-│   │   ├──  neovim.yml
-│   │   ├── 󰂺 README.md
-│   │   └──  selene.toml
-│   ├──  starship.toml
-│   ├──  wezterm
-│   │   ├──  images
-│   │   └──  wezterm.lua
-│   ├──  xplr
-│   │   └──  init.lua
-│   ├──  yazi
-│   │   ├──  flavors
-│   │   ├──  keymap.toml
-│   │   ├──  package.toml
-│   │   ├──  plugins
-│   │   ├──  theme.toml
-│   │   └──  yazi.toml
-│   └──  zellij
-│       └──  config.kdl
-├──  .gitignore
-├──  .oh-my-zsh
-│   └──  custom
-│       ├──  aliases.zsh
-│       └──  functions.zsh
-├──  .stowignore
-├── 󱆃 .zshrc
-├── 󱄖 Brewfile
-├── 󱄖 Brewfile.lock.json
-└── 󰂺 README.md
+```output
+.
+├── .config
+│   ├── aichat
+│   │   └── config.yaml
+│   ├── bagels
+│   │   └── config.yaml
+│   ├── elia
+│   │   └── config.toml
+│   ├── fish
+│   │   └── functions
+│   ├── gitui
+│   │   └── catppuccin-mocha.ron
+│   ├── helix
+│   │   ├── config.toml
+│   │   └── languages.toml
+│   ├── nushell
+│   │   ├── config.nu
+│   │   └── env.nu
+│   ├── nvim
+│   │   ├── .neoconf.json
+│   │   ├── .stylua.toml
+│   │   ├── init.lua
+│   │   ├── lua
+│   │   ├── neovim.yml
+│   │   ├── README.md
+│   │   └── selene.toml
+│   ├── starship.toml
+│   ├── wezterm
+│   │   ├── images
+│   │   └── wezterm.lua
+│   ├── xplr
+│   │   └── init.lua
+│   ├── yazi
+│   │   ├── flavors
+│   │   ├── keymap.toml
+│   │   ├── package.toml
+│   │   ├── plugins
+│   │   ├── theme.toml
+│   │   └── yazi.toml
+│   └── zellij
+│       └── config.kdl
+├── .gitignore
+├── .oh-my-zsh
+│   └── custom
+│       ├── aliases.zsh
+│       └── functions.zsh
+├── .stowignore
+├── .w3m
+│   └── config
+├── .zshrc
+├── Brewfile
+├── Brewfile.lock.json
+└── README.md
 ```
 
 1. While in `~/dotfiles`, run this to create symlinks:
@@ -92,7 +93,6 @@ stow .
 ```sh
 brew bundle list | sort
 ```
-
 ```output
 aichat
 argc
@@ -118,12 +118,15 @@ pipx
 poppler
 rich-cli
 ripgrep
+rlwrap
 rust
 sevenzip
+slides
 starship
 stow
 tldr
 tree
+w3m
 yazi
 zoxide
 zsh-autosuggestions
@@ -136,18 +139,16 @@ zsh-syntax-highlighting
 ```sh
 pipx list | sort
 ```
-
-- output
-```sh
-    - jdiff
-    - llm
-    - uv
-    - uvx
-    - whisper
-   package jsondiff 2.2.1, installed using Python 3.12.7
-   package llm 0.19.1, installed using Python 3.12.6
-   package openai-whisper 20240930, installed using Python 3.12.7
-   package uv 0.5.11, installed using Python 3.12.7
+```output
+- jdiff
+- llm
+- uv
+- uvx
+- whisper
+package jsondiff 2.2.1, installed using Python 3.12.7
+package llm 0.19.1, installed using Python 3.12.6
+package openai-whisper 20240930, installed using Python 3.12.7
+package uv 0.5.11, installed using Python 3.12.7
 ```
 
 ## Packages installed via `uv`
@@ -156,9 +157,7 @@ pipx list | sort
 ```sh
 uv tool list | sort
 ```
-
-- output
-```sh
+```output
 - bagels
 - datasette
 - docling
