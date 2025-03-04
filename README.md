@@ -189,3 +189,17 @@ open-webui v0.5.10
 ruff v0.9.5
 visidata v3.1.1
 ```
+
+## Packages installed via `yazi`
+
+- List packages installed via `yazi`
+```sh
+ya pack --list 
+```
+```output
+Plugins:
+	AnirudhG07/rich-preview (2559e5f)
+	AnirudhG07/nbpreview (f8879b3)
+Flavors:
+	yazi-rs/flavors:catppuccin-mocha (df95930)
+```
