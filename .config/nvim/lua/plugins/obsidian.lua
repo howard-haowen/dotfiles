@@ -1,7 +1,7 @@
 -- ╭─────────────────────────────────────────────────────────╮
 -- │ WARN: REMOVE THE NEXT LINE TO ACTIVATE THIS FILE        │
 -- ╰─────────────────────────────────────────────────────────╯
--- if true then return {} end
+if true then return {} end
 
 return {
   "epwalsh/obsidian.nvim",

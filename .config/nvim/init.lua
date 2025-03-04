@@ -17,9 +17,12 @@ end
 
 require "lazy_setup"
 require "polish"
-
--- For the Obsidian plugin to work
+-- For the telekasten plugin to work
+require("telekasten").setup {
+  -- Put the name of your notes directory here
+  home = vim.fn.expand "/Users/haowen_jiang/OneDrive - IBM/obsidian-vault",
+}
+-- For the obsidian plugin to work
 vim.opt.conceallevel = 1
--- Ensure the UTF-8 encoding
 vim.o.encoding = "utf-8"
 vim.o.fileencoding = "utf-8"
