@@ -10,11 +10,14 @@ return {
     event = "VeryLazy",
     keys = {
       -- Normal mode mapping
+      -- The default keybinding is <Leader>lS
+      -- <Leader>l is for language tools by default
+      -- Change from `S` to `l` for outline
       {
-        "<Leader>uo",
+        "<Leader>lo",
         "<cmd>AerialToggle<cr>",
         mode = "n",
-        desc = "Toggle Aerial for code outline",
+        desc = "Toggle symbols outline",
       },
     },
   },
