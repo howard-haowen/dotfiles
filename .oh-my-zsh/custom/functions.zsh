@@ -1,6 +1,6 @@
 # Get minimal weather info for Taipei
 function get_weather() {
-    local weather_info=$(curl -s "https://wttr.in/Taipei?1pqQF")
+    local weather_info=$(curl -s "https://wttr.in/Taipei?0pqQF")
     echo "Today's weather: $weather_info"
 }
 

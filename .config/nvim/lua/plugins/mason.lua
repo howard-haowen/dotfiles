@@ -10,10 +10,13 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
+        -- lua
         "lua_ls",
-        "basedpyright",
+        -- python
         "pyright",
         "ruff",
+        -- markdown
+        "marksman",
         -- "markdown_oxide",
         -- add more arguments for adding more language servers
       },
@@ -25,11 +28,13 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
+        -- lua
         "stylua",
+        "luacheck",
+        -- python
         "mypy",
         "ruff",
         "black",
-        "isort",
         -- add more arguments for adding more null-ls sources
       },
     },
@@ -39,6 +44,9 @@ return {
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
       ensure_installed = {
+        -- lua
+        "mobdegug",
+        -- python
         "debugpy",
         -- add more arguments for adding more debuggers
       },

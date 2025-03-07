@@ -6,11 +6,8 @@ tap "homebrew/bundle" || true
 tap "TheZoraiz/ascii-image-converter"
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ neovim text editor                                       │
+# │ text editor                                       │
 # ╰──────────────────────────────────────────────────────────╯
-## Ambitious Vim-fork focused on extensibility and agility
-## use `nvim` to launch the editor
-# tap "neovim/neovim" || true
 ## Ambitious Vim-fork focused on extensibility and agility
 brew "neovim", head: "true"
 ## Post-modern modal text editor
@@ -58,7 +55,7 @@ brew "zoxide"
 brew "imagemagick" 
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ shells                                                   │
+# │ file explorers                                                   │
 # ╰──────────────────────────────────────────────────────────╯
 ## Hackable, minimal, fast TUI file explorer
 # brew "xplr"
@@ -112,14 +109,16 @@ brew "slides"
 brew "rlwrap"
 ## Pager/text based browser
 brew "w3m"
+## Single-player roguelike video game
+brew "nethack"
+## Modern diagram scripting language that turns text to diagrams
+brew "d2"
 ## Terminal slideshow tool, the export2pdf function doesn't work!
 # brew "presenterm"
 ## Terminal multiplexer
 # brew "tmux"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
-## Single-player roguelike video game
-brew "nethack"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ cask applications                                        │

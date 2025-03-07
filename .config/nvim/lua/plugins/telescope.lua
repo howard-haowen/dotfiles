@@ -10,6 +10,15 @@ return {
     event = "VeryLazy",
     config = function()
       require("telescope").setup {
+        defaults = {
+          mappings = {
+            n = { -- Normal mode mappings
+              -- Bind `q` to close the Telescope window
+              -- The default is ESC
+              q = require("telescope.actions").close,
+            },
+          },
+        },
         extensions = {
           media_files = {
             -- filetypes whitelist

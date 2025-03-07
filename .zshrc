@@ -180,6 +180,8 @@ export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 # Call the function to clean up PATH
 remove_duplicate_path_entries
+# Init zoxide
+eval "$(zoxide init zsh)"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Messages to show when a zsh session starts               │
@@ -204,3 +206,4 @@ remove_duplicate_path_entries
 uvx pyfiglet --font=ansi_shadow --color=blue: "Hi Haowen"
 # Show the weather in Taipei, defined in .oh-my-zsh/custom/aliases.zsh
 wt
+
