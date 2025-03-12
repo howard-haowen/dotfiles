@@ -17,12 +17,24 @@ end
 
 require "lazy_setup"
 require "polish"
--- For the telekasten plugin to work
-require("telekasten").setup {
-  -- Put the name of your notes directory here
-  home = vim.fn.expand "/Users/haowen_jiang/OneDrive - IBM/obsidian-vault",
-}
--- For the obsidian plugin to work
+-- ╭─────────────────────────────────────────────────────────╮
+-- │ For the obsidian plugin to work                         │
+-- ╰─────────────────────────────────────────────────────────╯
 vim.opt.conceallevel = 1
 vim.o.encoding = "utf-8"
 vim.o.fileencoding = "utf-8"
+-- ╭─────────────────────────────────────────────────────────╮
+-- │ General options                                         │
+-- ╰─────────────────────────────────────────────────────────╯
+-- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+-- Configure how new splits should be opened
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+-- Preview substitutions live, as you type!
+vim.opt.inccommand = "split"
+-- Show which line your cursor is on
+vim.opt.cursorline = true
+-- Minimal number of screen lines to keep above and below the cursor.
+vim.opt.scrolloff = 10

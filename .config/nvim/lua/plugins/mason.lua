@@ -17,7 +17,7 @@ return {
         "ruff",
         -- markdown
         "marksman",
-        -- "markdown_oxide",
+        "markdown_oxide",
         -- add more arguments for adding more language servers
       },
     },
@@ -35,6 +35,9 @@ return {
         "mypy",
         "ruff",
         "black",
+        -- markdown
+        "markdownlint",
+        "prettier",
         -- add more arguments for adding more null-ls sources
       },
     },

@@ -9,6 +9,12 @@ return {
     dependencies = { "nvim-telescope/telescope.nvim" },
     event = "VeryLazy",
     config = function()
+      -- Telekasten setup
+      require("telekasten").setup {
+        -- Put the name of your notes directory here
+        home = vim.fn.expand "/Users/haowen_jiang/OneDrive - IBM/obsidian-vault",
+      }
+      -- Key mappings
       -- Launch panel if nothing is typed after <leader>z
       vim.keymap.set("n", "<leader>z", "<cmd>Telekasten panel<CR>", { desc = "Launch Telekasten panel" })
 

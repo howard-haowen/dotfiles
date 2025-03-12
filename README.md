@@ -6,9 +6,11 @@
 
 - show the tree structure of all files with icons using `eza`
 - use the `-I` option to ignore a directory
+
 ```sh
 eza --all --tree --icons --level=3 -I .git
 ```
+
 ```output
 .
 ├── .config
@@ -66,11 +68,13 @@ eza --all --tree --icons --level=3 -I .git
 ```
 
 1. While in `~/dotfiles`, run this to create symlinks:
+
 ```sh
 stow .
 ```
 
 1. When new dotfiles are added to `~/dotfiles`, run this to delete all symlinks before creating them again:
+
 ```sh
 stow -D .
 ```
@@ -78,11 +82,13 @@ stow -D .
 ## Replicate dotfiles on Machine B
 
 1. Clone the dotfiles repository using `git`.
+
 ```sh
-git clone git@github.com:howard-haowen/dotfiles.git 
+git clone git@github.com:howard-haowen/dotfiles.git
 ```
 
 1. While in `~/dotfiles`, run this to create symlinks:
+
 ```sh
 stow .
 ```
@@ -90,9 +96,11 @@ stow .
 ## Packages installed via `brew bundle`
 
 - List all packages listed in `Brewfile`
+
 ```sh
 brew bundle list | sort
 ```
+
 ```output
 aichat
 argc
@@ -136,9 +144,11 @@ zsh-syntax-highlighting
 ## Packages installed via `pipx`
 
 - List packages installed via `pipx`
+
 ```sh
 pipx list | sort
 ```
+
 ```output
 - jdiff
 - llm
@@ -154,9 +164,11 @@ package uv 0.5.11, installed using Python 3.12.7
 ## Packages installed via `uv`
 
 - List packages installed via `uv`
+
 ```sh
 uv tool list | sort
 ```
+
 ```output
 - bagels
 - datasette
@@ -193,13 +205,15 @@ visidata v3.1.1
 ## Packages installed via `yazi`
 
 - List packages installed via `yazi`
+
 ```sh
-ya pack --list 
+ya pack --list
 ```
+
 ```output
 Plugins:
-	AnirudhG07/rich-preview (2559e5f)
-	AnirudhG07/nbpreview (f8879b3)
+ AnirudhG07/rich-preview (2559e5f)
+ AnirudhG07/nbpreview (f8879b3)
 Flavors:
-	yazi-rs/flavors:catppuccin-mocha (df95930)
+ yazi-rs/flavors:catppuccin-mocha (df95930)
 ```

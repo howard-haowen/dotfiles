@@ -29,22 +29,6 @@ return {
               end,
               desc = "Obsidian Follow Link",
             },
-            -- The following doesn't work!
-            -- -- Toggle check-boxes
-            -- ["<Leader>zc"] = {
-            --   action = function() return require("obsidian").util.toggle_checkbox() end,
-            --   opts = { buffer = true },
-            -- },
-            -- -- Open Obsidan Search
-            -- ["<Leader>zs"] = {
-            --   function() require("obsidian").commands.search() end,
-            --   desc = "Obsidian Search",
-            -- },
-            -- -- Open Obsidan Quick Switch
-            -- ["<Leader>zo"] = {
-            --   function() require("obsidian").commands.quick_switch() end,
-            --   desc = "Obsidian Quick Switch",
-            -- },
           },
         },
       },
