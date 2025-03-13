@@ -12,7 +12,7 @@ return {
       -- Normal mode mapping
       -- The default keybinding is <Leader>lS
       -- <Leader>l is for language tools by default
-      -- Change from `S` to `l` for outline
+      -- Change from `S` to `o` for outline
       {
         "<Leader>lo",
         "<cmd>AerialToggle<cr>",

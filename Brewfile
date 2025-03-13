@@ -113,6 +113,10 @@ brew "w3m"
 brew "nethack"
 ## Modern diagram scripting language that turns text to diagrams
 brew "d2"
+## Feature-rich console based todo list manager, also known as taskwarrior
+brew "task"
+## Terminal user interface for taskwarrior
+brew "taskwarrior-tui"
 ## Terminal slideshow tool, the export2pdf function doesn't work!
 # brew "presenterm"
 ## Terminal multiplexer

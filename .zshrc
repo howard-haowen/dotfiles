@@ -178,6 +178,8 @@ export PATH="$PATH:/Users/haowen_jiang/.local/bin"
 # bun
 export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# Set the config path for taskwarrior
+export TASKRC=~/.config/task/taskrc
 # Call the function to clean up PATH
 remove_duplicate_path_entries
 # Init zoxide
