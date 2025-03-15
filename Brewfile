@@ -1,12 +1,10 @@
 # ╭──────────────────────────────────────────────────────────╮
-# │ brew bundle command                                      │
+# │ brew bundle                                              │
 # ╰──────────────────────────────────────────────────────────╯
-# add extra repositories other than the default one 
 tap "homebrew/bundle" || true 
-tap "TheZoraiz/ascii-image-converter"
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ text editor                                       │
+# │ Text editor                                              │
 # ╰──────────────────────────────────────────────────────────╯
 ## Ambitious Vim-fork focused on extensibility and agility
 brew "neovim", head: "true"
@@ -14,14 +12,14 @@ brew "neovim", head: "true"
 # brew "helix"
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ python environments                                      │
+# │ Python environments                                      │
 # ╰──────────────────────────────────────────────────────────╯
 # brew "pyenv" # replaced by the uv package manager written in Rust
 brew "pipenv"
 brew "pipx"
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ other programming languages                              │
+# │ Other programming languages                              │
 # ╰──────────────────────────────────────────────────────────╯
 brew "node" #node.js
 brew "openjdk" #java
@@ -55,7 +53,7 @@ brew "zoxide"
 brew "imagemagick" 
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ file explorers                                                   │
+# │ File explorers                                                   │
 # ╰──────────────────────────────────────────────────────────╯
 ## Hackable, minimal, fast TUI file explorer
 # brew "xplr"
@@ -63,7 +61,7 @@ brew "imagemagick"
 # brew "ranger"
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ other tools                                              │
+# │ Other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
 ## suite of command-line tools for converting to and working with csv
 # brew "csvkit"
@@ -97,14 +95,19 @@ brew "tldr"
 brew "tree"
 ## pluggable terminal workspace, with terminal multiplexer as the base feature
 # brew "zellij"
+## Terminal multiplexer
+# brew "tmux"
 ## Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 ## Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 ## Convert images to ascii art
+tap "TheZoraiz/ascii-image-converter"
 brew "ascii-image-converter"
 ## Terminal based presentation tool
 brew "slides"
+## Terminal slideshow tool, the export2pdf function doesn't work!
+# brew "presenterm"
 ## Readline wrapper: adds readline support to tools that lack it
 brew "rlwrap"
 ## Pager/text based browser
@@ -117,10 +120,9 @@ brew "d2"
 brew "task"
 ## Terminal user interface for taskwarrior
 brew "taskwarrior-tui"
-## Terminal slideshow tool, the export2pdf function doesn't work!
-# brew "presenterm"
-## Terminal multiplexer
-# brew "tmux"
+## Simple hotkey daemon for macOS
+tap "koekeishiya/formulae"
+brew "skhd"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
 
