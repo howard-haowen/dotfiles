@@ -9,7 +9,7 @@ data.location=~/.local/share/task
 hooks.location=~/.config/task/hooks
 
 # Suppress non-essential messages
-verbose=nothing
+verbose=label
 
 # Color theme (uncomment one to use)
 #include light-16.theme
@@ -27,3 +27,14 @@ verbose=nothing
 include themes/solarized-dark-256.theme
 #include solarized-light-256.theme
 #include no-color.theme
+
+# Configure the report table for the command `task next`
+report.next.columns=id,priority,due.age,project,description,tags
+report.next.labels=ID,Priority,Due,Project,Description,Tags
+report.next.filter=status:pending or status:waiting
+report.next.sort=due+
+report.next.column.id.width=3
+report.next.column.priority.width=8
+report.next.column.due.width=12
+report.next.column.project.width=15
+report.next.column.description.width=fill
