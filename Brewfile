@@ -116,6 +116,8 @@ brew "w3m"
 brew "nethack"
 ## Modern diagram scripting language that turns text to diagrams
 brew "d2"
+## Command-line and local web note-taking, bookmarking, and archiving
+brew "nb"
 ## Feature-rich console based todo list manager, also known as taskwarrior
 brew "task"
 ## Terminal user interface for taskwarrior

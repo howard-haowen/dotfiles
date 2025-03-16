@@ -5,7 +5,9 @@ local config = wezterm.config_builder()
 
 config.automatically_reload_config = true
 
--- Font Configuration
+-- ╭─────────────────────────────────────────────────────────╮
+-- │ Font Configuration                                      │
+-- ╰─────────────────────────────────────────────────────────╯
 config.font_size = 16.0
 -- config.font = wezterm.font_with_fallback({
 -- 	"FiraCode Nerd Font",
@@ -13,11 +15,15 @@ config.font_size = 16.0
 -- 	"JetBrainsMono Nerd Font",
 -- })
 --
--- Appearance Configuration
+-- ╭─────────────────────────────────────────────────────────╮
+-- │ Appearance Configuration                                │
+-- ╰─────────────────────────────────────────────────────────╯
 config.color_scheme = "Ibm 3270 (High Contrast) (Gogh)"
 config.hide_tab_bar_if_only_one_tab = true
 
--- Window Configuration
+-- ╭─────────────────────────────────────────────────────────╮
+-- │ Window Configuration                                    │
+-- ╰─────────────────────────────────────────────────────────╯
 config.initial_rows = 45
 config.initial_cols = 130
 config.window_padding = {
@@ -28,7 +34,9 @@ config.window_padding = {
 }
 config.window_close_confirmation = "NeverPrompt"
 
--- Background Image Configuration
+-- ╭─────────────────────────────────────────────────────────╮
+-- │ Background Image Configuration                          │
+-- ╰─────────────────────────────────────────────────────────╯
 local dimmer = { brightness = 0.2 }
 
 config.window_background_opacity = 1 -- Set overall window transparency
@@ -45,7 +53,9 @@ config.background = {
 	},
 }
 
--- Plugins
+-- ╭─────────────────────────────────────────────────────────╮
+-- │ Plugins                                                 │
+-- ╰─────────────────────────────────────────────────────────╯
 -- Presentation: Rather simple presentation mode toggle for WezTerm.
 -- Usage: Activate with CTRL + ALT + P for presentation mode, or CTRL + ALT + SHIFT + P for fullscreen presentation.
 wezterm.plugin.require("https://gitlab.com/xarvex/presentation.wez").apply_to_config(config)

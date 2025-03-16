@@ -184,6 +184,14 @@ export TASKRC=~/.config/task/taskrc
 remove_duplicate_path_entries
 # Init zoxide
 eval "$(zoxide init zsh)"
+# ╭──────────────────────────────────────────────────────────╮
+# │ To make the completion script for nb available to zsh    │
+# ╰──────────────────────────────────────────────────────────╯
+# Add Homebrew's zsh completion directory to the function path
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+# Initialize zsh's completion system
+autoload -Uz compinit
+compinit
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Messages to show when a zsh session starts               │
