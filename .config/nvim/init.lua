@@ -38,3 +38,14 @@ vim.opt.inccommand = "split"
 vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 5
+-- ╭─────────────────────────────────────────────────────────╮
+-- │ General keymaps                                         │
+-- ╰─────────────────────────────────────────────────────────╯
+vim.api.nvim_set_keymap("t", "<Leader>j", "<C-\\><C-n>", { noremap = true, silent = true })
+vim.api.nvim_create_autocmd("TermOpen", {
+  pattern = "term://*",
+  callback = function()
+    vim.wo.number = true -- Enable absolute line numbers
+    vim.wo.relativenumber = true -- Enable relative line numbers (optional)
+  end,
+})

@@ -171,6 +171,15 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Avoid saving duplicate entries in the command history
+# setopt HIST_IGNORE_DUPS
+# Remove commands that match the previous entry in history
+# setopt HIST_IGNORE_ALL_DUPS
+# Combine commands run on the same line together to avoid duplicates
+# setopt SHARE_HISTORY
+# Save history even if multiple sessions are open
+# setopt INC_APPEND_HISTORY
+
 # Set the home directory for nushell config
 export XDG_CONFIG_HOME="/Users/haowen_jiang/.config"
 # Created by `pipx` on 2024-10-05 07:29:14

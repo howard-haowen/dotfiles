@@ -22,6 +22,17 @@ function remove_duplicate_path_entries() {
     done
     PATH="${(j/:/)unique_paths}"
 }
+
+# Function to find the most frequent commands, with topK as an argument
+function top_commands() {
+  local topK=${1:-10} # Default to 10 if no argument is provided
+  # Extract commands, count them, sort by frequency, and display the top K
+  awk -F';' '{print $2}' ~/.zsh_history 2>/dev/null | \
+  LC_ALL=C sort | \
+  uniq -c | \
+  sort -rn | \
+  head -n $topK
+}
 # DOES NOT WORK
 # Preview a file depending on its extension
 # function preview_file() {

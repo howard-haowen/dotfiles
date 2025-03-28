@@ -79,6 +79,8 @@ brew "fastfetch"
 brew "git"
 ## Blazing fast terminal-ui for git written in rust
 brew "gitui"
+## Quickly rewrite git repository history
+brew "git-filter-repo"
 ## simple terminal ui for git commands
 # brew "lazygit"
 ## command-line toolbox for fancy output in the terminal
@@ -120,6 +122,8 @@ brew "d2"
 brew "nb"
 ## Feature-rich console based todo list manager, also known as taskwarrior
 brew "task"
+## Tool for taking notes and open urls with taskwarrior
+brew "taskopen"
 ## Terminal user interface for taskwarrior
 brew "taskwarrior-tui"
 ## Simple hotkey daemon for macOS
