@@ -3,4 +3,4 @@ charset UTF-8
 # Auto preview link url
 display_link 1
 # no images
-display_image 0
+display_image 1

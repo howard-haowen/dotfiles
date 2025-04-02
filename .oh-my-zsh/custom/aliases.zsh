@@ -16,5 +16,6 @@ alias img2text='ascii-image-converter --color'
 # taskwarrior and taskopen
 alias tw='task'
 alias to='taskopen'
+alias qr='uvx --from qrcode qr'
 # Use fzf with the preview_file function, defined in custom/preview.zsh
 # alias ff="fzf --border --preview 'preview_file {}'"

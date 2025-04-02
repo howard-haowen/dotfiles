@@ -63,8 +63,6 @@ brew "imagemagick"
 # ╭──────────────────────────────────────────────────────────╮
 # │ Other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
-## suite of command-line tools for converting to and working with csv
-# brew "csvkit"
 ## All-in-one AI-Powered CLI Chat & Copilot
 brew "aichat"
 ## Easily create and use cli based on bash script
@@ -99,6 +97,8 @@ brew "tree"
 # brew "zellij"
 ## Terminal multiplexer
 # brew "tmux"
+## Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 ## Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 ## Fish shell like syntax highlighting for zsh
