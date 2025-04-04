@@ -71,6 +71,8 @@ brew "argc"
 brew "bat"
 ## Modern, maintained replacement for ls
 brew "eza"
+## Simple terminal image viewer written in Rust
+brew "viu"
 ## like neofetch, but much faster because written mostly in c
 brew "fastfetch"
 ## distributed revision control system

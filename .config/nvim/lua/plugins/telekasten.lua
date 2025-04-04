@@ -12,7 +12,7 @@ return {
       -- Telekasten setup
       require("telekasten").setup {
         -- Put the name of your notes directory here
-        home = vim.fn.expand "/Users/haowen_jiang/OneDrive - IBM/obsidian-vault",
+        home = vim.fn.expand "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/work",
       }
       -- Key mappings
       -- Launch panel if nothing is typed after <leader>z
