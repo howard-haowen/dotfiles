@@ -6,6 +6,8 @@ alias ls='eza --color=always --color-scale=all --color-scale-mode=gradient --ico
 # Use `bat` to preview them
 # Use the default editor to edit a selected file
 alias ff='cd ~ && fzf --border --preview "bat --style=numbers --color=always --line-range :500 {}" --bind "enter:execute($EDITOR {})"'
+# Use fzf to preview notes managed by nb CLI and the default editor to edit a selected file
+alias nbf='nb list --no-id --paths | fzf --border --preview "bat --style=numbers --color=always --line-range :500 {}" --bind "enter:execute($EDITOR {})"'
 
 alias wt='get_weather'
 # See https://github.com/chubin/cheat.sh
