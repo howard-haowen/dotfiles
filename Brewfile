@@ -14,16 +14,25 @@ brew "neovim", head: "true"
 # ╭──────────────────────────────────────────────────────────╮
 # │ Python environments                                      │
 # ╰──────────────────────────────────────────────────────────╯
-# brew "pyenv" # replaced by the uv package manager written in Rust
+# All these can be replaced by the uv package manager written in Rust
+# brew "pyenv" 
 brew "pipenv"
 brew "pipx"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Other programming languages                              │
 # ╰──────────────────────────────────────────────────────────╯
+## Powerful, lightweight programming language
+brew "lua" #lua
+## Package manager for the Lua programming language
+brew "luarocks" 
+## Platform built on V8 to build network applications
 brew "node" #node.js
+## Development kit for the Java programming language
 brew "openjdk" #java
+## Safe, concurrent, practical language
 brew "rust" #rust
+## Open source programming language to build simple/reliable/efficient software
 brew "go" #golang
 
 # ╭──────────────────────────────────────────────────────────╮
@@ -133,6 +142,17 @@ tap "koekeishiya/formulae"
 brew "skhd"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
+# ╭──────────────────────────────────────────────────────────╮
+# │ Dependencies of WeasyPrint, which converts HTML to PDF   │
+# ╰──────────────────────────────────────────────────────────╯
+## Vector graphics library with cross-device output support
+# brew "cairo"
+## Framework for layout and rendering of i18n text
+# brew "pango"
+## Toolkit for image loading and pixel buffer manipulation
+# brew "gdk-pixbuf"
+## Portable Foreign Function Interface library
+# brew "libffi"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ cask applications                                        │

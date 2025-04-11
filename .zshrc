@@ -192,7 +192,9 @@ fi
 # Set the home directory for nushell config
 export XDG_CONFIG_HOME="/Users/haowen_jiang/.config"
 # Created by `pipx` on 2024-10-05 07:29:14
-export PATH="$PATH:/Users/haowen_jiang/.local/bin"
+export PATH="/Users/haowen_jiang/.local/bin:$PATH"
+# Add global packages installed by `npm` to PATH
+export PATH="$(npm prefix -g)/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
