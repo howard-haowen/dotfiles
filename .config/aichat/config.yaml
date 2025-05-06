@@ -1,6 +1,6 @@
 # see https://github.com/sigoden/aichat/blob/main/config.example.yaml
 
-model: ollama:granite3.2:8b
+model: ollama:gemma2:9b
 clients:
   - type: openai-compatible
     name: ollama
@@ -9,10 +9,14 @@ clients:
     models:
       - name: gemma2:9b
       - name: deepseek-r1:1.5b
-      - name: granite3.2:8b
-      - name: qwen2.5-coder:latest
       - name: deepseek-coder:6.7b
+      - name: granite3.3:latest
+      - name: qwen2.5-coder:latest
       - name: nomic-embed-text:latest
+        type: embedding
+        default_chunk_size: 1000
+        max_batch_size: 100
+      - name: nextfire/paraphrase-multilingual-minilm:l12-v2
         type: embedding
         default_chunk_size: 1000
         max_batch_size: 100

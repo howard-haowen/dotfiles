@@ -43,6 +43,10 @@ compinit
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Define ZLE widgets early
+zle -N menu-search
+zle -N recent-paths
+
 # Plugins for oh-my-zsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(

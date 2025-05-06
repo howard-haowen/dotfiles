@@ -39,15 +39,15 @@ config.window_close_confirmation = "NeverPrompt"
 -- ╰─────────────────────────────────────────────────────────╯
 local dimmer = { brightness = 0.2 }
 
-config.window_background_opacity = 1 -- Set overall window transparency
-config.macos_window_background_blur = 8 -- Blur the background on MacOS
+-- config.window_background_opacity = 1 -- Set overall window transparency
+-- config.macos_window_background_blur = 8 -- Blur the background on MacOS
 config.background = {
 	{
 		source = {
 			File = os.getenv("HOME") .. "/dotfiles/.config/wezterm/images/ibm_watsonx_bg.jpg",
 		},
 		hsb = dimmer,
-		opacity = 0.8,
+		-- opacity = 0.8,
 		attachment = "Fixed", -- Make the background image fixed
 		horizontal_align = "Right",
 	},
