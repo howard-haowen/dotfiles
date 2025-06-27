@@ -1,21 +1,46 @@
 # A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
-# Manage git repos using lazygit
-[[manager.prepend_keymap]]
-on   = [ "g", "i" ]
-run  = "plugin lazygit"
-desc = "run lazygit"
+# Run `gitui` on the current file's Git repository
+[[mgr.prepend_keymap]]
+on   = [ "g", "t" ]
+run  = 'shell "cd $(git -C \"$YAZI_FILE\" rev-parse --show-toplevel) && gitui" --block --silent'
+desc = "Open gitui in selected file's Git repo"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "!"
 run  = 'shell "$SHELL" --block'
 desc = "Open shell here"
 
-[manager]
+[[mgr.prepend_keymap]]
+on   = [ "E" ]
+run  = "plugin eza-preview"
+desc = "Toggle tree/list dir preview"
+
+[[mgr.prepend_keymap]]
+on   = [ "-" ]
+run  = "plugin eza-preview inc-level"
+desc = "Increment tree level"
+
+[[mgr.prepend_keymap]]
+on   = [ "_" ]
+run  = "plugin eza-preview dec-level"
+desc = "Decrement tree level"
+
+[[mgr.prepend_keymap]]
+on   = [ "$" ]
+run  = "plugin eza-preview toggle-follow-symlinks"
+desc = "Toggle tree follow symlinks"
+
+[[mgr.prepend_keymap]]
+on   = [ "*" ]
+run  = "plugin eza-preview toggle-hidden"
+desc = "Toggle hidden files"
+
+
+[mgr]
 
 keymap = [
-	{ on = [ "E" ], run = "plugin eza-preview",  desc = "Toggle tree/list dir preview" },
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
 	{ on = "<C-[>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
 	{ on = "q",     run = "quit",               desc = "Exit the process" },
