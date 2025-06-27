@@ -140,6 +140,12 @@ brew "taskwarrior-tui"
 ## Simple hotkey daemon for macOS
 tap "koekeishiya/formulae"
 brew "skhd"
+## Framework for Verilog RTL synthesis
+brew "yosys"
+## Configurable static site generator
+brew "hugo"
+## Next-gen compiler infrastructure
+brew "llvm"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
 # ╭──────────────────────────────────────────────────────────╮
