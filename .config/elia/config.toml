@@ -1,5 +1,5 @@
 # the ID or name of the model that is selected by default on launch
-default_model = "ollama/hf.co/nctu6/Llama3-TAIDE-LX-8B-Chat-Alpha1-GGUF:Q4_0"
+default_model = "ollama/gemma3n:e2b"
 
 # the system prompt on launch
 # system_prompt = "You are a helpful assistant who answers questions based on the context given to you."
@@ -16,11 +16,11 @@ default_model = "ollama/hf.co/nctu6/Llama3-TAIDE-LX-8B-Chat-Alpha1-GGUF:Q4_0"
 #
 system_prompt = """
 You're an expert of command line tools.
-Given the name of a CLI tool, your goal is to help users master it. 
+Given the name of a CLI tool, your goal is to help users understand what it does in a short paragraph. 
 Here're what you'll do:
 - Give a summary of what the CLI tool does
 - Show the major features of the CLI tool
-- Show a mind map of the CLI tool using the mermaid syntax. Each branch of the map should cover a subcommand and its subsequent subcommands if there is any.
+- 永遠使用繁體中文回答
 """"
 # system_prompt = """
 # 你是個語言專家，精通各國語言，你的任務是教使用者學會基本的日常對話。
@@ -95,11 +95,11 @@ message_code_theme = "dracula"
 # example of adding local ollama models
 # only the `name` field is required here.
 [[models]]
-name = "ollama/hf.co/nctu6/Llama3-TAIDE-LX-8B-Chat-Alpha1-GGUF:Q4_0"
+name = "ollama/gemma3n:e2b"
 [[models]]
 name = "ollama/qwen2.5-coder"
 [[models]]
-name = "ollama/granite3.1-moe"
+name = "ollama/granite3.3:latest"
 
 
 # example of a model running on a local server, e.g. LocalAI

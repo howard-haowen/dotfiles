@@ -33,6 +33,60 @@ function top_commands() {
   sort -rn | \
   head -n $topK
 }
+
+# Function to convert the clipboard text to a d2 diagram
+function d2clip() {
+  local tmp_file="temp.d2"
+  local output_file="diagram.svg"
+
+  pbpaste > "$tmp_file" || {
+    echo "❌ Failed to read clipboard"
+    return 1
+  }
+
+  d2 "$tmp_file" "$output_file" || {
+    echo "❌ D2 rendering failed"
+    rm -f "$tmp_file"
+    return 1
+  }
+
+  rm -f "$tmp_file"
+  echo "✅ Diagram saved as $output_file"
+  open "$output_file"
+}
+
+# rg_search: interactive regex search across a chosen directory with live preview and jump-to-file
+function rg_search() {
+  # Load environment if needed (especially for zoxide or Oh My Zsh plugins)
+  [[ -f ~/.zshrc ]] && source ~/.zshrc
+
+  # Step 1: Choose a target directory from zoxide history
+  local target_dir=$(zoxide query --interactive)
+  if [[ -z "$target_dir" ]]; then
+    echo "❌ Cancelled"
+    return 1
+  fi
+
+  cd "$target_dir" || {
+    echo "❌ Failed to cd into $target_dir"
+    return 1
+  }
+
+  # Step 2: Prompt the user for a regex pattern
+  echo -n "🔍 Regex to search: "
+  read -r pattern
+  if [[ -z "$pattern" ]]; then
+    echo "❌ No pattern entered"
+    return 1
+  fi
+
+  # Step 3: Run ripgrep and pipe matches into fzf
+  rg --with-filename --line-number --context=5 --color=always "$pattern" . 2>/dev/null | \
+    fzf --ansi --delimiter : \
+      --preview 'file={1}; line={2}; [[ -n "$line" && "$line" -gt 0 ]] && bat --style=numbers --color=always --highlight-line "$line" "$file" || bat --style=numbers --color=always "$file"' \
+      --bind "enter:execute(${EDITOR:-nvim} {1} +{2})"
+}
+
 # DOES NOT WORK
 # Preview a file depending on its extension
 # function preview_file() {
