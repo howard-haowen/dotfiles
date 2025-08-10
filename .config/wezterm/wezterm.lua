@@ -9,11 +9,11 @@ config.automatically_reload_config = true
 -- │ Font Configuration                                      │
 -- ╰─────────────────────────────────────────────────────────╯
 config.font_size = 16.0
--- config.font = wezterm.font_with_fallback({
--- 	"FiraCode Nerd Font",
--- 	"Symbols Nerd Font",
--- 	"JetBrainsMono Nerd Font",
--- })
+config.font = wezterm.font_with_fallback({
+	"IBMPlexSans",
+	"Hack Nerd Font Mono",
+	"JetBrains Mono",
+})
 --
 -- ╭─────────────────────────────────────────────────────────╮
 -- │ Appearance Configuration                                │
