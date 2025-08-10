@@ -148,6 +148,11 @@ brew "hugo"
 brew "llvm"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
+## HashiCorp Vault CLI
+tap "hashicorp/tap"
+brew "hashicorp/tap/vault"
+## Object-relational database system
+brew "postgresql@13"
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dependencies of WeasyPrint, which converts HTML to PDF   │
 # ╰──────────────────────────────────────────────────────────╯
@@ -165,13 +170,15 @@ brew "llvm"
 # ╰──────────────────────────────────────────────────────────╯
 # specify a directory to install the applications in
 cask_args appdir: '/Applications'
-## Menlo for Powerline 
-cask "font-hack-nerd-font"
-## Symbols Nerd Font (Symbols Only)
-cask "font-symbols-only-nerd-font"
 ## Terminal emulator as alternative to Apple's Terminal app
 # cask "iterm2"
 ## GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 ## Get up and running with large language models locally
 cask "ollama"
+## Menlo for Powerline 
+cask "font-hack-nerd-font"
+## Symbols Nerd Font (Symbols Only)
+cask "font-symbols-only-nerd-font"
+## IBM Plex Sans
+cask "font-ibm-plex-sans"
