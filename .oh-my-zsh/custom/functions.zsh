@@ -37,7 +37,7 @@ function top_commands() {
 # Function to convert the clipboard text to a d2 diagram
 function d2clip() {
   local tmp_file="temp.d2"
-  local output_file="diagram.svg"
+  local output_file="$HOME/Downloads/diagram.svg"
 
   pbpaste > "$tmp_file" || {
     echo "❌ Failed to read clipboard"
