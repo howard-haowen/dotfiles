@@ -202,6 +202,8 @@ export PATH="$(npm prefix -g)/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# Link psql binary to PATH
+export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 # Set the config path for taskwarrior
 export TASKRC=~/.config/task/taskrc
 # Call the function to clean up PATH
@@ -229,7 +231,7 @@ eval "$(zoxide init zsh)"
 # EOF
 
 # Print a greeting message with `pyfiglet`
-uvx pyfiglet --font=ansi_shadow --color=blue: "IBM CLI"
+uvx pyfiglet --font=ansi_shadow --color=blue: "watsonx"
 # Show the weather in Taipei, defined in .oh-my-zsh/custom/aliases.zsh
 wt
 
