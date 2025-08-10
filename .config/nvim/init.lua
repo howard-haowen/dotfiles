@@ -36,6 +36,14 @@ vim.opt.splitbelow = true
 vim.opt.inccommand = "split"
 -- Show which line your cursor is on
 vim.opt.cursorline = true
+vim.cmd [[
+  highlight CursorLine guibg=#3a4a5a
+]]
+-- Show which column your cursor is on
+vim.opt.cursorcolumn = true
+vim.cmd [[
+  highlight CursorColumn guibg=#3a4a5a
+]]
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 5
 -- ╭─────────────────────────────────────────────────────────╮
