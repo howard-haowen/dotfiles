@@ -4,6 +4,13 @@
 tap "homebrew/bundle" || true 
 
 # ╭──────────────────────────────────────────────────────────╮
+# │ Core taps                                                │
+# ╰──────────────────────────────────────────────────────────╯
+tap "TheZoraiz/ascii-image-converter"
+tap "koekeishiya/formulae"
+tap "hashicorp/tap"
+
+# ╭──────────────────────────────────────────────────────────╮
 # │ Text editor                                              │
 # ╰──────────────────────────────────────────────────────────╯
 ## Ambitious Vim-fork focused on extensibility and agility
@@ -36,6 +43,28 @@ brew "rust" #rust
 brew "go" #golang
 
 # ╭──────────────────────────────────────────────────────────╮
+# │ Git tools                                                │
+# ╰──────────────────────────────────────────────────────────╯
+## distributed revision control system
+brew "git"
+## Blazing fast terminal-ui for git written in rust
+brew "gitui"
+## Quickly rewrite git repository history
+brew "git-filter-repo"
+## Command-line tool to show clear git graphs arranged for your branching model
+brew "git-graph"
+## simple terminal ui for git commands
+# brew "lazygit"
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ File explorers                                           │
+# ╰──────────────────────────────────────────────────────────╯
+## Hackable, minimal, fast TUI file explorer
+# brew "xplr"
+## file browser
+# brew "ranger"
+
+# ╭──────────────────────────────────────────────────────────╮
 # │ yazi and its dependencies                                │
 # ╰──────────────────────────────────────────────────────────╯
 ## yazi file manager 
@@ -62,14 +91,6 @@ brew "zoxide"
 brew "imagemagick" 
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ File explorers                                                   │
-# ╰──────────────────────────────────────────────────────────╯
-## Hackable, minimal, fast TUI file explorer
-# brew "xplr"
-## file browser
-# brew "ranger"
-
-# ╭──────────────────────────────────────────────────────────╮
 # │ Other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
 ## All-in-one AI-Powered CLI Chat & Copilot
@@ -84,14 +105,6 @@ brew "eza"
 brew "viu"
 ## like neofetch, but much faster because written mostly in c
 brew "fastfetch"
-## distributed revision control system
-brew "git"
-## Blazing fast terminal-ui for git written in rust
-brew "gitui"
-## Quickly rewrite git repository history
-brew "git-filter-repo"
-## simple terminal ui for git commands
-# brew "lazygit"
 ## command-line toolbox for fancy output in the terminal
 brew "rich-cli"
 ## cross-shell prompt for astronauts
@@ -115,7 +128,6 @@ brew "zsh-autosuggestions"
 ## Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 ## Convert images to ascii art
-tap "TheZoraiz/ascii-image-converter"
 brew "ascii-image-converter"
 ## Terminal based presentation tool
 brew "slides"
@@ -138,7 +150,6 @@ brew "taskopen"
 ## Terminal user interface for taskwarrior
 brew "taskwarrior-tui"
 ## Simple hotkey daemon for macOS
-tap "koekeishiya/formulae"
 brew "skhd"
 ## Framework for Verilog RTL synthesis
 brew "yosys"
@@ -149,10 +160,10 @@ brew "llvm"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
 ## HashiCorp Vault CLI
-tap "hashicorp/tap"
 brew "hashicorp/tap/vault"
 ## Object-relational database system
 brew "postgresql@13"
+
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dependencies of WeasyPrint, which converts HTML to PDF   │
 # ╰──────────────────────────────────────────────────────────╯
