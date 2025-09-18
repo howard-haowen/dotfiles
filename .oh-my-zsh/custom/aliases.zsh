@@ -24,5 +24,6 @@ alias img2text='ascii-image-converter --color'
 alias tw='task'
 alias to='taskopen'
 alias qr='uvx --from qrcode qr'
+alias hq='harlequin'
 # Use fzf with the preview_file function, defined in custom/preview.zsh
 # alias ff="fzf --border --preview 'preview_file {}'"

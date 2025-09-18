@@ -1,0 +1,8 @@
+default_profile = "hw_db_ide"
+
+[profiles.hw_db_ide]
+adapter = "postgres"
+theme = "catppuccin-mocha"
+limit = 100
+keymap_name = ["vscode"]
+conn_str = ["postgres://haowen_jiang:@localhost:5432/ibmer"]
