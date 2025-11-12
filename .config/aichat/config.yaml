@@ -1,8 +1,91 @@
 # see https://github.com/sigoden/aichat/blob/main/config.example.yaml
+# ---- llm ----
+model: ollama:granite4:latest # Specify the LLM to use
+temperature: 0 # Set default temperature parameter (0, 1)
+top_p: null # Set default top-p parameter, with a range of (0, 1) or (0, 2) depending on the model
 
-model: ollama:granite3.3:latest
-# model: ollama:gemma3:latest
-# model: ollama:gemma3n:e2b
+# ---- behavior ----
+stream: true # Controls whether to use the stream-style API.
+save: true # Indicates whether to persist the message
+keybindings: emacs # Choose keybinding style (emacs, vi)
+editor: nvim # Specifies the command used to edit input buffer or session. (e.g. vim, emacs, nano).
+wrap: auto # Controls text wrapping (no, auto, <max-width>)
+wrap_code: true # Enables or disables wrapping of code blocks
+
+# ---- function-calling ----
+# Visit https://github.com/sigoden/llm-functions for setup instructions
+function_calling: true # Enables or disables function calling (Globally).
+mapping_tools: # Alias for a tool or toolset
+  fs: "fs_cat,fs_ls,fs_mkdir,fs_rm,fs_write"
+use_tools: null # Which tools to use by default. (e.g. 'fs,web_search')
+
+# ---- prelude ----
+repl_prelude: null # Set a default role or session for REPL mode (e.g. role:<name>, session:<name>, <session>:<role>)
+cmd_prelude: null # Set a default role or session for CMD mode (e.g. role:<name>, session:<name>, <session>:<role>)
+agent_prelude: null # Set a session to use when starting a agent (e.g. temp, default)
+
+# ---- session ----
+# Controls the persistence of the session. if true, auto save; if false, not save; if null, asking the user
+save_session: null
+# Compress session when token count reaches or exceeds this threshold
+compress_threshold: 4000
+# Text prompt used for creating a concise summary of session message
+summarize_prompt: "Summarize the discussion briefly in 200 words or less to use as a prompt for future context."
+# Text prompt used for including the summary of the entire session
+summary_prompt: "This is a summary of the chat history as a recap: "
+
+# ---- RAG ----
+# See [RAG-Guide](https://github.com/sigoden/aichat/wiki/RAG-Guide) for more details.
+rag_embedding_model: ollama:nomic-embed-text:latest # Specifies the embedding model used for context retrieval
+# rag_reranker_model: ollama:xitao/bge-reranker-v2-m3:latest # Specifies the reranker model used for sorting retrieved documents
+rag_top_k: 5 # Specifies the number of documents to retrieve for answering queries
+rag_chunk_size: null # Defines the size of chunks for document processing in characters
+rag_chunk_overlap: null # Defines the overlap between chunks
+# Defines the query structure using variables like __CONTEXT__ and __INPUT__ to tailor searches to specific needs
+rag_template: |
+  Answer the query based on the context while respecting the rules. (user query, some textual context and rules, all inside xml tags)
+
+  <context>
+  __CONTEXT__
+  </context>
+
+  <rules>
+  - If you don't know, just say so.
+  - If you are not sure, ask for clarification.
+  - Answer in the same language as the user query.
+  - If the context appears unreadable or of poor quality, tell the user then answer as best as you can.
+  - If the answer is not in the context but you think you know the answer, explain that to the user then answer with your own knowledge.
+  - Answer directly and without using xml tags.
+  </rules>
+
+  <user_query>
+  __INPUT__
+  </user_query>
+
+# Define document loaders to control how RAG and `.file`/`--file` load files of specific formats.
+document_loaders:
+  # You can add custom loaders using the following syntax:
+  #   <file-extension>: <command-to-load-the-file>
+  # Note: Use `$1` for input file and `$2` for output file. If `$2` is omitted, use stdout as output.
+  # docx: "docling $1" # Load .docx file
+  # pptx: "docling $1" # Load .pptx file
+  # pdf: "docling $1" # Load .pdf file
+
+# ---- apperence ----
+highlight: true # Controls syntax highlighting
+light_theme: false # Activates a light color theme when true. env: AICHAT_LIGHT_THEME
+# Custom REPL left/right prompts, see https://github.com/sigoden/aichat/wiki/Custom-REPL-Prompt for more details
+left_prompt: "{color.green}{?session {?agent {agent}>}{session}{?role /}}{!session {?agent {agent}>}}{role}{?rag @{rag}}{color.cyan}{?session )}{!session >}{color.reset} "
+right_prompt: "{color.purple}{?session {?consume_tokens {consume_tokens}({consume_percent}%)}{!consume_tokens {consume_tokens}}}{color.reset}"
+
+# ---- misc ----
+serve_addr: 127.0.0.1:8000 # Server listening address
+user_agent: null # Set User-Agent HTTP header, use `auto` for aichat/<current-version>
+save_shell_history: true # Whether to save shell execution command to the history file
+# URL to sync model changes from, e.g., https://cdn.jsdelivr.net/gh/sigoden/aichat@main/models.yaml
+sync_models_url: https://raw.githubusercontent.com/sigoden/aichat/refs/heads/main/models.yaml
+
+# ---- clients ----
 clients:
   - type: openai-compatible
     name: ollama
@@ -10,9 +93,12 @@ clients:
     api_key: xxx
     models:
       # LLMs
-      - name: granite3.3:latest
-      - name: gemma3:latest
-      - name: gemma3n:e2b
+      - name: granite4:latest
+        max_input_tokens: 128000
+        supports_function_calling: true
+      - name: llava:latest
+        max_input_tokens: 32000
+        supports_vision: true
       # Embedders
       - name: nextfire/paraphrase-multilingual-minilm:l12-v2
         type: embedding
@@ -22,3 +108,15 @@ clients:
         type: embedding
         default_chunk_size: 1000
         max_batch_size: 100
+      # Rerankers
+      # - name: xitao/bge-reranker-v2-m3:latest
+      #   type: reranker
+      #   max_input_tokens: 8000
+  - type: openai-compatible
+    name: ibm
+    api_base: https://us-south.ml.cloud.ibm.com/ml/v1
+    api_kea: xxx
+    models:
+      # LLMs
+      - name: openai/gpt-oss-120b
+        supports_function_calling: true
