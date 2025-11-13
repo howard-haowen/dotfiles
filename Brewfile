@@ -43,6 +43,14 @@ brew "rust" #rust
 brew "go" #golang
 
 # ╭──────────────────────────────────────────────────────────╮
+# │ AI tools                                                 │
+# ╰──────────────────────────────────────────────────────────╯
+## All-in-one AI-Powered CLI Chat & Copilot
+brew "aichat"
+## AI coding agent, built for the terminal
+brew "opencode"
+
+# ╭──────────────────────────────────────────────────────────╮
 # │ Git tools                                                │
 # ╰──────────────────────────────────────────────────────────╯
 ## distributed revision control system
@@ -89,12 +97,12 @@ brew "fzf"
 brew "zoxide" 
 ## tools and libraries to manipulate images in many formats
 brew "imagemagick" 
+## Interpreter for PostScript and PDF
+brew "ghostscript"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
-## All-in-one AI-Powered CLI Chat & Copilot
-brew "aichat"
 ## Easily create and use cli based on bash script
 brew "argc"
 ## Clone of cat(1) with syntax highlighting and Git integration
@@ -137,8 +145,6 @@ brew "slides"
 brew "rlwrap"
 ## Pager/text based browser
 brew "w3m"
-## Single-player roguelike video game
-brew "nethack"
 ## Modern diagram scripting language that turns text to diagrams
 brew "d2"
 ## Command-line and local web note-taking, bookmarking, and archiving
@@ -177,7 +183,7 @@ brew "postgresql@13"
 # brew "libffi"
 
 # ╭──────────────────────────────────────────────────────────╮
-# │ cask applications                                        │
+# │ Cask applications                                        │
 # ╰──────────────────────────────────────────────────────────╯
 # specify a directory to install the applications in
 cask_args appdir: '/Applications'
@@ -186,7 +192,7 @@ cask_args appdir: '/Applications'
 ## GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 ## Get up and running with large language models locally
-cask "ollama"
+cask "ollama-app"
 ## Menlo for Powerline 
 cask "font-hack-nerd-font"
 ## Symbols Nerd Font (Symbols Only)
