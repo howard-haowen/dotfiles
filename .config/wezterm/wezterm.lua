@@ -9,11 +9,11 @@ config.automatically_reload_config = true
 -- │ Font Configuration                                      │
 -- ╰─────────────────────────────────────────────────────────╯
 config.font_size = 16.0
-config.font = wezterm.font_with_fallback({
-	"IBMPlexSans",
-	"Hack Nerd Font Mono",
-	"JetBrains Mono",
-})
+-- config.font = wezterm.font_with_fallback({
+-- 	"IBMPlexSans",
+-- 	"Hack Nerd Font Mono",
+-- 	"JetBrains Mono",
+-- })
 --
 -- ╭─────────────────────────────────────────────────────────╮
 -- │ Appearance Configuration                                │
@@ -62,6 +62,9 @@ wezterm.plugin.require("https://gitlab.com/xarvex/presentation.wez").apply_to_co
 
 -- Modal: Vim-like modal keybindings for your terminal! ✌️
 -- wezterm.plugin.require("https://github.com/MLFlexer/modal.wezterm").apply_to_config(config)
+
+-- wez-pain-control plugin for pane management
+-- wezterm.plugin.require("https://github.com/sei40kr/wez-pain-control").apply_to_config(config, {})
 
 -- Bar: A wezterm tab bar with batteries included
 -- Bar's default config

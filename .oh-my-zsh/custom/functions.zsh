@@ -87,6 +87,12 @@ function rg_search() {
       --bind "enter:execute(${EDITOR:-nvim} {1} +{2})"
 }
 
+function pdf2png() {
+  local input_pdf="$1"
+  local output_prefix="${input_pdf:r}"
+  magick -density 300 "$input_pdf" "${output_prefix}.png"
+}
+
 # DOES NOT WORK
 # Preview a file depending on its extension
 # function preview_file() {
