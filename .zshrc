@@ -184,15 +184,48 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Avoid saving duplicate entries in the command history
-# setopt HIST_IGNORE_DUPS
-# Remove commands that match the previous entry in history
-# setopt HIST_IGNORE_ALL_DUPS
-# Combine commands run on the same line together to avoid duplicates
-# setopt SHARE_HISTORY
-# Save history even if multiple sessions are open
-# setopt INC_APPEND_HISTORY
+# ╭──────────────────────────────────────────────────────────╮
+# │ Command history                                          │
+# ╰──────────────────────────────────────────────────────────╯
+# History file location and size
+HISTFILE=~/.zsh_history
+HISTSIZE=10000          # Number of commands kept in memory
+SAVEHIST=10000          # Number of commands saved to file
 
+# Remove duplicates and improve history behavior
+setopt HIST_IGNORE_DUPS        # Don't store command if same as last
+setopt HIST_IGNORE_ALL_DUPS    # Remove older duplicates when adding new
+setopt HIST_SAVE_NO_DUPS       # Don't write duplicates to history file
+setopt HIST_FIND_NO_DUPS       # Don't show duplicates during search
+setopt HIST_EXPIRE_DUPS_FIRST  # Expire duplicates first when trimming history
+
+# Privacy: ignore commands starting with space
+setopt HIST_IGNORE_SPACE
+
+# Share history across all sessions
+setopt SHARE_HISTORY
+
+# Append to history file (don't overwrite)
+setopt APPEND_HISTORY
+
+# Extended history (timestamps)
+setopt EXTENDED_HISTORY
+
+# -------------------------------
+# Key Bindings for Arrow Keys
+# -------------------------------
+bindkey -e                          # Enable emacs-style key bindings (arrow keys work)
+bindkey "^[[A" up-line-or-search    # Up arrow: search backward
+bindkey "^[[B" down-line-or-search  # Down arrow: search forward
+
+# -------------------------------
+# Optional: Better search
+# -------------------------------
+bindkey "^R" history-incremental-search-backward
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ Path configuration                                       │
+# ╰──────────────────────────────────────────────────────────╯
 # Set the home directory for nushell config
 export XDG_CONFIG_HOME="/Users/haowen_jiang/.config"
 # Created by `pipx` on 2024-10-05 07:29:14
