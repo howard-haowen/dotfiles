@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "ollama/granite4:latest", // default model
+  "model": "ollama/granite4:latest",
   "provider": {
     "ollama": {
       "npm": "@ai-sdk/openai-compatible",
@@ -11,6 +11,27 @@
       "models": {
         "granite4:latest": {
           "name": "Granite 4",
+          "tools": true
+        },
+        "qwen3:latest": {
+          "name": "Qwen 3",
+          "tools": true
+        }
+      }
+    },
+    "ibm": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "IBM",
+      "options": {
+        "baseURL": "https://us-south.ml.cloud.ibm.com/ml/v1"
+      },
+      "models": {
+        "meta-llama/llama-3-3-70b-instruct": {
+          "name": "Llama 3.3 70B Instruct",
+          "tools": true
+        },
+        "ibm/granite-4-h-small": {
+          "name": "Granite 4.0 H Small",
           "tools": true
         }
       }
