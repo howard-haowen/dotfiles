@@ -36,7 +36,7 @@ return {
               },
               schema = {
                 model = {
-                  default = "gemma2:9b",
+                  default = "qwen3:latest",
                 },
                 -- num_ctx = {
                 --   default = 16384,
