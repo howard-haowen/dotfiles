@@ -93,6 +93,14 @@ function pdf2png() {
   magick -density 300 "$input_pdf" "${output_prefix}.png"
 }
 
+function rss() {
+  local opml_file="$HOME/dotfiles/newsfeed.opml"
+  if [[ -f "$opml_file" ]]; then
+    newsroom -o "$opml_file" 
+  else
+    echo "❌ OPML file not found at $opml_file"
+  fi
+}
 # DOES NOT WORK
 # Preview a file depending on its extension
 # function preview_file() {
