@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<opml version="1.0"><head><title>Haowen's News Feeds</title></head><body>
+
+<outline text="Chinese News" title="Chinese News">
+<outline text="中央社" title="中央社" type="rss" xmlUrl="https://feedx.net/rss/cna.xml" htmlUrl="http://m.cna.com.tw/list/firstnews"/>
+<outline text="BBC 中文 (繁體)" title="BBC 中文 (繁體)" type="rss" xmlUrl="https://www.bbc.com/zhongwen/trad/index.xml" />
+</outline>
+
+<outline text="Tech News" title="Tech News">
+<outline text="TechCrunch" title="TechCrunch" type="rss" xmlUrl="http://feeds.feedburner.com/TechCrunch" />
+<outline text="The Verge" title="The Verge" type="rss" xmlUrl="https://www.theverge.com/rss/index.xml" />
+<outline text="Mashable" title="Mashable" type="rss" xmlUrl="http://feeds.mashable.com/Mashable" /></outline>
+
+<outline text="Global News" title="Global News">
+<outline text="BBC World" title="BBC World" type="rss" xmlUrl="http://feeds.bbci.co.uk/news/world/rss.xml" />
+<outline text="CNN Top Stories" title="CNN Top Stories" type="rss" xmlUrl="http://rss.cnn.com/rss/edition.rss" />
+<outline text="NYTimes World" title="NYTimes World" type="rss" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" />
+</outline>
+
+</body></opml>

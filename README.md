@@ -44,6 +44,7 @@ eza --all --tree --icons --level=2 -I '.git|.mypy_cache'
 ├── Brewfile
 ├── Brewfile.lock.json
 ├── DumpBrewfile
+├── newsfeed.opml
 └── README.md
 ```
 
@@ -97,7 +98,6 @@ fzf
 ghostscript
 git
 git-filter-repo
-git-graph
 gitui
 go
 hashicorp/tap/vault
@@ -120,6 +120,7 @@ rich-cli
 ripgrep
 rlwrap
 rust
+serie
 sevenzip
 skhd
 slides
@@ -133,7 +134,6 @@ tree
 viu
 w3m
 yazi
-yosys
 zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting
@@ -243,5 +243,7 @@ npm list -g
 ```
 
 ```output
-└── @google/gemini-cli@0.16.0
+/Users/haowen_jiang/.npm-global/lib
+├── @google/gemini-cli@0.16.0
+└─ newsroom-cli@0.1.11
 ```

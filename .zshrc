@@ -267,4 +267,5 @@ eval "$(zoxide init zsh)"
 uvx pyfiglet --font=ansi_shadow --color=blue: "watsonx"
 # Show the weather in Taipei, defined in .oh-my-zsh/custom/aliases.zsh
 wt
-
+# Show 10 pieces of news from ItHome
+newsroom ithome

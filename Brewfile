@@ -59,8 +59,10 @@ brew "git"
 brew "gitui"
 ## Quickly rewrite git repository history
 brew "git-filter-repo"
+## Rich git commit graph in your terminal
+brew "serie"
 ## Command-line tool to show clear git graphs arranged for your branching model
-brew "git-graph"
+# brew "git-graph"
 ## simple terminal ui for git commands
 # brew "lazygit"
 
@@ -158,7 +160,7 @@ brew "taskwarrior-tui"
 ## Simple hotkey daemon for macOS
 brew "skhd"
 ## Framework for Verilog RTL synthesis
-brew "yosys"
+# brew "yosys"
 ## Configurable static site generator
 brew "hugo"
 ## Next-gen compiler infrastructure
