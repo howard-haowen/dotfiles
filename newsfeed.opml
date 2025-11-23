@@ -1,20 +1,32 @@
-<?xml version='1.0' encoding='utf-8'?>
-<opml version="1.0"><head><title>Haowen's News Feeds</title></head><body>
-
-<outline text="Chinese News" title="Chinese News">
-<outline text="中央社" title="中央社" type="rss" xmlUrl="https://feedx.net/rss/cna.xml" htmlUrl="http://m.cna.com.tw/list/firstnews"/>
-<outline text="BBC 中文 (繁體)" title="BBC 中文 (繁體)" type="rss" xmlUrl="https://www.bbc.com/zhongwen/trad/index.xml" />
-</outline>
-
-<outline text="Tech News" title="Tech News">
-<outline text="TechCrunch" title="TechCrunch" type="rss" xmlUrl="http://feeds.feedburner.com/TechCrunch" />
-<outline text="The Verge" title="The Verge" type="rss" xmlUrl="https://www.theverge.com/rss/index.xml" />
-<outline text="Mashable" title="Mashable" type="rss" xmlUrl="http://feeds.mashable.com/Mashable" /></outline>
-
-<outline text="Global News" title="Global News">
-<outline text="BBC World" title="BBC World" type="rss" xmlUrl="http://feeds.bbci.co.uk/news/world/rss.xml" />
-<outline text="CNN Top Stories" title="CNN Top Stories" type="rss" xmlUrl="http://rss.cnn.com/rss/edition.rss" />
-<outline text="NYTimes World" title="NYTimes World" type="rss" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" />
-</outline>
-
-</body></opml>
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>Goread feeds</title>
+	</head>
+	<body>
+		<outline text="News from around the world" title="News">
+			<outline text="中央社" type="rss" xmlUrl="https://feedx.net/rss/cna.xml" title="中央社"></outline>
+			<outline text="BBC中文" type="rss" xmlUrl="https://www.bbc.com/zhongwen/trad/index.xml" title="BBC中文"></outline>
+			<outline text="商周" type="rss" xmlUrl="https://cmsapi.businessweekly.com.tw/?CategoryId=efd99109-9e15-422e-97f0-078b21322450&amp;TemplateId=8E19CF43-50E5-4093-B72D-70A912962D55" title="商周"></outline>
+			<outline text="CNN Top Stories" type="rss" xmlUrl="http://rss.cnn.com/rss/edition.rss" title="CNN Top Stories"></outline>
+		</outline>
+		<outline text="Tech news" title="Tech">
+			<outline text="AI2People" type="rss" xmlUrl="https://ai2people.com/feed/" title="AI2People"></outline>
+			<outline text="Big Data" type="rss" xmlUrl="https://bigdataanalyticsnews.com/category/artificial-intelligence/feed/" title="Big Data"></outline>
+			<outline text="GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" title="GitHub Blog"></outline>
+			<outline text="Haowen Jiang" type="rss" xmlUrl="https://howard-haowen.github.io/index.xml" title="Haowen Jiang"></outline>
+			<outline text="InfoQ" type="rss" xmlUrl="http://feed.infoq.com/news/" title="InfoQ"></outline>
+			<outline text="It’s FOSS" type="rss" xmlUrl="https://itsfoss.com/rss/" title="It’s FOSS"></outline>
+			<outline text="KDnuggets" type="rss" xmlUrl="https://feeds.feedburner.com/kdnuggets-data-mining-analytics" title="KDnuggets"></outline>
+			<outline text="NetNewsWire" type="rss" xmlUrl="https://netnewswire.blog/feed.json" title="NetNewsWire"></outline>
+			<outline text="Python for Engineers" type="rss" xmlUrl="https://www.pythonforengineers.in/feeds/posts/default?alt=rss" title="Python for Engineers"></outline>
+			<outline text="Slashdot" type="rss" xmlUrl="http://rss.slashdot.org/Slashdot/slashdotLinux" title="Slashdot"></outline>
+			<outline text="TechCrunch " type="rss" xmlUrl="http://feeds.feedburner.com/TechCrunch" title="TechCrunch "></outline>
+			<outline text="Tecmint" type="rss" xmlUrl="https://www.tecmint.com/feed/" title="Tecmint"></outline>
+			<outline text="Unixmen" type="rss" xmlUrl="https://www.unixmen.com/feed/" title="Unixmen"></outline>
+		</outline>
+		<outline text="Other feeds" title="Others">
+			<outline text="讀冊本週暢銷" type="rss" xmlUrl="https://ebook.taaze.tw/do/rssfeed/item1_5.xml" title="讀冊本週暢銷"></outline>
+		</outline>
+	</body>
+</opml>
