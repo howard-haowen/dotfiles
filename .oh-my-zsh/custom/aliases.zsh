@@ -27,5 +27,6 @@ alias to='taskopen'
 alias qr='uvx --from qrcode qr'
 alias hq='harlequin'
 alias orc='orchestrate'
+
 # Use fzf with the preview_file function, defined in custom/preview.zsh
 # alias ff="fzf --border --preview 'preview_file {}'"

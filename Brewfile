@@ -105,6 +105,10 @@ brew "ghostscript"
 # ╭──────────────────────────────────────────────────────────╮
 # │ Other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
+## RSS/Atom feeds in the terminal
+brew "goread"
+## Pretty feed reader (ATOM/RSS) that stores articles in Markdown files
+# brew "bulletty"
 ## Easily create and use cli based on bash script
 brew "argc"
 ## Clone of cat(1) with syntax highlighting and Git integration

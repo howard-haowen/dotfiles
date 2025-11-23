@@ -269,3 +269,4 @@ uvx pyfiglet --font=ansi_shadow --color=blue: "watsonx"
 wt
 # Show 10 pieces of news from ItHome
 newsroom ithome
+autoload -U compinit; compinit
