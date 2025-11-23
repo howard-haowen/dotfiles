@@ -106,7 +106,7 @@ brew "ghostscript"
 # │ Other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
 ## RSS/Atom feeds in the terminal
-brew "goread"
+# brew "goread"
 ## Pretty feed reader (ATOM/RSS) that stores articles in Markdown files
 # brew "bulletty"
 ## Easily create and use cli based on bash script

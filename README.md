@@ -247,3 +247,16 @@ npm list -g
 ├── @google/gemini-cli@0.16.0
 └─ newsroom-cli@0.1.11
 ```
+
+## Packages installed via `cargo`
+
+- List packages installed via `cargo`
+
+```sh
+cargo install --list
+```
+
+```output
+feedr v0.3.0:
+    feedr
+```

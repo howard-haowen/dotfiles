@@ -235,6 +235,8 @@ export PATH="$(npm prefix -g)/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# cargo binaries
+export PATH="$HOME/.cargo/bin:$PATH"
 # Link psql binary to PATH
 export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 # Set the config path for taskwarrior
@@ -269,4 +271,3 @@ uvx pyfiglet --font=ansi_shadow --color=blue: "watsonx"
 wt
 # Show 10 pieces of news from ItHome
 newsroom ithome
-autoload -U compinit; compinit
