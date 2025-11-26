@@ -1,5 +1,5 @@
 # Python alias
-alias python="/opt/homebrew/opt/python@3.13/bin/python3.13"
+alias python="$(which python3)"
 
 # === List files
 alias ll='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first --sort=name --no-user -la --git -h --tree --level=2'

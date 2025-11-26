@@ -92,14 +92,37 @@ function pdf2png() {
   local output_prefix="${input_pdf:r}"
   magick -density 300 "$input_pdf" "${output_prefix}.png"
 }
-
+# ╭──────────────────────────────────────────────────────────╮
+# │ RSS feeds                                                │
+# ╰──────────────────────────────────────────────────────────╯
+# Read newsfeed.opml with the CLI newsroom
 function rss() {
   local opml_file="$HOME/dotfiles/newsfeed.opml"
+
   if [[ -f "$opml_file" ]]; then
-    newsroom -o "$opml_file" 
+    newsroom -o "$opml_file"
   else
     echo "❌ OPML file not found at $opml_file"
+    return 1
   fi
+}
+
+# List feeds in newsfeed.opml with the CLI yq
+function list_feeds() {
+  local opml_file="$HOME/dotfiles/newsfeed.opml"
+
+  if [[ -z "$opml_file" ]]; then
+    echo "Usage: opml_texts <opml_file>"
+    return 1
+  fi
+
+  if [[ ! -f "$opml_file" ]]; then
+    echo "Error: File '$opml_file' not found."
+    return 1
+  fi
+
+  # Extract all 'text' values from outline elements with type attribute
+  yq -p=xml -o=yaml '.opml.body.outline[].outline[] | select(.["+@type"] != null) | .["+@text"]' $opml_file
 }
 # DOES NOT WORK
 # Preview a file depending on its extension
