@@ -1,0 +1,190 @@
+wtf:
+  colors:
+    border:
+      focusable: deepskyblue
+      focused: orange
+      normal: gray
+  grid:
+    columns: [32, 32, 32, 32, 90]
+    rows: [10, 10, 10, 4, 4, 90]
+  refreshInterval: 1s
+  mods:
+    digitalclock:
+      withDatePrefix: false
+      color: navy
+      enabled: true
+      font: bigfont
+      hourFormat: 12
+      position:
+        top: 0
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 1s
+      title: "Clock"
+    prettyweather:
+      enabled: true
+      city: Taipei
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 24h
+      # u for Fahrenheit, m for Celsius.
+      unit: m
+      # 0 for only current weather
+      view: 0
+      language: "en"
+      title: "Weather"
+    ipinfo:
+      colors:
+        name: green
+        value: white
+      enabled: true
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 24h
+    resourceusage:
+      cpuCombined: true
+      graphIcon: "🐝"
+      enabled: true
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 1
+      refreshInterval: 1s
+      showCPU: true
+      showMem: true
+      showSwp: true
+    feedreader:
+      enabled: true
+      feeds:
+        # iThome
+        - https://www.ithome.com.tw/rss
+        # 中央社
+        # - https://feedx.net/rss/cna.xml
+        # 中文BBC
+        - https://www.bbc.com/zhongwen/trad/index.xml
+      feedLimit: 10
+      position:
+        top: 1
+        left: 0
+        height: 2
+        width: 4
+      refreshInterval: 1h
+    git:
+      commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
+      commitCount: 5
+      dateFormat: "%H:%M %d %b %y"
+      lastFolderTitle: true
+      enabled: true
+      position:
+        top: 3
+        left: 0
+        height: 2
+        width: 2
+      refreshInterval: 8s
+      repositories:
+        - "/Users/haowen_jiang/dotfiles"
+        - "/Users/haowen_jiang/howard-haowen.github.io"
+    subreddit:
+      enabled: true
+      numberOfPosts: 10
+      position:
+        top: 3
+        left: 2
+        height: 2
+        width: 2
+      refreshInterval: 15m
+      sortOrder: top
+      subreddit: "ArtificialInteligence"
+      topTimePeriod: month
+    # Disabled modules
+    clocks:
+      colors:
+        rows:
+          even: lightblue
+          odd: white
+      enabled: false
+      locations:
+        # From https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+        Taipei: "Asia/Taipei"
+        "New York": "America/New_York"
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 1m
+      sort: "natural"
+      title: "Clocks"
+    uptime:
+      args: []
+      cmd: "uptime"
+      enabled: false
+      position:
+        top: 3
+        left: 1
+        height: 1
+        width: 2
+      refreshInterval: 30
+      type: cmdrunner
+    power:
+      enabled: false
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 1
+      refreshInterval: 24h
+      title: "⚡️"
+    # Not working
+    yfinance:
+      enabled: false
+      title: "Stocks"
+      sort: true
+      refreshInterval: 1m
+      symbols:
+        - IBM
+      position:
+        top: 2
+        left: 0
+        height: 1
+        width: 3
+    logger:
+      enabled: false
+      colors:
+        label: "green"
+        text: "white"
+      position:
+        top: 2
+        left: 0
+        height: 1
+        width: 2
+      refreshInterval: 15
+    hackernews:
+      enabled: false
+      numberOfStories: 10
+      position:
+        top: 3
+        left: 0
+        height: 2
+        width: 3
+      # One of these: new, top, job, ask
+      storyType: top
+      refreshInterval: 1h
+    cmdrunner:
+      args: ["-l", "1", "-o", "mem"]
+      cmd: "top"
+      enabled: false
+      position:
+        top: 1
+        left: 3
+        height: 2
+        width: 1
+      refreshInterval: 30s

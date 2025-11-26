@@ -268,6 +268,6 @@ eval "$(zoxide init zsh)"
 # Print a greeting message with `pyfiglet`
 uvx pyfiglet --font=ansi_shadow --color=blue: "watsonx"
 # Show the weather in Taipei, defined in .oh-my-zsh/custom/aliases.zsh
-wt
+# wt
 # Show 10 pieces of news from ItHome
-newsroom ithome
+# newsroom ithome

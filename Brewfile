@@ -67,6 +67,20 @@ brew "serie"
 # brew "lazygit"
 
 # ╭──────────────────────────────────────────────────────────╮
+# │ File processors                                          │
+# ╰──────────────────────────────────────────────────────────╯
+## lightweight and flexible command-line json processor
+brew "jq" 
+## Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq" 
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ Dashboard                                                │
+# ╰──────────────────────────────────────────────────────────╯
+## Personal information dashboard for your terminal
+brew "wtfutil"
+
+# ╭──────────────────────────────────────────────────────────╮
 # │ File explorers                                           │
 # ╰──────────────────────────────────────────────────────────╯
 ## Hackable, minimal, fast TUI file explorer
@@ -85,8 +99,6 @@ brew "ffmpegthumbnailer"
 brew "ffmpeg"
 ## 7-Zip is a file archiver with a high compression ratio 
 brew "sevenzip" 
-## lightweight and flexible command-line json processor
-brew "jq" 
 ## PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler" 
 ## Simple, fast and user-friendly alternative to find 
@@ -105,6 +117,8 @@ brew "ghostscript"
 # ╭──────────────────────────────────────────────────────────╮
 # │ Other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
+## RSS reader for the terminal
+# brew "nom"
 ## RSS/Atom feeds in the terminal
 # brew "goread"
 ## Pretty feed reader (ATOM/RSS) that stores articles in Markdown files
