@@ -1,0 +1,70 @@
+categories:
+    - name: All Feeds
+      desc: All feeds
+      subscriptions:
+        - name: BBC
+          desc: News from the BBC
+          url: http://feeds.bbci.co.uk/news/rss.xml
+    - name: News
+      desc: News from around the world
+      subscriptions:
+        - name: 中央社
+          desc: ""
+          url: https://feedx.net/rss/cna.xml
+        - name: BBC中文
+          desc: ""
+          url: https://www.bbc.com/zhongwen/trad/index.xml
+        - name: 商周
+          desc: ""
+          url: https://cmsapi.businessweekly.com.tw/?CategoryId=efd99109-9e15-422e-97f0-078b21322450&TemplateId=8E19CF43-50E5-4093-B72D-70A912962D55
+        - name: CNN Top Stories
+          desc: ""
+          url: http://rss.cnn.com/rss/edition.rss
+    - name: Tech
+      desc: Tech news
+      subscriptions:
+        - name: AI2People
+          desc: ""
+          url: https://ai2people.com/feed/
+        - name: Big Data
+          desc: ""
+          url: https://bigdataanalyticsnews.com/category/artificial-intelligence/feed/
+        - name: GitHub Blog
+          desc: ""
+          url: https://github.blog/feed/
+        - name: Haowen Jiang
+          desc: ""
+          url: https://howard-haowen.github.io/index.xml
+        - name: InfoQ
+          desc: ""
+          url: http://feed.infoq.com/news/
+        - name: It’s FOSS
+          desc: ""
+          url: https://itsfoss.com/rss/
+        - name: KDnuggets
+          desc: ""
+          url: https://feeds.feedburner.com/kdnuggets-data-mining-analytics
+        - name: NetNewsWire
+          desc: ""
+          url: https://netnewswire.blog/feed.json
+        - name: Python for Engineers
+          desc: ""
+          url: https://www.pythonforengineers.in/feeds/posts/default?alt=rss
+        - name: Slashdot
+          desc: ""
+          url: http://rss.slashdot.org/Slashdot/slashdotLinux
+        - name: 'TechCrunch '
+          desc: ""
+          url: http://feeds.feedburner.com/TechCrunch
+        - name: Tecmint
+          desc: ""
+          url: https://www.tecmint.com/feed/
+        - name: Unixmen
+          desc: ""
+          url: https://www.unixmen.com/feed/
+    - name: Others
+      desc: Other feeds
+      subscriptions:
+        - name: 讀冊本週暢銷
+          desc: ""
+          url: https://ebook.taaze.tw/do/rssfeed/item1_5.xml

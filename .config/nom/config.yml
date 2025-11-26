@@ -1,0 +1,53 @@
+configpath: .config/nom/config.yml
+version: ""
+feeds:
+  - url: https://feedx.net/rss/cna.xml
+    name: 中央社
+  - url: https://www.bbc.com/zhongwen/trad/index.xml
+    name: BBC中文
+  - url: https://cmsapi.businessweekly.com.tw/?CategoryId=efd99109-9e15-422e-97f0-078b21322450&TemplateId=8E19CF43-50E5-4093-B72D-70A912962D55
+    name: 商周
+  - url: http://rss.cnn.com/rss/edition.rss
+    name: CNN Top Stories
+  - url: https://www.ithome.com.tw/rss
+    name: iThome
+  - url: https://ai2people.com/feed/
+    name: AI2People
+  - url: https://bigdataanalyticsnews.com/category/artificial-intelligence/feed/
+    name: Big Data
+  - url: https://github.blog/feed/
+    name: GitHub Blog
+  - url: https://howard-haowen.github.io/index.xml
+    name: Haowen Jiang
+  - url: http://feed.infoq.com/news/
+    name: InfoQ
+  - url: https://itsfoss.com/rss/
+    name: It’s FOSS
+  - url: https://feeds.feedburner.com/kdnuggets-data-mining-analytics
+    name: KDnuggets
+  - url: https://netnewswire.blog/feed.json
+    name: NetNewsWire
+  - url: https://www.pythonforengineers.in/feeds/posts/default?alt=rss
+    name: Python for Engineers
+  - url: http://rss.slashdot.org/Slashdot/slashdotLinux
+    name: Slashdot
+  - url: http://feeds.feedburner.com/TechCrunch
+    name: "TechCrunch "
+  - url: https://www.tecmint.com/feed/
+    name: Tecmint
+  - url: https://www.unixmen.com/feed/
+    name: Unixmen
+  - url: https://ebook.taaze.tw/do/rssfeed/item1_5.xml
+    name: 讀冊本週暢銷
+database: nom.db
+ordering: asc
+filtering:
+  defaultIncludeFeedName: false
+theme:
+  glamour: light
+  titleColorFg: "231"
+  filterColor: "62"
+  selectedItemColor: "170"
+  readIcon: ✓
+http:
+  mintls: TLS 1.2
