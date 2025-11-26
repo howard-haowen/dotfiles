@@ -7,7 +7,7 @@ wtf:
   grid:
     columns: [32, 32, 32, 32, 90]
     rows: [10, 10, 10, 4, 4, 90]
-  refreshInterval: 1s
+  # refreshInterval: 1s
   mods:
     digitalclock:
       withDatePrefix: false
@@ -75,7 +75,7 @@ wtf:
         top: 1
         left: 0
         height: 2
-        width: 4
+        width: 3
       refreshInterval: 1h
     git:
       commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
@@ -84,11 +84,11 @@ wtf:
       lastFolderTitle: true
       enabled: true
       position:
-        top: 3
-        left: 0
+        top: 1
+        left: 3
         height: 2
-        width: 2
-      refreshInterval: 8s
+        width: 1
+      refreshInterval: 1h
       repositories:
         - "/Users/haowen_jiang/dotfiles"
         - "/Users/haowen_jiang/howard-haowen.github.io"
@@ -97,9 +97,9 @@ wtf:
       numberOfPosts: 10
       position:
         top: 3
-        left: 2
+        left: 0
         height: 2
-        width: 2
+        width: 4
       refreshInterval: 15m
       sortOrder: top
       subreddit: "ArtificialInteligence"
