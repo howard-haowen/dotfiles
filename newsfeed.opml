@@ -11,6 +11,7 @@
 			<outline text="CNN Top Stories" type="rss" xmlUrl="http://rss.cnn.com/rss/edition.rss" title="CNN Top Stories"></outline>
 		</outline>
 		<outline text="Tech news" title="Tech">
+			<outline text="iThome" type="rss" xmlUrl="https://www.ithome.com.tw/rss" title="iThome"></outline>
 			<outline text="AI2People" type="rss" xmlUrl="https://ai2people.com/feed/" title="AI2People"></outline>
 			<outline text="Big Data" type="rss" xmlUrl="https://bigdataanalyticsnews.com/category/artificial-intelligence/feed/" title="Big Data"></outline>
 			<outline text="GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" title="GitHub Blog"></outline>
