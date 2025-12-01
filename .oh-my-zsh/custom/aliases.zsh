@@ -30,6 +30,6 @@ alias orc='orchestrate'
 alias nom='nom -c ~/dotfiles/.config/nom/config.'
 alias goread='goread -c ~/dotfiles/.config/goread/colorscheme.json -s ~/dotfiles/.config/goread/goread.yml -r ~/dotfiles/.config/goread/urls.yml'
 alias da='wtfutil'
-alias ggraph='serie'
+alias gg='serie'
 # Use fzf with the preview_file function, defined in custom/preview.zsh
 # alias ff="fzf --border --preview 'preview_file {}'"
