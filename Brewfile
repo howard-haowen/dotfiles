@@ -87,12 +87,12 @@ brew "wtfutil"
 # brew "xplr"
 ## file browser
 # brew "ranger"
-
-# ╭──────────────────────────────────────────────────────────╮
-# │ yazi and its dependencies                                │
-# ╰──────────────────────────────────────────────────────────╯
 ## yazi file manager 
 brew "yazi" 
+
+# ╭──────────────────────────────────────────────────────────╮
+# │ yazi dependencies                                │
+# ╰──────────────────────────────────────────────────────────╯
 ## Create thumbnails for your video files
 brew "ffmpegthumbnailer" 
 ## Play, record, convert, and stream audio and video
@@ -183,6 +183,8 @@ brew "skhd"
 brew "hugo"
 ## Next-gen compiler infrastructure
 brew "llvm"
+## Send push notifications to your phone or desktop via PUT/POST
+brew "ntfy"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
 ## HashiCorp Vault CLI
@@ -219,3 +221,6 @@ cask "font-hack-nerd-font"
 cask "font-symbols-only-nerd-font"
 ## IBM Plex Sans
 cask "font-ibm-plex-sans"
+## Kubernetes and container management on the desktop
+cask "rancher"
+

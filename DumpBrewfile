@@ -60,6 +60,8 @@ brew "nb"
 brew "neovim"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Send push notifications to your phone or desktop via PUT/POST
+brew "ntfy"
 # AI coding agent, built for the terminal
 brew "opencode"
 # Development kit for the Java programming language
@@ -100,8 +102,12 @@ brew "tldr"
 brew "tree"
 # Simple terminal image viewer written in Rust
 brew "viu"
+# Personal information dashboard for your terminal
+brew "wtfutil"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -119,6 +125,8 @@ cask "font-ibm-plex-sans", args: { appdir: "/Applications" }
 cask "font-symbols-only-nerd-font", args: { appdir: "/Applications" }
 # Get up and running with large language models locally
 cask "ollama-app", args: { appdir: "/Applications" }
+# Kubernetes and container management on the desktop
+cask "rancher", args: { appdir: "/Applications" }
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm", args: { appdir: "/Applications" }
 vscode "charliermarsh.ruff"
@@ -135,6 +143,7 @@ vscode "frhtylcn.pythonsnippets"
 vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
+vscode "google.colab"
 vscode "holooooo.markdown-kanban"
 vscode "ibm.zopeneditor"
 vscode "janisdd.vscode-edit-csv"

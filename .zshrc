@@ -271,3 +271,7 @@ uvx pyfiglet --font=ansi_shadow --color=blue: "watsonx"
 # wt
 # Show 10 pieces of news from ItHome
 # newsroom ithome
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/haowen_jiang/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
