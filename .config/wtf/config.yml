@@ -48,19 +48,16 @@ wtf:
         height: 1
         width: 1
       refreshInterval: 24h
-    resourceusage:
-      cpuCombined: true
-      graphIcon: "🐝"
-      enabled: true
+    cmdrunner:
+      args: ["-l", "1", "-o", "mem"]
+      cmd: "top"
+      enabled: false
       position:
-        top: 0
+        top: 1
         left: 3
-        height: 1
+        height: 2
         width: 1
-      refreshInterval: 1s
-      showCPU: true
-      showMem: true
-      showSwp: true
+      refreshInterval: 30s
     feedreader:
       enabled: true
       feeds:
@@ -102,7 +99,7 @@ wtf:
         width: 4
       refreshInterval: 15m
       sortOrder: top
-      subreddit: "ArtificialInteligence"
+      subreddit: "commandline"
       topTimePeriod: month
     # Disabled modules
     clocks:
@@ -179,12 +176,26 @@ wtf:
       storyType: top
       refreshInterval: 1h
     cmdrunner:
-      args: ["-l", "1", "-o", "mem"]
-      cmd: "top"
+      title: "Tasks"
+      args: ["l", "progress"]
+      cmd: "tl"
+      enabled: true
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 1
+      refreshInterval: 1d
+    resourceusage:
+      cpuCombined: true
+      graphIcon: "🐝"
       enabled: false
       position:
-        top: 1
+        top: 0
         left: 3
-        height: 2
+        height: 1
         width: 1
-      refreshInterval: 30s
+      refreshInterval: 1s
+      showCPU: true
+      showMem: true
+      showSwp: true
