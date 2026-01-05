@@ -21,8 +21,8 @@ alias cheat='cht.sh'
 alias gitui='gitui -t catppuccin-mocha.ron'
 alias img2text='ascii-image-converter --color'
 # taskwarrior and taskopen
-alias tw='task'
-alias to='taskopen'
+# alias tw='task'
+# alias to='taskopen'
 # Other shortcuts
 alias qr='uvx --from qrcode qr'
 alias hq='harlequin'
@@ -31,5 +31,6 @@ alias nom='nom -c ~/dotfiles/.config/nom/config.'
 alias goread='goread -c ~/dotfiles/.config/goread/colorscheme.json -s ~/dotfiles/.config/goread/goread.yml -r ~/dotfiles/.config/goread/urls.yml'
 alias da='wtfutil'
 alias gg='serie'
+alias mt='matcha -c ~/dotfiles/.config/matcha/config.yaml'
 # Use fzf with the preview_file function, defined in custom/preview.zsh
 # alias ff="fzf --border --preview 'preview_file {}'"
