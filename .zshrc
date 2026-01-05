@@ -16,17 +16,6 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475a \
 --multi"
 
-# ╭──────────────────────────────────────────────────────────╮
-# │ For the Yazi text editor                                 │
-# ╰──────────────────────────────────────────────────────────╯
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ To make the completion script for nb available to zsh    │
@@ -53,10 +42,8 @@ plugins=(
   git
   zoxide
   starship
-  pipenv
   eza
   uv
-  python
   fzf
   zsh-interactive-cd
   zsh-autosuggestions 
@@ -237,8 +224,6 @@ export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 # cargo binaries
 export PATH="$HOME/.cargo/bin:$PATH"
-# Link psql binary to PATH
-export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 # Set the config path for taskwarrior
 export TASKRC=~/.config/task/taskrc
 # Call the function to clean up PATH
@@ -275,3 +260,11 @@ uvx pyfiglet --font=ansi_shadow --color=blue: "watsonx"
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/haowen_jiang/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+## Path to socket_vmnet, run "brew list socket_vmnet" to find out
+export PATH="/opt/homebrew/Cellar/socket_vmnet/1.2.2/bin:$PATH"
+
+# Added by mq-tui installer
+export PATH="$PATH:/Users/haowen_jiang/.mq/bin"
+export LUA="/opt/homebrew/bin/luajit"      # helps tools that honor $LUA
+export LUA_VERSION="5.1"                    # some health checks look at this
+export BROWSER="w3m"
