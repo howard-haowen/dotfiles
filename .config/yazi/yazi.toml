@@ -121,6 +121,7 @@ preloaders = [
 
 prepend_previewers = [
 	{ name = "*/", run = "eza-preview"}, # for directories
+  { name = "*.py", run = "rich-preview"}, # for py files
   { name = "*.csv", run = "rich-preview"}, # for csv files
 	{ name = "*.tsv", run = "rich-preview" }, # for tsv (.tsv) files
   { name = "*.md", run = "rich-preview" }, # for markdown (.md) files
@@ -131,6 +132,7 @@ prepend_previewers = [
 	{ name = "*.yml", run = "rich-preview"}, # for yml (.yml) files
 	{ name = "*.html", run = "rich-preview"}, # for html (.html) files
 	{ name = "*.xml", run = "rich-preview"}, # for xml (.xml) files
+	{ name = "*.opml", run = "rich-preview"}, # for opml (.opml) files
 	{ name = "*.txt", run = "rich-preview"}, # for text (.txt) files
   { name = "*.env", run = "rich-preview"}, # for env files 
   { name = ".env", run = "rich-preview"}, # for env files 
