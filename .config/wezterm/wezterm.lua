@@ -8,12 +8,26 @@ config.automatically_reload_config = true
 -- ╭─────────────────────────────────────────────────────────╮
 -- │ Font Configuration                                      │
 -- ╰─────────────────────────────────────────────────────────╯
-config.font_size = 16.0
--- config.font = wezterm.font_with_fallback({
--- 	"IBMPlexSans",
--- 	"Hack Nerd Font Mono",
--- 	"JetBrains Mono",
--- })
+config.font_size = 18.0
+config.font = wezterm.font_with_fallback({
+	-- /Users/haowen_jiang/Library/Fonts/IBMPlexSansTC-Regular.otf, CoreText
+	-- "IBM Plex Sans TC",
+	-- /Users/haowen_jiang/Library/Fonts/IBMPlexMono-Regular.otf, CoreText
+	"IBM Plex Mono",
+
+	-- /Users/haowen_jiang/Library/Fonts/HackNerdFontMono-Regular.ttf, CoreText
+	"Hack Nerd Font Mono",
+
+	-- <built-in>, BuiltIn
+	"Symbols Nerd Font Mono",
+
+	-- <built-in>, BuiltIn
+	"JetBrains Mono",
+
+	-- <built-in>, BuiltIn
+	-- Assumed to have Emoji Presentation
+	"Noto Color Emoji",
+})
 --
 -- ╭─────────────────────────────────────────────────────────╮
 -- │ Appearance Configuration                                │
