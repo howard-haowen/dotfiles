@@ -1,7 +1,8 @@
 # ╭──────────────────────────────────────────────────────────╮
 # │ brew bundle                                              │
 # ╰──────────────────────────────────────────────────────────╯
-tap "homebrew/bundle" || true 
+# Remove this because now "bundle" is part of the core "brew"
+# tap "homebrew/bundle" || true 
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Core taps                                                │
@@ -9,6 +10,8 @@ tap "homebrew/bundle" || true
 tap "TheZoraiz/ascii-image-converter"
 tap "koekeishiya/formulae"
 tap "hashicorp/tap"
+# Required for the cask ngrok
+tap "ngrok/ngrok"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Text editor                                              │
@@ -33,6 +36,8 @@ brew "pipx"
 brew "lua" #lua
 ## Package manager for the Lua programming language
 brew "luarocks" 
+## Just-In-Time Compiler (JIT) for the Lua programming language
+brew "luajit"
 ## Platform built on V8 to build network applications
 brew "node" #node.js
 ## Development kit for the Java programming language
@@ -71,8 +76,10 @@ brew "serie"
 # ╰──────────────────────────────────────────────────────────╯
 ## lightweight and flexible command-line json processor
 brew "jq" 
-## Process YAML, JSON, XML, CSV and properties documents from the CLI
+### `brew bundle`# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq" 
+## jq-like command-line tool for markdown processing
+brew "harehare/tap/mq"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dashboard                                                │
@@ -115,6 +122,20 @@ brew "imagemagick"
 brew "ghostscript"
 
 # ╭──────────────────────────────────────────────────────────╮
+# │ Notes, bookmarks, and tasks                              │
+# ╰──────────────────────────────────────────────────────────╯
+## Command-line and local web note-taking, bookmarking, and archiving
+brew "nb"
+## Tasks, boards & notes for the command-line habitat
+brew "taskline"
+## Feature-rich console based todo list manager, also known as taskwarrior
+# brew "task"
+## Tool for taking notes and open urls with taskwarrior
+# brew "taskopen"
+## Terminal user interface for taskwarrior
+# brew "taskwarrior-tui"
+
+# ╭──────────────────────────────────────────────────────────╮
 # │ Other tools                                              │
 # ╰──────────────────────────────────────────────────────────╯
 ## RSS reader for the terminal
@@ -123,6 +144,10 @@ brew "ghostscript"
 # brew "goread"
 ## Pretty feed reader (ATOM/RSS) that stores articles in Markdown files
 # brew "bulletty"
+## RSS/Atom feed reader for text terminals
+# brew "newsboat"
+## Daily digest generator for your RSS feeds
+brew "matcha"
 ## Easily create and use cli based on bash script
 brew "argc"
 ## Clone of cat(1) with syntax highlighting and Git integration
@@ -142,7 +167,9 @@ brew "stow"
 ## Terminal image and video viewer
 # brew "timg"
 ## simplified and community-driven man pages
-brew "tldr"
+# brew "tldr"
+## Very fast implementation of tldr in Rust
+brew "tealdeer"
 ## display directories as trees (with optional color/html output)
 brew "tree"
 ## pluggable terminal workspace, with terminal multiplexer as the base feature
@@ -159,7 +186,7 @@ brew "zsh-syntax-highlighting"
 brew "ascii-image-converter"
 ## Terminal based presentation tool
 brew "slides"
-## Terminal slideshow tool, the export2pdf function doesn't work!
+## Terminal slideshow tool, doesn't work!
 # brew "presenterm"
 ## Readline wrapper: adds readline support to tools that lack it
 brew "rlwrap"
@@ -167,14 +194,6 @@ brew "rlwrap"
 brew "w3m"
 ## Modern diagram scripting language that turns text to diagrams
 brew "d2"
-## Command-line and local web note-taking, bookmarking, and archiving
-brew "nb"
-## Feature-rich console based todo list manager, also known as taskwarrior
-brew "task"
-## Tool for taking notes and open urls with taskwarrior
-brew "taskopen"
-## Terminal user interface for taskwarrior
-brew "taskwarrior-tui"
 ## Simple hotkey daemon for macOS
 brew "skhd"
 ## Framework for Verilog RTL synthesis
@@ -185,12 +204,12 @@ brew "hugo"
 brew "llvm"
 ## Send push notifications to your phone or desktop via PUT/POST
 brew "ntfy"
+## Daemon to provide vmnet.framework support for rootless QEMU
+brew "socket_vmnet"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
 ## HashiCorp Vault CLI
 brew "hashicorp/tap/vault"
-## Object-relational database system
-brew "postgresql@13"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dependencies of WeasyPrint, which converts HTML to PDF   │
@@ -215,12 +234,21 @@ cask_args appdir: '/Applications'
 cask "wezterm"
 ## Get up and running with large language models locally
 cask "ollama-app"
-## Menlo for Powerline 
-cask "font-hack-nerd-font"
-## Symbols Nerd Font (Symbols Only)
-cask "font-symbols-only-nerd-font"
-## IBM Plex Sans
-cask "font-ibm-plex-sans"
 ## Kubernetes and container management on the desktop
 cask "rancher"
-
+## Free and open-source RSS reader
+cask "netnewswire"
+## Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# ╭──────────────────────────────────────────────────────────╮
+# │ Fonts                                                    │
+# ╰──────────────────────────────────────────────────────────╯
+# IBM Plex series
+cask "font-ibm-plex-serif"
+cask "font-ibm-plex-sans"
+cask "font-ibm-plex-sans-tc"
+cask "font-ibm-plex-sans-condensed"
+cask "font-ibm-plex-mono"
+cask "font-ibm-plex-math"
+## Menlo for Powerline 
+cask "font-hack-nerd-font"

@@ -1,6 +1,7 @@
+tap "harehare/tap"
 tap "hashicorp/tap"
-tap "homebrew/bundle"
 tap "koekeishiya/formulae"
+tap "ngrok/ngrok"
 tap "thezoraiz/ascii-image-converter"
 # All-in-one AI-Powered CLI Chat & Copilot
 brew "aichat"
@@ -50,6 +51,8 @@ brew "imagemagick"
 brew "jq"
 # Package manager for the Lua programming language
 brew "luarocks"
+# Daily digest generator for your RSS feeds
+brew "matcha"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Pager/text based browser
@@ -72,8 +75,6 @@ brew "pipenv"
 brew "pipx"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
-# Object-relational database system
-brew "postgresql@13"
 # Command-line toolbox for fancy output in the terminal
 brew "rich-cli"
 # Readline wrapper: adds readline support to tools that lack it
@@ -86,18 +87,16 @@ brew "serie"
 brew "sevenzip"
 # Terminal based presentation tool
 brew "slides"
+# Daemon to provide vmnet.framework support for rootless QEMU
+brew "socket_vmnet"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# Feature-rich console based todo list manager
-brew "task"
-# Tool for taking notes and open urls with taskwarrior
-brew "taskopen"
-# Terminal user interface for taskwarrior
-brew "taskwarrior-tui"
-# Simplified and community-driven man pages
-brew "tldr"
+# Tasks, boards & notes for the command-line habitat
+brew "taskline"
+# Very fast implementation of tldr in Rust
+brew "tealdeer"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Simple terminal image viewer written in Rust
@@ -114,6 +113,8 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# A jq-like command-line tool for Markdown processing
+brew "harehare/tap/mq"
 # Vault
 brew "hashicorp/tap/vault"
 # Simple hotkey-daemon for macOS.
@@ -121,8 +122,16 @@ brew "koekeishiya/formulae/skhd"
 # Convert images into ascii art
 brew "thezoraiz/ascii-image-converter/ascii-image-converter"
 cask "font-hack-nerd-font", args: { appdir: "/Applications" }
+cask "font-ibm-plex-math", args: { appdir: "/Applications" }
+cask "font-ibm-plex-mono", args: { appdir: "/Applications" }
 cask "font-ibm-plex-sans", args: { appdir: "/Applications" }
-cask "font-symbols-only-nerd-font", args: { appdir: "/Applications" }
+cask "font-ibm-plex-sans-condensed", args: { appdir: "/Applications" }
+cask "font-ibm-plex-sans-tc", args: { appdir: "/Applications" }
+cask "font-ibm-plex-serif", args: { appdir: "/Applications" }
+# Free and open-source RSS reader
+cask "netnewswire", args: { appdir: "/Applications" }
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok", args: { appdir: "/Applications" }
 # Get up and running with large language models locally
 cask "ollama-app", args: { appdir: "/Applications" }
 # Kubernetes and container management on the desktop
@@ -130,7 +139,6 @@ cask "rancher", args: { appdir: "/Applications" }
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm", args: { appdir: "/Applications" }
 vscode "charliermarsh.ruff"
-vscode "continue.continue"
 vscode "danielroedl.meld-diff"
 vscode "dendron.dendron"
 vscode "donjayamanne.vscode-jupytext"
@@ -179,6 +187,7 @@ vscode "openai.chatgpt"
 vscode "pkief.material-icon-theme"
 vscode "redhat.vscode-yaml"
 vscode "ritwickdey.liveserver"
+vscode "rooveterinaryinc.roo-cline"
 vscode "tamasfe.even-better-toml"
 vscode "teabyii.ayu"
 vscode "terrastruct.d2"
