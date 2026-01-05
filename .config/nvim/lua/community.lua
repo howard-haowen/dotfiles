@@ -6,11 +6,14 @@ return {
   "AstroNvim/astrocommunity",
   -- example of importing a plugin
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
+  { import = "astrocommunity.ai.opencode-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
-  -- { import = "astrocommunity.note-taking.obsidian-nvim" },
   { import = "astrocommunity.editing-support.comment-box-nvim" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  { import = "astrocommunity.motion.hop-nvim" },
+  { import = "astrocommunity.note-taking.neorg" },
+  { import = "astrocommunity.note-taking.obsidian-nvim" },
+  { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.utility.noice-nvim" },
   -- { import = "astrocommunity.completion.avante-nvim" },
   -- { import = "astrocommunity.editing-support.true-zen-nvim" },

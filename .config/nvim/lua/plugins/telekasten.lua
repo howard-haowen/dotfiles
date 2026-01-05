@@ -1,7 +1,7 @@
 -- ╭─────────────────────────────────────────────────────────╮
 -- │ WARN: REMOVE THE NEXT LINE TO ACTIVATE THIS FILE        │
 -- ╰─────────────────────────────────────────────────────────╯
--- if true then return {} end
+if true then return {} end
 ---@type LazySpec
 return {
   {
@@ -20,7 +20,7 @@ return {
 
       -- Most used functions
       vim.keymap.set("n", "<leader>zb", "<cmd>Telekasten show_backlinks<CR>", { desc = "Show backlinks" })
-      vim.keymap.set("n", "<leader>zc", "<cmd>Telekasten show_calendar<CR>", { desc = "Show calendar" })
+      -- vim.keymap.set("n", "<leader>zc", "<cmd>Telekasten show_calendar<CR>", { desc = "Show calendar" })
       vim.keymap.set("n", "<leader>zd", "<cmd>Telekasten goto_today<CR>", { desc = "Go to today's note" })
       vim.keymap.set("n", "<leader>zf", "<cmd>Telekasten find_friends<CR>", { desc = "Find friends" })
       vim.keymap.set("n", "<leader>zn", "<cmd>Telekasten new_note<CR>", { desc = "Create a new note" })

@@ -1,7 +1,7 @@
 -- ╭─────────────────────────────────────────────────────────╮
 -- │ WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE            │
 -- ╰─────────────────────────────────────────────────────────╯
--- if true then return {} end
+if true then return {} end
 
 ---@type LazySpec
 return {
