@@ -1,0 +1,46 @@
+markdown_dir_path: "/Users/haowen_jiang/Library/Mobile Documents/iCloud~md~obsidian/Documents/work/news_digest/"
+feeds:
+  # - https://www.youtube.com/feeds/videos.xml?channel_id=UCHnyfMqiRRG1u-2MsSQLbXA
+google_news_keywords: Generative AI, IBM
+instapaper: false
+# Taipei
+weather_latitude: 25.05
+weather_longitude: 121.53
+terminal_mode: false
+opml_file_path: /Users/haowen_jiang/dotfiles/.config/matcha/config.opml
+markdown_file_prefix:
+markdown_file_suffix:
+reading_time: true
+sunrise_sunset: false
+# openai_api_key:
+openai_base_url: "http://localhost:11434/v1"
+openai_model: qwen3:latest # for summary
+summary_feeds:
+  # KD Nuggets
+  # - https://feeds.feedburner.com/kdnuggets-data-mining-analytics
+  # Big Data AI
+  - https://bigdataanalyticsnews.com/category/artificial-intelligence/feed
+  # GitHub All Monthly
+  # - https://mshibanami.github.io/GitHubTrendingRSS/monthly/all.xml
+  # Wired AI
+  # - https://www.wired.com/feed/tag/ai/latest/rss
+  # TechCrunch
+  # - http://feeds.feedburner.com/TechCrunch
+summary_prompt: >
+  摘要下面的新聞，摘要內容使用繁體中文
+show_images: true
+analyst_feeds:
+  # iThome
+  # - https://www.ithome.com.tw/rss
+  # CNN
+  - http://rss.cnn.com/rss/edition.rss
+  # BCC Chinese
+  - https://www.bbc.com/zhongwen/trad/index.xml
+analyst_prompt: >
+  - 分析跟台灣有關的新聞，分析內容包含下面兩個標題：
+  #### 事件概要
+  #### 事件對台灣的影響
+  - 跟台灣無關的新聞只要簡單描述即可
+analyst_model: qwen3:latest # for analysis
+# notification_trigger: "TAIWAN NEWS DETECTED"
+# notification _webhook_url: https://ntfy.sh/hwpub
