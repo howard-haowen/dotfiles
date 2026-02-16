@@ -1,0 +1,13 @@
+# Essential Packages
+# Basic tools and software
+stow
+neovim
+node
+npm
+git
+
+# Useful Utilities
+# Enhanced command-line utilities
+tealdeer
+eza
+bat
