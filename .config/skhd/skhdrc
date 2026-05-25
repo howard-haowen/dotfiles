@@ -117,19 +117,33 @@
 # Test skhd with a simple command
 # shift + cmd - j : echo 'hello SKHD'
 
-# Open WezTerm
+# Open WezTerm, return for the terminal symbol
 alt - return : open -a "WezTerm"
-# Open Safari, b for browser
-alt - b : open -a "Safari"
-# Open Visual Studio Code, c for code
-alt - c : open -a "Visual Studio Code"
-# Open Google Chrome, g for google
+# Open IBM Bob, b for Bob
+alt - b : open -a "IBM Bob"
+# Open Calendar, c for calendar
+alt - c : open -a "Calendar"
+# Open Dictionary, d for dictionary
+alt - d : open -a "Dictionary"
+# Open Microsoft Excel, e for Excel
+alt - e : open -a "Microsoft Excel"
+# Open Google Chrome, g for Google
 alt - g : open -a "Google Chrome"
+# Open iCloud Drive, i for iCloud
+alt - i : open -a "iCloud Drive"
 # Open Outlook, m for mail
 alt - m : open -a "Microsoft Outlook"
-# Open Obsidian, o for obsidian
+# Open NetNewsWire, n for news
+alt - n : open -a "NetNewsWire"
+# Open Obsidian, o for Obsidian
 alt - o : open -a "Obsidian"
-# Open Slack, s for slack
+# Open Microsoft PowerPoint, p for PowerPoint
+alt - p : open -a "Microsoft PowerPoint"
+# Open Slack, s for Slack
 alt - s : open -a "Slack"
-# Open Microsoft Teams, t for teams
+# Open Microsoft Teams, t for Teams
 alt - t : open -a "Microsoft Teams"
+# Open Visual Studio Code, v for Visual
+alt - v : open -a "Visual Studio Code"
+# Open Microsoft Word, w for Word
+alt - w : open -a "Microsoft Word"
