@@ -147,3 +147,5 @@ alt - t : open -a "Microsoft Teams"
 alt - v : open -a "Visual Studio Code"
 # Open Microsoft Word, w for Word
 alt - w : open -a "Microsoft Word"
+# Open Zed text editor, z for Zed
+alt - z : open -a "Zed"
