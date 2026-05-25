@@ -53,18 +53,34 @@ config.window_close_confirmation = "NeverPrompt"
 -- ╰─────────────────────────────────────────────────────────╯
 local dimmer = { brightness = 0.2 }
 
--- config.window_background_opacity = 1 -- Set overall window transparency
--- config.macos_window_background_blur = 8 -- Blur the background on MacOS
+-- ✅ Overall window transparency
+-- config.window_background_opacity = 1
+
+-- ✅ macOS-only blur (ignored on other platforms)
+-- config.macos_window_background_blur = 8
+
 config.background = {
-	{
-		source = {
-			File = os.getenv("HOME") .. "/dotfiles/.config/wezterm/images/ibm_watsonx_bg.jpg",
-		},
-		hsb = dimmer,
-		-- opacity = 0.8,
-		attachment = "Fixed", -- Make the background image fixed
-		horizontal_align = "Right",
-	},
+  {
+    source = {
+      File = os.getenv("HOME")
+        .. "/dotfiles/.config/wezterm/images/black-bg-with-white-ibm.png",
+    },
+
+    hsb = dimmer,
+    attachment = "Fixed",
+
+    -- ✅ Anchor to lower-right
+    horizontal_align = "Right",
+    vertical_align = "Bottom",
+
+    -- ✅ Fill the screen; allow crop from upper-left
+    width = "100%",
+    height = "100%",
+
+    -- ✅ Prevent tiling
+    repeat_x = "NoRepeat",
+    repeat_y = "NoRepeat",
+  },
 }
 
 -- ╭─────────────────────────────────────────────────────────╮
@@ -72,7 +88,7 @@ config.background = {
 -- ╰─────────────────────────────────────────────────────────╯
 -- Presentation: Rather simple presentation mode toggle for WezTerm.
 -- Usage: Activate with CTRL + ALT + P for presentation mode, or CTRL + ALT + SHIFT + P for fullscreen presentation.
-wezterm.plugin.require("https://gitlab.com/xarvex/presentation.wez").apply_to_config(config)
+-- wezterm.plugin.require("https://gitlab.com/xarvex/presentation.wez").apply_to_config(config)
 
 -- Modal: Vim-like modal keybindings for your terminal! ✌️
 -- wezterm.plugin.require("https://github.com/MLFlexer/modal.wezterm").apply_to_config(config)
@@ -144,7 +160,7 @@ local bar_config = {
 		},
 	},
 }
-wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm").apply_to_config(config, bar_config)
+-- wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm").apply_to_config(config, bar_config)
 
 -- Key Bindings for vim-like navigation
 -- config.leader = { key = "a", mods = "ALT", timeout_milliseconds = 1000 } -- Set leader key to Ctrl
