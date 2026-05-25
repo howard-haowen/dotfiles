@@ -1,3 +1,5 @@
 ./.config/nushell/history.txt
 ./.mypy_cache
 .DS_Store
+.bob
+
