@@ -12,6 +12,10 @@ tap "koekeishiya/formulae"
 tap "hashicorp/tap"
 # Required for the cask ngrok
 tap "ngrok/ngrok"
+# Required for imsg
+tap "steipete/tap"
+# Required for eilmeldung
+tap "christo-auer/eilmeldung", "https://github.com/christo-auer/eilmeldung"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Text editor                                              │
@@ -46,14 +50,20 @@ brew "openjdk" #java
 brew "rust" #rust
 ## Open source programming language to build simple/reliable/efficient software
 brew "go" #golang
+## .NET Core
+brew "dotnet"
+## Java-based project management
+brew "maven"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ AI tools                                                 │
 # ╰──────────────────────────────────────────────────────────╯
-## All-in-one AI-Powered CLI Chat & Copilot
-brew "aichat"
 ## AI coding agent, built for the terminal
-brew "opencode"
+# brew "opencode"
+## All-in-one AI-Powered CLI Chat & Copilot
+# brew "aichat"
+## Open source, extensible AI agent that goes beyond code suggestions
+# brew "block-goose-cli"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Git tools                                                │
@@ -66,6 +76,8 @@ brew "gitui"
 brew "git-filter-repo"
 ## Rich git commit graph in your terminal
 brew "serie"
+## GitHub command-line tool
+brew "gh"
 ## Command-line tool to show clear git graphs arranged for your branching model
 # brew "git-graph"
 ## simple terminal ui for git commands
@@ -148,6 +160,10 @@ brew "taskline"
 # brew "newsboat"
 ## Daily digest generator for your RSS feeds
 brew "matcha"
+## TUI RSS reader based on the awesome news-flash library
+brew "eilmeldung"
+## User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
 ## Easily create and use cli based on bash script
 brew "argc"
 ## Clone of cat(1) with syntax highlighting and Git integration
@@ -210,6 +226,10 @@ brew "socket_vmnet"
 # brew "gtk+3"
 ## HashiCorp Vault CLI
 brew "hashicorp/tap/vault"
+## Send iMessages from the terminal
+brew "steipete/tap/imsg"
+## Command-line unarchiving tools supporting multiple formats
+brew "unar"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dependencies of WeasyPrint, which converts HTML to PDF   │
@@ -232,6 +252,10 @@ cask_args appdir: '/Applications'
 # cask "iterm2"
 ## GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
+## Rust-based terminal
+cask "warp"
+## Multiplayer code editor
+cask "zed"
 ## Get up and running with large language models locally
 cask "ollama-app"
 ## Kubernetes and container management on the desktop
@@ -240,6 +264,8 @@ cask "rancher"
 cask "netnewswire"
 ## Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+## Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
 # ╭──────────────────────────────────────────────────────────╮
 # │ Fonts                                                    │
 # ╰──────────────────────────────────────────────────────────╯

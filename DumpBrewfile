@@ -1,10 +1,10 @@
+tap "christo-auer/eilmeldung", "https://github.com/christo-auer/eilmeldung"
 tap "harehare/tap"
 tap "hashicorp/tap"
 tap "koekeishiya/formulae"
 tap "ngrok/ngrok"
+tap "steipete/tap"
 tap "thezoraiz/ascii-image-converter"
-# All-in-one AI-Powered CLI Chat & Copilot
-brew "aichat"
 # Easily create and use cli based on bash script
 brew "argc"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -17,22 +17,26 @@ brew "glib"
 brew "cairo"
 # Modern diagram scripting language that turns text to diagrams
 brew "d2"
+# .NET Core
+brew "dotnet"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
 # OpenType text shaping engine
 brew "harfbuzz"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
+brew "gh"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
 # Distributed revision control system
@@ -43,16 +47,28 @@ brew "git-filter-repo"
 brew "gitui"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
 # Configurable static site generator
 brew "hugo"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Next-gen compiler infrastructure
+brew "llvm"
+# Powerful, lightweight programming language
+brew "lua"
+# Just-In-Time Compiler (JIT) for the Lua programming language
+brew "luajit"
 # Package manager for the Lua programming language
 brew "luarocks"
 # Daily digest generator for your RSS feeds
 brew "matcha"
+# Development kit for the Java programming language
+brew "openjdk"
+# Java-based project management
+brew "maven"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Pager/text based browser
@@ -67,8 +83,6 @@ brew "node"
 brew "ntfy"
 # AI coding agent, built for the terminal
 brew "opencode"
-# Development kit for the Java programming language
-brew "openjdk"
 # Python dependency management tool
 brew "pipenv"
 # Execute binaries from Python packages in isolated environments
@@ -99,6 +113,8 @@ brew "taskline"
 brew "tealdeer"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
 # Simple terminal image viewer written in Rust
 brew "viu"
 # Personal information dashboard for your terminal
@@ -113,12 +129,16 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# a feature-rich TUI RSS reader based on the newsflash library
+brew "christo-auer/eilmeldung/eilmeldung"
 # A jq-like command-line tool for Markdown processing
 brew "harehare/tap/mq"
 # Vault
 brew "hashicorp/tap/vault"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
+# Send and read iMessage / SMS from the terminal
+brew "steipete/tap/imsg"
 # Convert images into ascii art
 brew "thezoraiz/ascii-image-converter/ascii-image-converter"
 cask "font-hack-nerd-font", args: { appdir: "/Applications" }
@@ -136,8 +156,14 @@ cask "ngrok", args: { appdir: "/Applications" }
 cask "ollama-app", args: { appdir: "/Applications" }
 # Kubernetes and container management on the desktop
 cask "rancher", args: { appdir: "/Applications" }
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager", args: { appdir: "/Applications" }
+# Rust-based terminal
+cask "warp", args: { appdir: "/Applications" }
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm", args: { appdir: "/Applications" }
+# Multiplayer code editor
+cask "zed", args: { appdir: "/Applications" }
 vscode "charliermarsh.ruff"
 vscode "danielroedl.meld-diff"
 vscode "dendron.dendron"
@@ -148,7 +174,6 @@ vscode "fabiospampinato.vscode-highlight"
 vscode "foam.foam-vscode"
 vscode "foxundermoon.shell-format"
 vscode "frhtylcn.pythonsnippets"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "google.colab"
@@ -175,6 +200,7 @@ vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpp-devtools"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.cpptools-extension-pack"
 vscode "ms-vscode.cpptools-themes"
@@ -193,10 +219,16 @@ vscode "teabyii.ayu"
 vscode "terrastruct.d2"
 vscode "tomoki1207.pdf"
 vscode "tyriar.theme-sapphire"
-vscode "undefined_publisher.ibm-watsonx-orchestrate-agent-builder"
 vscode "vscode-snippet.snippet"
+vscode "wytheglobal.pdfmore"
 vscode "yasht.terminal-all-in-one"
 vscode "yzane.markdown-pdf"
 vscode "yzhang.markdown-all-in-one"
 vscode "zowe.vscode-extension-for-zowe"
 go "github.com/olivere/iterm2-imagetools/cmd/imgcat"
+npm "@earendil-works/pi-coding-agent"
+npm "@google/gemini-cli"
+npm "bobshell"
+npm "decktape"
+npm "defuddle"
+npm "newsroom-cli"

@@ -8,44 +8,59 @@
 - use the `-I` option to ignore a directory
 
 ```sh
-eza --all --tree --icons --level=2 -I '.git|.mypy_cache'
+eza --all --tree --level=2 --ignore-glob='.git|.mypy_cache' .
 ```
 
 ```output
-.
-├── .config
-│   ├── aichat
-│   ├── bagels
-│   ├── elia
-│   ├── fish
-│   ├── gitui
-│   ├── helix
-│   ├── nushell
-│   ├── nvim
-│   ├── opencode
-│   ├── skhd
-│   ├── starship.toml
-│   ├── task
-│   ├── taskopen
-│   ├── wezterm
-│   ├── xplr
-│   ├── yazi
-│   └── zellij
-├── .gitignore
-├── .harlequin.toml
-├── .nbrc
-├── .oh-my-zsh
-│   └── custom
-├── .stowignore
-├── .visidatarc
-├── .w3m
-│   └── config
-├── .zshrc
-├── Brewfile
-├── Brewfile.lock.json
-├── DumpBrewfile
-├── newsfeed.opml
-└── README.md
+ .
+├──  .bob
+│   └──  notes
+├──  .config
+│   ├──  aichat
+│   ├──  bagels
+│   ├──  elia
+│   ├──  fish
+│   ├──  gitui
+│   ├──  goose
+│   ├──  goread
+│   ├──  helix
+│   ├──  matcha
+│   ├──  nom
+│   ├──  nushell
+│   ├──  nvim
+│   ├──  opencode
+│   ├──  skhd
+│   ├──  starship.toml
+│   ├──  task
+│   ├──  taskopen
+│   ├──  wezterm
+│   ├──  wtf
+│   ├──  xplr
+│   ├──  yazi
+│   └──  zellij
+├── 󰊢 .gitignore
+├──  .harlequin.toml
+├──  .luarocks
+│   └──  config-5.1.lua
+├──  .nbrc
+├──  .newsboat
+│   └── 󰡯 urls
+├──  .oh-my-zsh
+│   └──  custom
+├──  .stowignore
+├──  .taskline.json
+├──  .visidatarc
+├──  .w3m
+│   └── 󱁻 config
+├── 󱆃 .zshrc
+├──  AGENTS.md
+├── 󱄖 Brewfile
+├── 󱄖 Brewfile.lock.json
+├── 󰡯 DumpBrewfile
+├──  
+│   └──  .db
+├── 󰗀 newsfeed.opml
+└── 󰂺 README.md
 ```
 
 1. While in `~/dotfiles`, run this to create symlinks:
@@ -83,39 +98,45 @@ brew bundle list | sort
 ```
 
 ```output
-aichat
 argc
 ascii-image-converter
 bash
 bat
 d2
+dotnet
+eilmeldung
 eza
 fastfetch
 fd
 ffmpeg
 ffmpegthumbnailer
 fzf
+gh
 ghostscript
 git
 git-filter-repo
 gitui
 go
+harehare/tap/mq
 hashicorp/tap/vault
+httpie
 hugo
 imagemagick
 jq
 llvm
 lua
+luajit
 luarocks
+matcha
+maven
 nb
 neovim
 node
-opencode
+ntfy
 openjdk
 pipenv
 pipx
 poppler
-postgresql@13
 rich-cli
 ripgrep
 rlwrap
@@ -124,16 +145,19 @@ serie
 sevenzip
 skhd
 slides
+socket_vmnet
 starship
+steipete/tap/imsg
 stow
-task
-taskopen
-taskwarrior-tui
-tldr
+taskline
+tealdeer
 tree
+unar
 viu
 w3m
+wtfutil
 yazi
+yq
 zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting
@@ -148,11 +172,9 @@ pipx list | sed -n '4,$p'
 ```
 
 ```output
-   package jsondiff 2.2.1, installed using Python 3.12.7
-    - jdiff (symlink missing or pointing to unexpected location)
-   package openai-whisper 20240930, installed using Python 3.12.7
-    - whisper (symlink missing or pointing to unexpected location)
-   package uv 0.5.11, installed using Python 3.12.7
+package jsondiff 2.2.1, installed using Python 3.14.5
+    - jdiff
+package uv 0.11.16, installed using Python 3.14.5
     - uv
     - uvx
 ```
@@ -185,29 +207,19 @@ csvkit v2.1.0
 - sql2csv
 datasette v0.65.1
 - datasette
-docling v2.58.0
+docling-slim v2.93.0
 - docling
 - docling-tools
-elia-chat v1.10.0
-- elia
 ibm-watsonx-orchestrate v1.14.0
 - orchestrate
-jupytext v1.16.7
-- jupytext
-- jupytext-config
-langflow v1.5.1
-- langflow
 markitdown v0.1.3
 - markitdown
-open-interpreter v0.4.3
-- i
-- interpreter
-- interpreter-classic
-- wtf
-open-webui v0.6.36
+open-webui v0.6.41
 - open-webui
 pyigt v2.2.0
 - igt
+rendercv v2.6
+- rendercv
 rich-diff v1.0.4
 - rich-diff
 ruff v0.14.3
@@ -216,22 +228,6 @@ visidata v3.2
 - vd
 - vd2to3.vdx
 - visidata
-```
-
-## Packages installed via `yazi`
-
-- List packages installed via `yazi`
-
-```sh
-ya pkg list
-```
-
-```output
-Plugins:
- AnirudhG07/rich-preview (2559e5f)
- AnirudhG07/nbpreview (f8879b3)
-Flavors:
- yazi-rs/flavors:catppuccin-mocha (df95930)
 ```
 
 ## Packages installed via `npm`
@@ -244,8 +240,28 @@ npm list -g
 
 ```output
 /Users/haowen_jiang/.npm-global/lib
-├── @google/gemini-cli@0.16.0
-└─ newsroom-cli@0.1.11
+├── @earendil-works/pi-coding-agent@0.75.5
+├── @google/gemini-cli@0.19.1
+├── bobshell@0.0.33
+├── decktape@3.15.0
+├── defuddle@0.18.1
+└── newsroom-cli@0.1.11
+```
+
+## Packages installed via `yazi`
+
+- List packages installed via `yazi`
+
+```sh
+ya pkg list
+```
+
+```output
+Plugins:
+	AnirudhG07/rich-preview (573b275)
+	ahkohd/eza-preview (7a2d60f)
+Flavors:
+	yazi-rs/flavors:catppuccin-mocha (df95930)
 ```
 
 ## Packages installed via `cargo`
@@ -257,6 +273,5 @@ cargo install --list
 ```
 
 ```output
-feedr v0.3.0:
-    feedr
+
 ```
