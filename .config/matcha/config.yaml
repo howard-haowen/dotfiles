@@ -14,7 +14,7 @@ reading_time: true
 sunrise_sunset: false
 # openai_api_key:
 openai_base_url: "http://localhost:11434/v1"
-openai_model: qwen3:latest # for summary
+openai_model: nemotron-3-nano:4b # for summary
 summary_feeds:
   # KD Nuggets
   # - https://feeds.feedburner.com/kdnuggets-data-mining-analytics
@@ -41,6 +41,6 @@ analyst_prompt: >
   #### 事件概要
   #### 事件對台灣的影響
   - 跟台灣無關的新聞只要簡單描述即可
-analyst_model: qwen3:latest # for analysis
+analyst_model: nemotron-3-nano:4b # for analysis
 # notification_trigger: "TAIWAN NEWS DETECTED"
 # notification _webhook_url: https://ntfy.sh/hwpub

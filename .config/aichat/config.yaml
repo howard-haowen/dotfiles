@@ -1,6 +1,6 @@
 # see https://github.com/sigoden/aichat/blob/main/config.example.yaml
 # ---- llm ----
-model: ollama:qwen3:latest # Specify the LLM to use
+model: ollama:nemotron-3-nano:4b # Specify the LLM to use
 temperature: 0 # Set default temperature parameter (0, 1)
 top_p: null # Set default top-p parameter, with a range of (0, 1) or (0, 2) depending on the model
 
