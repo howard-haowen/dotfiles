@@ -43,7 +43,6 @@ plugins=(
   zoxide
   starship
   eza
-  uv
   fzf
   zsh-interactive-cd
   zsh-autosuggestions 
@@ -224,6 +223,8 @@ export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 # cargo binaries
 export PATH="$HOME/.cargo/bin:$PATH"
+# Java runtime path
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # Set the config path for taskwarrior
 export TASKRC=~/.config/task/taskrc
 # Call the function to clean up PATH
@@ -251,7 +252,7 @@ eval "$(zoxide init zsh)"
 # EOF
 
 # Print a greeting message with `pyfiglet`
-uvx pyfiglet --font=ansi_shadow --color=blue: "watsonx"
+uvx pyfiglet --font=ansi_shadow --color=blue: "IBM Bob"
 # Show the weather in Taipei, defined in .oh-my-zsh/custom/aliases.zsh
 # wt
 # Show 10 pieces of news from ItHome
