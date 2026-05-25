@@ -40,7 +40,6 @@ dotfiles/
 ├── Brewfile.lock.json  # Locked package versions
 ├── .stowignore         # Files to ignore during stow
 ├── .gitignore          # Git ignore patterns
-└── /           #  for testing
 ```
 
 When updating this file, verify installed tools with `command -v <tool>`, `brew list --versions <formula>`, `pipx list`, `uv tool list`, `npm list -g`, or `cargo install --list`. Do not describe a tool as installed just because a config directory exists, and remove references to tools that are not installed on this machine.

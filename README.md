@@ -57,8 +57,6 @@ eza --all --tree --level=2 --ignore-glob='.git|.mypy_cache' .
 ├── 󱄖 Brewfile
 ├── 󱄖 Brewfile.lock.json
 ├── 󰡯 DumpBrewfile
-├──  
-│   └──  .db
 ├── 󰗀 newsfeed.opml
 └── 󰂺 README.md
 ```
