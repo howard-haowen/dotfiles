@@ -12,53 +12,54 @@ eza --all --tree --level=2 --ignore-glob='.git|.mypy_cache' .
 ```
 
 ```output
- .
-├──  .bob
-│   └──  notes
-├──  .config
-│   ├──  aichat
-│   ├──  bagels
-│   ├──  elia
-│   ├──  fish
-│   ├──  gitui
-│   ├──  goose
-│   ├──  goread
-│   ├──  helix
-│   ├──  matcha
-│   ├──  nom
-│   ├──  nushell
-│   ├──  nvim
-│   ├──  opencode
-│   ├──  skhd
-│   ├──  starship.toml
-│   ├──  task
-│   ├──  taskopen
-│   ├──  wezterm
-│   ├──  wtf
-│   ├──  xplr
-│   ├──  yazi
-│   └──  zellij
-├── 󰊢 .gitignore
-├──  .harlequin.toml
-├──  .luarocks
-│   └──  config-5.1.lua
-├──  .nbrc
-├──  .newsboat
-│   └── 󰡯 urls
-├──  .oh-my-zsh
-│   └──  custom
-├──  .stowignore
-├──  .taskline.json
-├──  .visidatarc
-├──  .w3m
-│   └── 󱁻 config
-├── 󱆃 .zshrc
-├──  AGENTS.md
-├── 󱄖 Brewfile
-├── 󱄖 Brewfile.lock.json
-├── 󰡯 DumpBrewfile
-├── 󰗀 newsfeed.opml
-└── 󰂺 README.md
+.
+├── .config
+│   ├── aichat
+│   ├── bagels
+│   ├── elia
+│   ├── fish
+│   ├── gitui
+│   ├── goose
+│   ├── goread
+│   ├── helix
+│   ├── matcha
+│   ├── nom
+│   ├── nushell
+│   ├── nvim
+│   ├── opencode
+│   ├── skhd
+│   ├── starship.toml
+│   ├── task
+│   ├── taskopen
+│   ├── wezterm
+│   ├── wtf
+│   ├── xplr
+│   ├── yazi
+│   ├── zed
+│   └── zellij
+├── .gitignore
+├── .harlequin.toml
+├── .luarocks
+│   └── config-5.1.lua
+├── .nbrc
+├── .newsboat
+│   └── urls
+├── .oh-my-zsh
+│   └── custom
+├── .pi
+│   └── agent
+├── .stowignore
+├── .taskline.json
+├── .visidatarc
+├── .w3m
+│   └── config
+├── .zshrc
+├── AGENTS.md
+├── Brewfile
+├── Brewfile.lock.json
+├── DumpBrewfile
+├── newsfeed.opml
+└── README.md
 ```
 
 1. While in `~/dotfiles`, run this to create symlinks:
@@ -170,9 +171,9 @@ pipx list | sed -n '4,$p'
 ```
 
 ```output
-package jsondiff 2.2.1, installed using Python 3.14.5
+   package jsondiff 2.2.1, installed using Python 3.14.5
     - jdiff
-package uv 0.11.16, installed using Python 3.14.5
+   package uv 0.11.16, installed using Python 3.14.5
     - uv
     - uvx
 ```

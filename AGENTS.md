@@ -24,22 +24,36 @@ This is a **personal dotfiles repository** managed with [GNU Stow](https://www.g
 ```
 dotfiles/
 ├── .config/             # Application configurations
+│   ├── aichat/          # AIChat CLI configuration
+│   ├── bagels/          # Bagels configuration
+│   ├── elia/            # Elia TUI configuration
+│   ├── fish/            # Fish shell configuration
 │   ├── gitui/           # gitui TUI Git client
 │   ├── goose/           # Goose AI agent
+│   ├── goread/          # goread feed reader configuration
+│   ├── helix/           # Helix editor configuration
 │   ├── matcha/          # matcha feed reader
+│   ├── nom/             # nom feed reader configuration
+│   ├── nushell/         # Nushell configuration
 │   ├── nvim/            # Neovim (AstroNvim) configuration
 │   ├── opencode/        # OpenCode AI coding agent
 │   ├── skhd/            # skhd hotkey daemon
 │   ├── starship.toml    # Starship prompt config
+│   ├── task/            # Taskwarrior configuration
+│   ├── taskopen/        # taskopen configuration
 │   ├── wezterm/         # WezTerm terminal emulator config
 │   ├── wtf/             # wtfutil dashboard config
-│   └── yazi/            # Yazi file manager config
+│   ├── xplr/            # xplr file manager configuration
+│   ├── yazi/            # Yazi file manager config
+│   ├── zed/             # Zed editor settings
+│   └── zellij/          # Zellij terminal workspace config
 ├── .oh-my-zsh/custom/   # Oh My Zsh custom aliases and functions
-├── .zshrc              # Main Zsh configuration
-├── Brewfile            # Homebrew package definitions
-├── Brewfile.lock.json  # Locked package versions
-├── .stowignore         # Files to ignore during stow
-├── .gitignore          # Git ignore patterns
+├── .pi/agent/           # Pi Coding Agent model configuration
+├── .zshrc               # Main Zsh configuration
+├── Brewfile             # Homebrew package definitions
+├── Brewfile.lock.json   # Locked package versions
+├── .stowignore          # Files to ignore during stow
+├── .gitignore           # Git ignore patterns
 ```
 
 When updating this file, verify installed tools with `command -v <tool>`, `brew list --versions <formula>`, `pipx list`, `uv tool list`, `npm list -g`, or `cargo install --list`. Do not describe a tool as installed just because a config directory exists, and remove references to tools that are not installed on this machine.
