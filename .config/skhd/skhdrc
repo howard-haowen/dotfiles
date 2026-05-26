@@ -145,7 +145,7 @@ alt - s : open -a "Slack"
 alt - t : open -a "Microsoft Teams"
 # Open Visual Studio Code, v for Visual
 alt - v : open -a "Visual Studio Code"
-# Open Microsoft Word, w for Word
-alt - w : open -a "Microsoft Word"
+# Open Warp terminal, w for Warp
+alt - w : open -a "Warp"
 # Open Zed text editor, z for Zed
 alt - z : open -a "Zed"
