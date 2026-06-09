@@ -19,6 +19,10 @@
   },
   "agent_servers": {
     "pi-acp": {
+      "favorite_models": [
+        "ollama/gemma4:e4b-mlx"
+      ],
+      "default_model": "openai-codex/gpt-5.5",
       "type": "registry",
     },
   },
@@ -46,7 +50,8 @@
   },
   "edit_predictions": {
     "ollama": {
-      "model": "gemma4:e2b",
+      "max_output_tokens": 100,
+      "model": "gemma4:e4b-mlx",
     },
     "provider": "ollama",
   },

@@ -17,11 +17,10 @@
         {
           "_launch": true,
           "contextWindow": 128000,
-          "id": "gemma4:e2b",
+          "id": "gemma4:e4b-mlx",
           "input": [
-            "text",
-            "image"
-          ],
+            "text"          
+	  ],
           "reasoning": true
         }
       ]
