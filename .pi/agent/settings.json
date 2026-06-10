@@ -1,6 +1,6 @@
 {
-  "defaultModel": "gemma4:e4b-mlx",
-  "defaultProvider": "ollama",
+  "defaultModel": "gpt-5.5",
+  "defaultProvider": "openai-codex",
   "lastChangelogVersion": "0.79.0",
   "theme": "dark",
   "quietStartup": false,
