@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "inlay_hints": {
+    "show_background": true
+  },
+  "indent_guides": {
+    "background_coloring": "indent_aware"
+  },
   "project_panel": {
     "git_status_indicator": true
   },
@@ -50,7 +56,7 @@
   },
   "edit_predictions": {
     "ollama": {
-      "max_output_tokens": 100,
+      "max_output_tokens": 70,
       "model": "gemma4:e4b-mlx",
     },
     "provider": "ollama",
