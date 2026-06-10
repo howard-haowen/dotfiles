@@ -234,12 +234,12 @@ visidata v3.2
 - List global packages installed via `npm`
 
 ```sh
-npm list -g
+npm list -g --depth=0 --prefix ~/.npm-global
 ```
 
 ```output
 /Users/haowen_jiang/.npm-global/lib
-├── @earendil-works/pi-coding-agent@0.75.5
+├── @earendil-works/pi-coding-agent@0.79.0
 ├── @google/gemini-cli@0.19.1
 ├── bobshell@0.0.33
 ├── decktape@3.15.0
