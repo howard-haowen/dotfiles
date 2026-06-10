@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "inlay_hints": {
+    "show_background": true
+  },
+  "indent_guides": {
+    "background_coloring": "indent_aware"
+  },
   "project_panel": {
     "git_status_indicator": true
   },
@@ -19,6 +25,10 @@
   },
   "agent_servers": {
     "pi-acp": {
+      "favorite_models": [
+        "ollama/gemma4:e4b-mlx"
+      ],
+      "default_model": "openai-codex/gpt-5.5",
       "type": "registry",
     },
   },
@@ -46,7 +56,8 @@
   },
   "edit_predictions": {
     "ollama": {
-      "model": "gemma4:e2b",
+      "max_output_tokens": 70,
+      "model": "gemma4:e4b-mlx",
     },
     "provider": "ollama",
   },
@@ -56,13 +67,13 @@
   "session": {
     "trust_all_worktrees": true,
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "icon_theme": "Zed (Default)",
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Ayu Mirage",
+    "dark": "Catppuccin Mocha",
   },
 }
