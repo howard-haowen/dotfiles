@@ -1,0 +1,13 @@
+{
+  "defaultModel": "gemma4:e4b-mlx",
+  "defaultProvider": "ollama",
+  "lastChangelogVersion": "0.79.0",
+  "theme": "dark",
+  "quietStartup": false,
+  "defaultThinkingLevel": "medium",
+  "skills": [
+    "+skills/openlibrary-search/SKILL.md",
+    "+../../.agents/skills/markdown-to-html/SKILL.md"
+  ],
+  "packages": []
+}

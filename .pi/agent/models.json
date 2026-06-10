@@ -7,20 +7,20 @@
       "models": [
         {
           "_launch": true,
+          "contextWindow": 128000,
+          "id": "gemma4:e4b-mlx",
+          "input": [
+            "text"          
+	  	  ],
+          "reasoning": true
+        },
+        {
+          "_launch": true,
           "contextWindow": 256000,
           "id": "nemotron-3-nano:4b",
           "input": [
             "text"
           ],
-          "reasoning": true
-        },
-        {
-          "_launch": true,
-          "contextWindow": 128000,
-          "id": "gemma4:e4b-mlx",
-          "input": [
-            "text"          
-	  ],
           "reasoning": true
         }
       ]
