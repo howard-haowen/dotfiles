@@ -2,7 +2,7 @@
 # │ brew bundle                                              │
 # ╰──────────────────────────────────────────────────────────╯
 # Remove this because now "bundle" is part of the core "brew"
-# tap "homebrew/bundle" || true 
+# tap "homebrew/bundle" || true
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Core taps                                                │
@@ -29,7 +29,7 @@ brew "neovim", head: "true"
 # │ Python environments                                      │
 # ╰──────────────────────────────────────────────────────────╯
 # All these can be replaced by the uv package manager written in Rust
-# brew "pyenv" 
+# brew "pyenv"
 brew "pipenv"
 brew "pipx"
 
@@ -39,7 +39,7 @@ brew "pipx"
 ## Powerful, lightweight programming language
 brew "lua" #lua
 ## Package manager for the Lua programming language
-brew "luarocks" 
+brew "luarocks"
 ## Just-In-Time Compiler (JIT) for the Lua programming language
 brew "luajit"
 ## Platform built on V8 to build network applications
@@ -87,9 +87,9 @@ brew "gh"
 # │ File processors                                          │
 # ╰──────────────────────────────────────────────────────────╯
 ## lightweight and flexible command-line json processor
-brew "jq" 
+brew "jq"
 ### `brew bundle`# Process YAML, JSON, XML, CSV and properties documents from the CLI
-brew "yq" 
+brew "yq"
 ## jq-like command-line tool for markdown processing
 brew "harehare/tap/mq"
 
@@ -106,30 +106,30 @@ brew "wtfutil"
 # brew "xplr"
 ## file browser
 # brew "ranger"
-## yazi file manager 
-brew "yazi" 
+## yazi file manager
+brew "yazi"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ yazi dependencies                                │
 # ╰──────────────────────────────────────────────────────────╯
 ## Create thumbnails for your video files
-brew "ffmpegthumbnailer" 
+brew "ffmpegthumbnailer"
 ## Play, record, convert, and stream audio and video
 brew "ffmpeg"
-## 7-Zip is a file archiver with a high compression ratio 
-brew "sevenzip" 
+## 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
 ## PDF rendering library (based on the xpdf-3.0 code base)
-brew "poppler" 
-## Simple, fast and user-friendly alternative to find 
-brew "fd" 
-## Search tool like grep and The Silver Searcher 
-brew "ripgrep" 
+brew "poppler"
+## Simple, fast and user-friendly alternative to find
+brew "fd"
+## Search tool like grep and The Silver Searcher
+brew "ripgrep"
 ## Command-line fuzzy finder written in Go
-brew "fzf" 
+brew "fzf"
 ## Shell extension to navigate your filesystem faster
-brew "zoxide" 
+brew "zoxide"
 ## tools and libraries to manipulate images in many formats
-brew "imagemagick" 
+brew "imagemagick"
 ## Interpreter for PostScript and PDF
 brew "ghostscript"
 
@@ -251,7 +251,7 @@ cask_args appdir: '/Applications'
 ## Terminal emulator as alternative to Apple's Terminal app
 # cask "iterm2"
 ## GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm"
+# cask "wezterm"
 ## Rust-based terminal
 cask "warp"
 ## Multiplayer code editor
@@ -276,5 +276,5 @@ cask "font-ibm-plex-sans-tc"
 cask "font-ibm-plex-sans-condensed"
 cask "font-ibm-plex-mono"
 cask "font-ibm-plex-math"
-## Menlo for Powerline 
+## Menlo for Powerline
 cask "font-hack-nerd-font"
