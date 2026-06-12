@@ -234,7 +234,7 @@ visidata v3.2
 - List global packages installed via `npm`
 
 ```sh
-npm list -g --depth=0 --prefix ~/.npm-global
+npm list -g
 ```
 
 ```output
