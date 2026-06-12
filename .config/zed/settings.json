@@ -43,6 +43,7 @@
   "audio": {},
   "buffer_font_family": "IBM Plex Mono",
   "agent": {
+    "single_file_review": true,
     "default_width": 600.0,
     "flexible": true,
     "default_profile": "write",
@@ -56,7 +57,7 @@
   },
   "edit_predictions": {
     "ollama": {
-      "max_output_tokens": 70,
+      "max_output_tokens": 100,
       "model": "gemma4:e4b-mlx",
     },
     "provider": "ollama",

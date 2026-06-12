@@ -5,9 +5,5 @@
   "theme": "dark",
   "quietStartup": false,
   "defaultThinkingLevel": "medium",
-  "skills": [
-    "+skills/openlibrary-search/SKILL.md",
-    "+../../.agents/skills/markdown-to-html/SKILL.md"
-  ],
   "packages": []
 }

@@ -161,6 +161,16 @@ Notes:
 
 ## Development Conventions
 
+### Branch Workflow
+
+Use this repository workflow for all changes:
+
+1. Start from the `macos-tahoe` branch before making edits.
+2. Commit changes to the `macos-tahoe` branch.
+3. Merge `macos-tahoe` into the `main` branch after commits are made.
+4. Verify both `macos-tahoe` and `main` are clean.
+5. Push all branches to the remote only after both branches are clean.
+
 ### File Organization
 
 - **Configuration files**: Place in `.config/` directory following XDG Base Directory specification
