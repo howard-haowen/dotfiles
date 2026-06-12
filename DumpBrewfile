@@ -160,8 +160,6 @@ cask "rancher", args: { appdir: "/Applications" }
 cask "raspberry-pi-imager", args: { appdir: "/Applications" }
 # Rust-based terminal
 cask "warp", args: { appdir: "/Applications" }
-# GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm", args: { appdir: "/Applications" }
 # Multiplayer code editor
 cask "zed", args: { appdir: "/Applications" }
 vscode "charliermarsh.ruff"
