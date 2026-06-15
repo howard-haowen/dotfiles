@@ -1,0 +1,12 @@
+{
+  "trustedformulae": [
+    "harehare/tap/mq",
+    "hashicorp/tap/vault",
+    "koekeishiya/formulae/skhd",
+    "steipete/tap/imsg",
+    "thezoraiz/ascii-image-converter/ascii-image-converter"
+  ],
+  "trustedtaps": [
+    "https://github.com/christo-auer/eilmeldung"
+  ]
+}
