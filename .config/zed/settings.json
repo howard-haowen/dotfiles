@@ -7,14 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "bottom_dock_layout": "left_aligned",
   "inlay_hints": {
-    "show_background": true
+    "show_background": true,
   },
   "indent_guides": {
-    "background_coloring": "indent_aware"
+    "background_coloring": "indent_aware",
   },
   "project_panel": {
-    "git_status_indicator": true
+    "git_status_indicator": true,
   },
   "git_panel": {
     "file_icons": true,
@@ -25,9 +26,7 @@
   },
   "agent_servers": {
     "pi-acp": {
-      "favorite_models": [
-        "ollama/gemma4:e4b-mlx"
-      ],
+      "favorite_models": ["ollama/gemma4:e4b-mlx"],
       "default_model": "openai-codex/gpt-5.5",
       "type": "registry",
     },
@@ -43,13 +42,22 @@
   "audio": {},
   "buffer_font_family": "IBM Plex Mono",
   "agent": {
+    "tool_permissions": {
+      "default": "allow",
+      "tools": {
+        "skill": {
+          "default": "allow"
+        }
+      }
+    },
     "single_file_review": true,
     "default_width": 600.0,
     "flexible": true,
     "default_profile": "write",
     "default_model": {
-      "provider": "ollama",
-      "model": "gemma4:e2b",
+      "effort": "medium",
+      "provider": "openai-subscribed",
+      "model": "gpt-5.5",
       "enable_thinking": true,
     },
     "favorite_models": [],
