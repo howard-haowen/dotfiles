@@ -116,6 +116,8 @@ brew "yazi"
 brew "ffmpegthumbnailer"
 ## Play, record, convert, and stream audio and video
 brew "ffmpeg"
+## Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 ## 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
 ## PDF rendering library (based on the xpdf-3.0 code base)

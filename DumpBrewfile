@@ -1,4 +1,4 @@
-tap "christo-auer/eilmeldung", "https://github.com/christo-auer/eilmeldung"
+tap "christo-auer/eilmeldung", "https://github.com/christo-auer/eilmeldung", trusted: true
 tap "harehare/tap"
 tap "hashicorp/tap"
 tap "koekeishiya/formulae"
@@ -123,6 +123,8 @@ brew "wtfutil"
 brew "yazi"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -132,15 +134,15 @@ brew "zsh-syntax-highlighting"
 # a feature-rich TUI RSS reader based on the newsflash library
 brew "christo-auer/eilmeldung/eilmeldung"
 # A jq-like command-line tool for Markdown processing
-brew "harehare/tap/mq"
+brew "harehare/tap/mq", trusted: true
 # Vault
-brew "hashicorp/tap/vault"
+brew "hashicorp/tap/vault", trusted: true
 # Simple hotkey-daemon for macOS.
-brew "koekeishiya/formulae/skhd"
+brew "koekeishiya/formulae/skhd", trusted: true
 # Send and read iMessage / SMS from the terminal
-brew "steipete/tap/imsg"
+brew "steipete/tap/imsg", trusted: true
 # Convert images into ascii art
-brew "thezoraiz/ascii-image-converter/ascii-image-converter"
+brew "thezoraiz/ascii-image-converter/ascii-image-converter", trusted: true
 cask "font-hack-nerd-font", args: { appdir: "/Applications" }
 cask "font-ibm-plex-math", args: { appdir: "/Applications" }
 cask "font-ibm-plex-mono", args: { appdir: "/Applications" }
