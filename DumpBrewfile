@@ -69,6 +69,8 @@ brew "matcha"
 brew "openjdk"
 # Java-based project management
 brew "maven"
+# Deep clean and optimize your Mac
+brew "mole"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Pager/text based browser
