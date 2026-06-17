@@ -232,6 +232,8 @@ brew "hashicorp/tap/vault"
 brew "steipete/tap/imsg"
 ## Command-line unarchiving tools supporting multiple formats
 brew "unar"
+## Deep clean and optimize your Mac
+brew "mole"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dependencies of WeasyPrint, which converts HTML to PDF   │
