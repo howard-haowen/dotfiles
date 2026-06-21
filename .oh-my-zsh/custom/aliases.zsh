@@ -5,7 +5,7 @@ alias python="$(which python3)"
 alias ll='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first --sort=name --no-user -la --git -h --tree --level=2'
 alias ls='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first --sort=name --no-user -la --git -h'
 
-# === Search 
+# === Search
 # Use `fzf` to search for files
 # Use `bat` to preview them
 # Use the default editor to edit a selected file
@@ -17,7 +17,7 @@ alias nbf='nb list --no-id --paths | fzf --border --preview "bat --style=numbers
 alias wt='get_weather'
 # See https://github.com/chubin/cheat.sh
 alias cheat='cht.sh'
-# Use the catppuccin-mocha theme for gitui 
+# Use the catppuccin-mocha theme for gitui
 alias gitui='gitui -t catppuccin-mocha.ron'
 alias img2text='ascii-image-converter --color'
 # taskwarrior and taskopen
@@ -32,5 +32,6 @@ alias goread='goread -c ~/dotfiles/.config/goread/colorscheme.json -s ~/dotfiles
 alias da='wtfutil'
 alias gg='serie'
 alias mt='matcha -c ~/dotfiles/.config/matcha/config.yaml'
+alias qd='quarkdown'
 # Use fzf with the preview_file function, defined in custom/preview.zsh
 # alias ff="fzf --border --preview 'preview_file {}'"

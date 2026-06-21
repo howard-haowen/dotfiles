@@ -16,6 +16,8 @@ tap "ngrok/ngrok"
 tap "steipete/tap"
 # Required for eilmeldung
 tap "christo-auer/eilmeldung", "https://github.com/christo-auer/eilmeldung"
+# Required for quarkdown
+tap "quarkdown-labs/quarkdown"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Text editor                                              │
@@ -213,7 +215,7 @@ brew "w3m"
 ## Modern diagram scripting language that turns text to diagrams
 brew "d2"
 ## Simple hotkey daemon for macOS
-brew "skhd"
+brew "asmvik/formulae/skhd"
 ## Framework for Verilog RTL synthesis
 # brew "yosys"
 ## Configurable static site generator
@@ -234,6 +236,8 @@ brew "steipete/tap/imsg"
 brew "unar"
 ## Deep clean and optimize your Mac
 brew "mole"
+## Markdown meets the power of LaTeX
+brew "quarkdown-labs/quarkdown/quarkdown"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dependencies of WeasyPrint, which converts HTML to PDF   │
