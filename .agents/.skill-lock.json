@@ -1,0 +1,176 @@
+{
+  "version": 3,
+  "skills": {
+    "json-canvas": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/json-canvas/SKILL.md",
+      "skillFolderHash": "9df7971db7ffebf96f2a207840b9f4765aa11b04",
+      "installedAt": "2026-06-12T05:40:10.596Z",
+      "updatedAt": "2026-06-12T05:40:10.596Z"
+    },
+    "obsidian-bases": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/obsidian-bases/SKILL.md",
+      "skillFolderHash": "f3330f27de4d7907ead57d0f48672f4d3280bb77",
+      "installedAt": "2026-06-12T05:40:10.599Z",
+      "updatedAt": "2026-06-12T05:40:10.599Z"
+    },
+    "obsidian-cli": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/obsidian-cli/SKILL.md",
+      "skillFolderHash": "96254a554e480359de7b685571876f2e7f9ba57d",
+      "installedAt": "2026-06-12T05:40:10.600Z",
+      "updatedAt": "2026-06-12T05:40:10.600Z"
+    },
+    "obsidian-markdown": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/obsidian-markdown/SKILL.md",
+      "skillFolderHash": "4723197c6dc59abc29819da87863b1ac20b96095",
+      "installedAt": "2026-06-12T05:40:10.600Z",
+      "updatedAt": "2026-06-12T05:40:10.600Z"
+    },
+    "defuddle": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/defuddle/SKILL.md",
+      "skillFolderHash": "db0b775af7e7d603f59fa2b67bdef615baf1a48f",
+      "installedAt": "2026-06-12T05:40:10.601Z",
+      "updatedAt": "2026-06-12T05:40:10.601Z"
+    },
+    "git-commit": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/git-commit/SKILL.md",
+      "skillFolderHash": "883a6a7466f55a9cd9f22cf1cce2d9333fc9b998",
+      "installedAt": "2026-06-12T05:41:22.191Z",
+      "updatedAt": "2026-06-12T05:41:22.191Z"
+    },
+    "here-now": {
+      "source": "heredotnow/skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/heredotnow/skill.git",
+      "skillPath": "here-now/SKILL.md",
+      "skillFolderHash": "e4a10e34c79faa6a5eb8f6021721823bb2745a36",
+      "installedAt": "2026-06-12T05:43:00.181Z",
+      "updatedAt": "2026-06-12T05:43:00.181Z"
+    },
+    "markdown-to-html": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/markdown-to-html/SKILL.md",
+      "skillFolderHash": "bd8cd071f08f841753283719eeaa28adbb167051",
+      "installedAt": "2026-06-12T05:44:59.100Z",
+      "updatedAt": "2026-06-12T05:44:59.100Z"
+    },
+    "marp-slide": {
+      "source": "softaworks/agent-toolkit",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/softaworks/agent-toolkit.git",
+      "skillPath": "skills/marp-slide/SKILL.md",
+      "skillFolderHash": "fcba767a6ab48cbe297d752d83c7987f61eabdb8",
+      "installedAt": "2026-06-12T05:45:34.754Z",
+      "updatedAt": "2026-06-12T05:45:34.754Z"
+    },
+    "md-to-office": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/claude-office-skills/skills.git",
+      "skillPath": "md-to-office/SKILL.md",
+      "skillFolderHash": "dc8db1449daee7ea8230db7bee82a83f9ed5fbb5",
+      "installedAt": "2026-06-12T05:46:06.996Z",
+      "updatedAt": "2026-06-12T05:46:06.996Z"
+    },
+    "youtube-transcript": {
+      "source": "badlogic/pi-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/badlogic/pi-skills.git",
+      "skillPath": "youtube-transcript/SKILL.md",
+      "skillFolderHash": "b9ff8fe2aca82c0f370e0b5125a6fea0ac0a909c",
+      "installedAt": "2026-06-12T05:50:32.454Z",
+      "updatedAt": "2026-06-12T05:50:32.454Z"
+    },
+    "haowen-openlibrary-search": {
+      "source": "howard-haowen/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/howard-haowen/agent-skills.git",
+      "skillPath": "haowen-openlibrary-search/SKILL.md",
+      "skillFolderHash": "49f64677d3354091aad86d76f55a0d87b5fd3caa",
+      "installedAt": "2026-06-12T05:53:07.427Z",
+      "updatedAt": "2026-06-12T05:53:07.427Z"
+    },
+    "haowen-webpage-to-markdown": {
+      "source": "howard-haowen/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/howard-haowen/agent-skills.git",
+      "skillPath": "haowen-webpage-to-markdown/SKILL.md",
+      "skillFolderHash": "4da1bbae45cb4bbc73f3f4ae00f374a6c1ec301a",
+      "installedAt": "2026-06-12T05:53:07.429Z",
+      "updatedAt": "2026-06-12T05:53:07.429Z"
+    },
+    "excalidraw-diagram-generator": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/excalidraw-diagram-generator/SKILL.md",
+      "skillFolderHash": "508522bb5a9950bbbac3c3a680bdc2fed717a5d8",
+      "installedAt": "2026-06-12T08:34:39.630Z",
+      "updatedAt": "2026-06-12T08:34:39.630Z"
+    },
+    "mole-mac-cleaner": {
+      "source": "aradotso/trending-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/aradotso/trending-skills.git",
+      "skillPath": "skills/mole-mac-cleaner/SKILL.md",
+      "skillFolderHash": "a1a93ca8247bf6cf5c62293480b8e00eb05be4cf",
+      "installedAt": "2026-06-18T09:11:39.839Z",
+      "updatedAt": "2026-06-18T09:11:39.839Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-06-18T09:29:13.751Z",
+      "updatedAt": "2026-06-18T09:29:13.751Z"
+    },
+    "slides": {
+      "source": "nexu-io/open-design",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nexu-io/open-design.git",
+      "skillPath": "skills/slides/SKILL.md",
+      "skillFolderHash": "a08698d6d9964562782c2f3e728757187755499e",
+      "installedAt": "2026-06-19T12:42:20.918Z",
+      "updatedAt": "2026-06-19T12:42:20.918Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "antigravity-cli",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed"
+  ]
+}

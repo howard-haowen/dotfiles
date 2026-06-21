@@ -45,6 +45,9 @@
     "tool_permissions": {
       "default": "allow",
       "tools": {
+        "edit_file": {
+          "default": "allow"
+        },
         "skill": {
           "default": "allow"
         }
