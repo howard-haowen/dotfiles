@@ -1,8 +1,10 @@
+tap "asmvik/formulae"
 tap "christo-auer/eilmeldung", "https://github.com/christo-auer/eilmeldung", trusted: true
 tap "harehare/tap"
 tap "hashicorp/tap"
 tap "koekeishiya/formulae"
 tap "ngrok/ngrok"
+tap "quarkdown-labs/quarkdown"
 tap "steipete/tap"
 tap "thezoraiz/ascii-image-converter"
 # Easily create and use cli based on bash script
@@ -139,8 +141,8 @@ brew "christo-auer/eilmeldung/eilmeldung"
 brew "harehare/tap/mq", trusted: true
 # Vault
 brew "hashicorp/tap/vault", trusted: true
-# Simple hotkey-daemon for macOS.
-brew "koekeishiya/formulae/skhd", trusted: true
+# A modern Markdown-based typesetting system
+brew "quarkdown-labs/quarkdown/quarkdown", trusted: true
 # Send and read iMessage / SMS from the terminal
 brew "steipete/tap/imsg", trusted: true
 # Convert images into ascii art
