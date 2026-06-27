@@ -13,6 +13,8 @@ eza --all --tree --level=2 --ignore-glob='.git|.mypy_cache' .
 
 ```output
 .
+├── .agents
+│   └── .skill-lock.json
 ├── .config
 │   ├── aichat
 │   ├── bagels
@@ -22,6 +24,7 @@ eza --all --tree --level=2 --ignore-glob='.git|.mypy_cache' .
 │   ├── goose
 │   ├── goread
 │   ├── helix
+│   ├── homebrew
 │   ├── matcha
 │   ├── nom
 │   ├── nushell
@@ -97,8 +100,10 @@ brew bundle list | sort
 ```
 
 ```output
+✔︎ JSON API packages.arm64_tahoe.jws.json
 argc
 ascii-image-converter
+asmvik/formulae/skhd
 bash
 bat
 d2
@@ -128,6 +133,7 @@ luajit
 luarocks
 matcha
 maven
+mole
 nb
 neovim
 node
@@ -136,13 +142,13 @@ openjdk
 pipenv
 pipx
 poppler
+quarkdown-labs/quarkdown/quarkdown
 rich-cli
 ripgrep
 rlwrap
 rust
 serie
 sevenzip
-skhd
 slides
 socket_vmnet
 starship
@@ -157,6 +163,7 @@ w3m
 wtfutil
 yazi
 yq
+yt-dlp
 zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting
@@ -239,12 +246,14 @@ npm list -g
 
 ```output
 /Users/haowen_jiang/.npm-global/lib
-├── @earendil-works/pi-coding-agent@0.79.0
+├── @earendil-works/pi-coding-agent@0.79.9
 ├── @google/gemini-cli@0.19.1
+├── @openai/codex@0.141.0
 ├── bobshell@0.0.33
 ├── decktape@3.15.0
 ├── defuddle@0.18.1
-└── newsroom-cli@0.1.11
+├── newsroom-cli@0.1.11
+└── pptxgenjs@4.0.1
 ```
 
 ## Packages installed via `yazi`

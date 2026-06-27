@@ -13,7 +13,6 @@
 # https://github.com/xwmx/nb
 ###############################################################################
 
-export EDITOR="nvim" # Set by `nb` • Wed Apr  2 21:57:34 CST 2025
 
 export NB_FOOTER="${NB_FOOTER:-0}" # Set by `nb` • Wed Apr  2 21:58:04 CST 2025
 
@@ -40,3 +39,5 @@ export NB_BROWSE_SUPPORT_LINKS=0
 export NB_SYNTAX_THEME="${NB_SYNTAX_THEME:-gruvbox-dark}" # Set by `nb` • Mon Dec 15 17:49:17 CST 2025
 
 export NB_COLOR_THEME="${NB_COLOR_THEME:-ocean}" # Set by `nb` • Mon Dec 15 17:58:01 CST 2025
+
+export EDITOR="zed" # Set by `nb` • Fri Jun 26 09:24:12 CST 2026

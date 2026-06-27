@@ -1,11 +1,9 @@
 {
   "trustedformulae": [
+    "asmvik/formulae/skhd",
     "harehare/tap/mq",
     "hashicorp/tap/vault",
-    "asmvik/formulae/skhd",
     "quarkdown-labs/quarkdown/quarkdown",
-    "steipete/tap/imsg",
-    "thezoraiz/ascii-image-converter/ascii-image-converter"
-  ],
-  "trustedtaps": ["https://github.com/christo-auer/eilmeldung"]
+    "steipete/tap/imsg"
+  ]
 }

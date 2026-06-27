@@ -118,6 +118,15 @@
       "installedAt": "2026-06-12T05:53:07.429Z",
       "updatedAt": "2026-06-12T05:53:07.429Z"
     },
+    "haowen-html-to-pdf": {
+      "source": "howard-haowen/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/howard-haowen/agent-skills.git",
+      "skillPath": "haowen-html-to-pdf/SKILL.md",
+      "skillFolderHash": "0f5e6f41aafc44f3079f877cb5f23b641e23bd7c77a64e60f9ef3b2a285035e4",
+      "installedAt": "2026-06-27T11:50:56.791Z",
+      "updatedAt": "2026-06-27T11:50:56.791Z"
+    },
     "excalidraw-diagram-generator": {
       "source": "github/awesome-copilot",
       "sourceType": "github",
@@ -153,6 +162,70 @@
       "skillFolderHash": "a08698d6d9964562782c2f3e728757187755499e",
       "installedAt": "2026-06-19T12:42:20.918Z",
       "updatedAt": "2026-06-19T12:42:20.918Z"
+    },
+    "pptx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/pptx/SKILL.md",
+      "skillFolderHash": "10b3d70962e489867ddfee7da92f7da6b0eccc4f",
+      "pluginName": "document-skills",
+      "installedAt": "2026-06-23T03:29:28.828Z",
+      "updatedAt": "2026-06-23T03:29:28.828Z"
+    },
+    "frontend-slides": {
+      "source": "zarazhangrui/frontend-slides",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/zarazhangrui/frontend-slides.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "9906a34d640d2111f724544cbc50f7f130569ae1",
+      "installedAt": "2026-06-24T07:41:32.431Z",
+      "updatedAt": "2026-06-24T07:41:32.431Z"
+    },
+    "architecture-designer": {
+      "source": "jeffallan/claude-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/jeffallan/claude-skills.git",
+      "skillPath": "skills/architecture-designer/SKILL.md",
+      "skillFolderHash": "44b08027e2c06856066b6e27f1584acb7328e164",
+      "installedAt": "2026-06-25T06:08:24.542Z",
+      "updatedAt": "2026-06-25T06:08:24.542Z"
+    },
+    "educates-course-design": {
+      "source": "educates/educates-course-design-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/educates/educates-course-design-skill.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "c333de4b3a6059bb0ccc93f9422fdff5942cece3",
+      "installedAt": "2026-06-25T06:14:47.273Z",
+      "updatedAt": "2026-06-25T06:14:47.273Z"
+    },
+    "skill-create": {
+      "source": "skillscatalog/registry",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/skillscatalog/registry.git",
+      "skillPath": "skills/skill-create/SKILL.md",
+      "skillFolderHash": "67ae43dff3dcb5813f38fda5c7c7764dae6aca96",
+      "installedAt": "2026-06-25T09:00:02.672Z",
+      "updatedAt": "2026-06-25T09:00:02.672Z"
+    },
+    "nb": {
+      "source": "bjesuiter/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bjesuiter/skills.git",
+      "skillPath": "skills/nb/SKILL.md",
+      "skillFolderHash": "14bd4a92da2fe39c8cd17e3c3ea0a060057a33e7",
+      "installedAt": "2026-06-26T01:25:48.599Z",
+      "updatedAt": "2026-06-26T01:25:48.599Z"
+    },
+    "html-to-pdf": {
+      "source": "aviz85/claude-skills-library",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/aviz85/claude-skills-library.git",
+      "skillPath": "skills/html-to-pdf/SKILL.md",
+      "skillFolderHash": "cb08a533dca2bbef561e7f9aee70aa7267b038f2",
+      "installedAt": "2026-06-27T10:35:32.990Z",
+      "updatedAt": "2026-06-27T10:35:32.990Z"
     }
   },
   "dismissed": {

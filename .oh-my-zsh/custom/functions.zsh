@@ -218,17 +218,21 @@ function tldr2rich() {
 # ╰──────────────────────────────────────────────────────────╯
 function sync_brew() {
     echo "🔄 Syncing Homebrew..."
-    cd ~/dotfiles || { echo "❌ Failed to cd to ~/dotfiles"; return 1; }
 
-    echo "🧹 Cleaning up unused Homebrew packages..."
-    brew bundle cleanup --force
+    local dotfiles_dir="$HOME/dotfiles"
+    local oldpwd="$PWD"
+    cd "$dotfiles_dir" || { echo "❌ Failed to cd to $dotfiles_dir"; return 1; }
 
     echo "📦 Installing from Brewfile..."
-    brew bundle install
+    brew bundle install || { local status=$?; cd "$oldpwd"; return $status; }
+
+    echo "🧹 Cleaning up unused Homebrew packages..."
+    brew bundle cleanup --force || { local status=$?; cd "$oldpwd"; return $status; }
 
     echo "📝 Dumping current Homebrew state to DumpBrewfile..."
-    brew bundle dump --describe --file=DumpBrewfile --force
+    brew bundle dump --file=DumpBrewfile --force || { local status=$?; cd "$oldpwd"; return $status; }
 
+    cd "$oldpwd"
     echo "✅ Homebrew sync complete!"
 }
 
