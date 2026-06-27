@@ -1,8 +1,8 @@
-tap "asmvik/formulae"
-tap "christo-auer/eilmeldung", "https://github.com/christo-auer/eilmeldung", trusted: true
+tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git", trusted: { formulae: ["skhd"] }
+tap "christo-auer/eilmeldung", "https://github.com/christo-auer/eilmeldung"
 tap "harehare/tap"
 tap "hashicorp/tap"
-tap "koekeishiya/formulae"
+tap "koekeishiya/formulae", "https://github.com/asmvik/homebrew-formulae.git"
 tap "ngrok/ngrok"
 tap "quarkdown-labs/quarkdown"
 tap "steipete/tap"
@@ -85,8 +85,6 @@ brew "neovim"
 brew "node"
 # Send push notifications to your phone or desktop via PUT/POST
 brew "ntfy"
-# AI coding agent, built for the terminal
-brew "opencode"
 # Python dependency management tool
 brew "pipenv"
 # Execute binaries from Python packages in isolated environments
@@ -135,8 +133,6 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# a feature-rich TUI RSS reader based on the newsflash library
-brew "christo-auer/eilmeldung/eilmeldung"
 # A jq-like command-line tool for Markdown processing
 brew "harehare/tap/mq", trusted: true
 # Vault
@@ -145,8 +141,6 @@ brew "hashicorp/tap/vault", trusted: true
 brew "quarkdown-labs/quarkdown/quarkdown", trusted: true
 # Send and read iMessage / SMS from the terminal
 brew "steipete/tap/imsg", trusted: true
-# Convert images into ascii art
-brew "thezoraiz/ascii-image-converter/ascii-image-converter", trusted: true
 cask "font-hack-nerd-font", args: { appdir: "/Applications" }
 cask "font-ibm-plex-math", args: { appdir: "/Applications" }
 cask "font-ibm-plex-mono", args: { appdir: "/Applications" }
@@ -154,6 +148,8 @@ cask "font-ibm-plex-sans", args: { appdir: "/Applications" }
 cask "font-ibm-plex-sans-condensed", args: { appdir: "/Applications" }
 cask "font-ibm-plex-sans-tc", args: { appdir: "/Applications" }
 cask "font-ibm-plex-serif", args: { appdir: "/Applications" }
+# Free cross-platform office suite, fresh version
+cask "libreoffice", args: { appdir: "/Applications" }
 # Free and open-source RSS reader
 cask "netnewswire", args: { appdir: "/Applications" }
 # Reverse proxy, secure introspectable tunnels to localhost
@@ -245,7 +241,9 @@ uv "ruff"
 uv "visidata"
 npm "@earendil-works/pi-coding-agent"
 npm "@google/gemini-cli"
+npm "@openai/codex"
 npm "bobshell"
 npm "decktape"
 npm "defuddle"
 npm "newsroom-cli"
+npm "pptxgenjs"

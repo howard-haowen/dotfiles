@@ -8,7 +8,8 @@
 # │ Core taps                                                │
 # ╰──────────────────────────────────────────────────────────╯
 tap "TheZoraiz/ascii-image-converter"
-tap "koekeishiya/formulae"
+tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git"
+tap "harehare/tap"
 tap "hashicorp/tap"
 # Required for the cask ngrok
 tap "ngrok/ngrok"
@@ -93,7 +94,7 @@ brew "jq"
 ### `brew bundle`# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 ## jq-like command-line tool for markdown processing
-brew "harehare/tap/mq"
+brew "harehare/tap/mq", trusted: true
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dashboard                                                │
@@ -165,7 +166,7 @@ brew "taskline"
 ## Daily digest generator for your RSS feeds
 brew "matcha"
 ## TUI RSS reader based on the awesome news-flash library
-brew "eilmeldung"
+# brew "eilmeldung"
 ## User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 ## Easily create and use cli based on bash script
@@ -215,7 +216,7 @@ brew "w3m"
 ## Modern diagram scripting language that turns text to diagrams
 brew "d2"
 ## Simple hotkey daemon for macOS
-brew "asmvik/formulae/skhd"
+brew "asmvik/formulae/skhd", trusted: true
 ## Framework for Verilog RTL synthesis
 # brew "yosys"
 ## Configurable static site generator
@@ -229,15 +230,15 @@ brew "socket_vmnet"
 ## Toolkit for creating graphical user interfaces
 # brew "gtk+3"
 ## HashiCorp Vault CLI
-brew "hashicorp/tap/vault"
+brew "hashicorp/tap/vault", trusted: true
 ## Send iMessages from the terminal
-brew "steipete/tap/imsg"
+brew "steipete/tap/imsg", trusted: true
 ## Command-line unarchiving tools supporting multiple formats
 brew "unar"
 ## Deep clean and optimize your Mac
 brew "mole"
 ## Markdown meets the power of LaTeX
-brew "quarkdown-labs/quarkdown/quarkdown"
+brew "quarkdown-labs/quarkdown/quarkdown", trusted: true
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Dependencies of WeasyPrint, which converts HTML to PDF   │
@@ -274,6 +275,9 @@ cask "netnewswire"
 cask "ngrok"
 ## Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
+## Free cross-platform office suite, fresh version
+cask "libreoffice"
+
 # ╭──────────────────────────────────────────────────────────╮
 # │ Fonts                                                    │
 # ╰──────────────────────────────────────────────────────────╯
