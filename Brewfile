@@ -91,7 +91,9 @@ brew "gh"
 # ╰──────────────────────────────────────────────────────────╯
 ## lightweight and flexible command-line json processor
 brew "jq"
-### `brew bundle`# Process YAML, JSON, XML, CSV and properties documents from the CLI
+## JQ clone focussed on correctness, speed, and simplicity
+# brew "jaq"
+## Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 ## jq-like command-line tool for markdown processing
 brew "harehare/tap/mq", trusted: true
