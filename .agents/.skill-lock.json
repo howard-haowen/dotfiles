@@ -226,6 +226,24 @@
       "skillFolderHash": "cb08a533dca2bbef561e7f9aee70aa7267b038f2",
       "installedAt": "2026-06-27T10:35:32.990Z",
       "updatedAt": "2026-06-27T10:35:32.990Z"
+    },
+    "hackathon-idea-generator": {
+      "source": "bernieweb3/hackathon-ai-devkit",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bernieweb3/hackathon-ai-devkit.git",
+      "skillPath": "skills/hackathon-idea-generator/SKILL.md",
+      "skillFolderHash": "889a60ab87d214df57cd49236f4a267fcdeff5f6",
+      "installedAt": "2026-06-27T15:16:45.635Z",
+      "updatedAt": "2026-06-27T15:16:45.635Z"
+    },
+    "design-doc-mermaid": {
+      "source": "spillwavesolutions/design-doc-mermaid",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/spillwavesolutions/design-doc-mermaid.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "e13f987306d5cd7a34f541927a3228343dd90e45",
+      "installedAt": "2026-06-28T13:51:28.481Z",
+      "updatedAt": "2026-06-28T13:51:28.481Z"
     }
   },
   "dismissed": {
