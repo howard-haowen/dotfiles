@@ -7,6 +7,8 @@ tap "ngrok/ngrok"
 tap "quarkdown-labs/quarkdown"
 tap "steipete/tap"
 tap "thezoraiz/ascii-image-converter"
+# Apple Intelligence from the command-line, with OpenAi-compatible API server
+brew "apfel"
 # Easily create and use cli based on bash script
 brew "argc"
 # Bourne-Again SHell, a UNIX command interpreter
