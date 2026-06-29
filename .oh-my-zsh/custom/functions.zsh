@@ -257,13 +257,13 @@ function sync_brew() {
     cd "$dotfiles_dir" || { echo "❌ Failed to cd to $dotfiles_dir"; return 1; }
 
     echo "📦 Installing from Brewfile..."
-    brew bundle install || { local status=$?; cd "$oldpwd"; return $status; }
+    brew bundle install || { local exit_code=$?; cd "$oldpwd"; return $exit_code; }
 
     echo "🧹 Cleaning up unused Homebrew packages..."
-    brew bundle cleanup --force || { local status=$?; cd "$oldpwd"; return $status; }
+    brew bundle cleanup --force || { local exit_code=$?; cd "$oldpwd"; return $exit_code; }
 
     echo "📝 Dumping current Homebrew state to DumpBrewfile..."
-    brew bundle dump --file=DumpBrewfile --force || { local status=$?; cd "$oldpwd"; return $status; }
+    brew bundle dump --file=DumpBrewfile --force || { local exit_code=$?; cd "$oldpwd"; return $exit_code; }
 
     cd "$oldpwd"
     echo "✅ Homebrew sync complete!"

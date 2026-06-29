@@ -6,5 +6,6 @@
     "quarkdown-labs/quarkdown/quarkdown",
     "steipete/tap/imsg",
     "thezoraiz/ascii-image-converter/ascii-image-converter"
-  ]
+  ],
+  "trustedcasks": ["arthur-ficial/tap/apfel-quick"]
 }

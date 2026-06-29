@@ -7,7 +7,7 @@
 # ╭──────────────────────────────────────────────────────────╮
 # │ Core taps                                                │
 # ╰──────────────────────────────────────────────────────────╯
-tap "TheZoraiz/ascii-image-converter"
+tap "thezoraiz/ascii-image-converter"
 tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git"
 tap "harehare/tap"
 tap "hashicorp/tap"
@@ -67,6 +67,8 @@ brew "maven"
 # brew "aichat"
 ## Open source, extensible AI agent that goes beyond code suggestions
 # brew "block-goose-cli"
+## Apple Intelligence from the command-line, with OpenAi-compatible API server
+brew "apfel"
 
 # ╭──────────────────────────────────────────────────────────╮
 # │ Git tools                                                │
@@ -206,7 +208,7 @@ brew "zsh-autosuggestions"
 ## Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 ## Convert images to ascii art
-brew "ascii-image-converter"
+brew "thezoraiz/ascii-image-converter/ascii-image-converter", trusted: true
 ## Terminal based presentation tool
 brew "slides"
 ## Terminal slideshow tool, doesn't work!
@@ -269,6 +271,9 @@ cask "warp"
 cask "zed"
 ## Get up and running with large language models locally
 cask "ollama-app"
+## Instant AI overlay for macOS. Press a key, ask anything.
+# Default keybinding for launching the app: Option + Space
+cask "arthur-ficial/tap/apfel-quick", trusted: true
 ## Kubernetes and container management on the desktop
 cask "rancher"
 ## Free and open-source RSS reader
